@@ -1,0 +1,575 @@
+<div class="faq">
+<h2>Frequently asked Questions</h2>
+
+More or less frequently asked questions about Enigma
+<ul>
+    <li><a href="$$faq$$#section1">Installation &#38; Upgrading</a></li>
+    <li><a href="$$faq$$#section2">Running Enigma</a></li>
+    <li><a href="$$faq$$#section3">Playing Enigma</a></li>
+    <li><a href="$$faq$$#section4">Developing Enigma</a></li>
+    <li><a href="$$faq$$#section5">Copyrights &#38; Warranties</a></li>
+    <li><a href="$$faq$$#section6">Other</a></li>
+</ul>
+For an index of all questions, see <a href="$$faqq$$">here</a>.
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section1">Installation &#38; Upgrading</a>
+</h3>
+
+<a name="s1q1">
+<h4>I tried to download Enigma, following your links in the download-section,
+but the server doesn't respond or cancels downloading.</h4></a>
+<p>Servers sometimes don't work properly -- due to bugs, hardware errors
+or just maintaining. We can't really help you at this point, as we
+don't own these servers. Please try one of the mirrors (replace
+&quot;download&quot; in the url by &quot;download2&quot;), or retry
+tomorrow.</p>
+
+<a name="s1q2">
+<h4>I downloaded a game named Enigma, but it looks quite different?!</h4></a>
+<p>There exists another game called Enigma, which is a text-based
+puzzle game with elements of Boulderdash and Sokoban, visit
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/enigma/">
+http://www.chiark.greenend.org.uk/&#732;sgtatham/enigma/</a>
+to learn more about it. If you want to install our Enigma,
+download the one in our <a href="$$download$$">download section</a> on this
+website.</p>
+
+<a name="s1q3">
+<h4>How can I update Enigma?</h4></a>
+<p>There are in principal three kinds of updates: The world record list (aka
+ratings, aka statistics), the levels, and the program.
+<ul>
+<li>
+Enigma updates the world record list automatically, if you activated this in
+the options menu: &quot;Ratings update: Auto&quot;. If you want to update
+manually, read the following question.</li>
+<li>
+To update levels, you could either wait for the next release of Enigma, or
+manually put new levels into your user path: Single levels into subfolder
+&quot;levels/auto&quot;, whole levelpacks into a distinct subdirectory of
+&quot;levels&quot;.</li>
+<li>
+To update the program, simply deinstall the old Enigma and install the
+new one. Your scores and settings should be taken over.</li>
+</ul></p>
+
+<a name="s1q4">
+<h4>What's this about auto-updating scores/ratings? It never updated till
+now!</h4></a>
+<p>Go into the options menu and set &quot;Ratings update&quot; to
+&quot;Auto&quot;. Enigma then tries to auto-update scores about once a week.
+</p><p>
+If you want to update manually, download ratings.xml from the link given
+<a href="$$support$$">here</a> and copy it into your user path.</p>
+
+<a name="s1q5">
+<h4>What's this about auto-updating scores/ratings? I don't want any
+application to connect to the internet unasked!</h4></a>
+<p>Don't worry; Enigma won't access the internet as long as you don't activate
+it in the options menu: See the button named &quot;Ratings update&quot;. It's
+&quot;off&quot; by default, you can activate and deactivate it.
+</p><p>
+If you want to update manually, download ratings.xml from the link given 
+<a href="$$support$$">here</a> and copy it into your user path.</p>
+
+<a name="s1q6">
+<h4>I found an Enigma-level on the internet and want to play it &#8230;</h4></a>
+<p>If the level is in the 1.0-xml format, you can simply download
+and copy it into the subfolder &quot;levels/auto&quot; of your user path.
+Then restart Enigma, enter the level pack menu, choose group
+&quot;User&quot; and level pack &quot;Auto&quot;. There it should appear now.
+</p><p>
+If it doesn't appear, the level might have an earlier format.
+If you're experienced enough to work with level files, read
+the question &quot;How can I convert my old 0.92/0.81/&#8230; level files
+to 1.00?&quot; below.
+</p><p>
+Note that the new level might be buggy. If so, Enigma will
+probably complain about it at the startup. In this case it
+might be better to remove the level from &quot;levels/auto&quot; again.</p>
+
+<a name="s1q7">
+<h4>How can I play Sokoban levels from the internet?</h4></a>
+<p>We are working on this. Until then, you have to create an
+Enigma level on your own. You can use the ralf_sokoban-library
+for this, take a look at the level files in the
+&quot;data/levels/enigma_sokoban&quot;-subdirectory of your installation
+directory.</p>
+
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section2">Running Enigma</a>
+</h3>
+
+<a name="s2q1">
+<h4>My screen becomes black sometimes, but then Enigma comes back, as
+if nothing happened?</h4></a>
+<p>That's your screen saver. Mouse movements during Enigma are sometimes
+not noticed by the screen saver, and so it thinks you're not using
+your computer. You can either deactivate your screen saver, or try
+to toggle from window-mode to fullscreen-mode (see &quot;options
+menu&quot;).</p>
+
+<a name="s2q2">
+<h4>Enigma doesn't start, it gives an error message of the kind
+&quot;mismatch of state.xml and enigma.score&quot;.</h4></a>
+<p>Please send us copies of the two files (see &quot;Where are these
+enigma.score and state.xml files?&quot; below). If you once installed an
+earlier version of Enigma, please also attach the file
+&quot;enigmarc.lua2&quot; from the same directory. We can then analyse the
+problem.
+</p><p>
+Meanwhile, you can try to delete &quot;state.xml&quot; and
+&quot;enigma.score&quot; and restart Enigma twice and report us if the error
+continues.</p>
+
+<a name="s2q3">
+<h4>Enigma doesn't start, it gives an error message of the kind
+&quot;Datatype error: Type: invalid data type Value exception, Message:
+Value '44734' must be less than or equal to maxinclusive '32767'&quot;.
+(Value might be different.)</h4></a>
+<p>This is a known problem. It results from a 0.92-score that
+exceeds 9 hours. Make a backup of &quot;enigmarc.lua2&quot; (in your user
+path), then either remove or rename it (this way you'll loose
+all your 0.92-scores), or open it in a text editor. There you can
+search for a line that contains the value of your error message
+(&quot;44734&quot; in our example) and delete this single line (you'll loose
+the 9-hour-score only). Save &quot;enigmarc.lua2&quot; and delete
+&quot;state.xml&quot; and &quot;enigma.score&quot;, so Enigma is forced to
+recreate them. Restart Enigma twice and check if everything is working.</p>
+
+<a name="s2q4">
+<h4>When I enter a level pack, it needs so long to load the images?</h4></a>
+<p>This happens only the first time you start Enigma, and only
+if no thumbnails had been downloaded with Enigma. It's normal
+and will disappear when all thumbnails are created.</p>
+
+<a name="s2q5">
+<h4>Where are these enigma.score and state.xml files?</h4></a>
+<p>Their path is called &quot;user path&quot;. You can see it when you
+enter the &quot;Options&quot;-menu from the main menu; or pressing
+F2 in main-menu. The default user paths are as follows:
+</p><p>
+On a Linux/Unix-system:<br/>
+&#732;/.enigma<br/>
+On a new Windows-system (NT&#8727;, XP) in English language:<br/>
+C:\Documents and Settings\YourUserName\Application Data\Enigma<br/>
+On a new Windows-system (NT&#8727;, XP) in German language:<br/>
+C:\Dokumente und Einstellungen\YourUserName\Anwendungsdaten\Enigma<br/>
+(Correspondingly in other languages; replace YourUserName with your
+user name)<br/>
+On a Mac OS X: Use the finder, menu titled &quot;Go&quot;, select &quot;Go to
+folder&quot;, then type in: &quot;/Users/YourUserName/.enigma&quot;</p>
+
+<a name="s2q6">
+<h4>I found a bug!</h4></a>
+<p>You can either post this to the developers mailing list:
+<a href="mailto:enigma-devel@nongnu.org" >enigma-devel@nongnu.org</a>
+to <a href="http://www.mag-heut.net">mag-heut.net</a> or fill in a bug report
+at Berlios: <a href="http://developer.berlios.de/projects/enigma-game/"
+>http://developer.berlios.de/projects/enigma-game/</a>
+then click on &quot;Bug Tracking&quot; (&quot;Fehlerverfolgung&quot;) and
+&quot;Submit a Bug&quot;. For this, you need an accout at Berlios. To create
+one, use &quot;New User&quot; (&quot;Neuer Benutzer&quot;) on the left.
+</p><p>
+Please include the following basic information:
+<ul>
+<li>What computer and operating system are you using?</li>
+<li>Where and which Enigma version did you download?</li>
+<li>What did you do when the bug happened?</li>
+<li>What exactly did you see then?</li>
+</ul>
+</p><p>
+Especially the last point is important. There are dozens of
+ways an application can &quot;crash&quot; or &quot;freeze&quot;. Just
+describe what exactly you've done and what the monitor
+showed right after this.
+If you observed a &quot;hard bug&quot; (crash, freeze etc.; not a faulty
+level), please start Enigma from the console using
+&quot;enigma --log&quot;
+and try to reproduce this bug. This will create two files
+stdout.txt and stderr.txt in the installation directory,
+filled with valuable information for us. Please attach them
+to your mail to us.</p>
+
+<a name="s2q7">
+<h4>I wrote to the mailing-list, but noone answered :-(</h4></a>
+<p>Sorry, this happens too regular. It's not that we're not
+interested in your mail; we're just busy, and sometimes
+even noone has an answer and waits for the others to
+answer. So, please write us a second time and ask anew.
+</p><p>
+In particular, if you just wrote to encourage us to
+continue development, we've surely already read it and
+felt that warm gladness it creates in us. Thank you a
+lot for this; and you have to admit, that any reply
+would just hold us back from further programming ;-)</p>
+
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section3">Playing Enigma</a>
+</h3>
+
+<a name="s3q1">
+<h4>I'm new to this game. Where should I start?</h4></a>
+<p>When you start Enigma the first time, you are lead to the Tutorial.
+It's filled with easy and practicing levels. After you played them
+for a while, you should start with the level pack &quot;Enigma I&quot; and
+slowly play through all the level packs. You may of course start
+with another level pack, but the levels are ordered in a way to
+introduce not too many new game objects at once.</p>
+
+<a name="s3q2">
+<h4>Why do you say there are 900+ levels? There are only 65, and they
+are all too easy.</h4></a>
+<p>When you start Enigma the first time, you'll start in the
+&quot;Tutorial level pack&quot;, which is composed of easier levels and
+some for practicing. If you find yourself prepared enough, you
+can switch to the &quot;real&quot; level packs: Click on the button
+labeled &quot;Level Pack&quot;, then &quot;Enigma&quot; on the right side and
+one of the packs &quot;Enigma I&quot; to &quot;Enigma VI&quot;.
+</p><p>
+Instead of the &quot;Enigma group&quot; you can also take a look at the
+&quot;Deja Vu&quot; and the &quot;Sokoban&quot; groups.</p>
+
+<a name="s3q3">
+<h4>What is the meaning of the icon-buttons and of these medals
+and feathers?</h4></a>
+<p>In short: There are two difficulties between which you can choose:
+easy-mode and normal-mode. However, not all levels support easy-mode.
+A golden medal on a level shows that you solved it in normal-mode,
+a silver one that you solved it in easy-mode. If there is a feather,
+this means there is an easy-mode you didn't solve yet.
+The buttons on the bottom mean from left to right:
+<ul>
+<li>record-mode (for advanced users, consult manual for this),</li>
+<li>start next level relative to chosen record-mode,</li>
+<li>toggle between easy- and normal-mode,</li>
+<li>enter level pack menu to choose another level pack,</li>
+<li>back to main menu.</li>
+</ul>
+</p><p>
+Please consult the <a href="$$manual$$">manual</a> for details.</p>
+
+<a name="s3q4">
+<h4>What are those [insert any game-objects] doing?</h4></a>
+<p>There are several ways to find this out. We encourage you to
+just experiment with them, get ready for some surprises!
+Or, you can visit <a href="http://www.mag-heut.net">www.mag-heut.net</a> and
+search the forum for information. Or, you can look into the manual, some
+objects are explained there.
+</p><p>
+If you need detailed information about an object, e.g. if you
+want to write a level, take a look at the <a href="$$refman$$">reference
+manual</a>. However, for this you'll have to know the name of the object.
+</p><p>
+If you need to know the name of an object, visit the Enigma
+Wiki at <a href="$$wiki$$" >$$wiki$$</a>.</p>
+
+<a name="s3q5">
+<h4>I can't solve [insert any level]!</h4></a>
+<p>Don't despair. There are dozens of levels that even experts
+need weeks to solve.
+</p><p>
+There are some hints in the manual and some hints on <a
+href="http://www.mag-heut.net/blackball/index.php"
+>http://www.mag-heut.net/</a>.</p>
+
+<a name="s3q6">
+<h4>I don't want to play those maze/turnstile/speedy/&#8230; levels.</h4></a>
+<p>There is no sense in playing levels you don't like.
+In particular, nothing happens if you complete all
+levels; there is no hidden level or such, which you
+could miss if you don't solve all levels.
+</p><p>
+Apart from that, different people prefer different levels.
+That's why we won't remove seemingly less interesting levels
+from the standard level packs. But you're invited to compose
+your own level pack out of levels you liked most! Read
+Chapter 2 of the reference manual for details. You may even
+post your new level pack to mag-heut.net after this.</p>
+
+<a name="s3q7">
+<h4>I find Enigma too difficult for me, I like the idea, but it's
+too frustrating.</h4></a>
+<p>Well, open source software lives from constructive criticism.
+Write levels you like, and send them to us, or distribute them
+yourself, e.g. via <a href="http://www.mag-heut.net/blackball/index.php"
+>http://www.mag-heut.net/</a>.</p>
+
+<a name="s3q8">
+<h4>I'd like to start from the beginning! Is there a way to mark an
+already solved level as unsolved?</h4></a>
+<p>If you want to &quot;unsolve&quot; a single level, go to the level menu,
+point at it (don't click!) and press &quot;u&quot;.
+</p><p>
+If you want to reset all your scores (do you really want to
+do this?) then rename or delete the files &quot;state.xml&quot; and
+&quot;enigma.score&quot;, as well as its backups
+&quot;enigma.score&#732;&#8727;&quot; (otherwise a backup will be taken). You
+might also have to rename/delete your old 0.92-scores
+(&quot;enigmarc.lua2&quot;).</p>
+
+<a name="s3q9">
+<h4>I saw a level, and want to play it again; but forgot where
+it was. How can I find it?</h4></a>
+<p>Do you remember the title or a part of it? Then click on
+&quot;Search&quot; in the level pack menu, and enter it.
+</p><p>
+Alternatively, you can search through the &quot;History&quot; level
+pack which you can find in the &quot;User&quot; level group (go to
+level pack menu, choose &quot;User&quot; on the left side and then
+&quot;History&quot; on the right). Here all levels are crossreferenced
+that you played a while ago, in chronological order.
+</p><p>
+Note that neither method will take you to the level pack from
+which you played the level. If you search its level pack, you
+can enter the level info page (right-click on it in the level
+menu). Read the line &quot;Level Path&quot;. This might give you
+an idea in which level pack you have to search the level.</p>
+
+<a name="s3q10">
+<h4>How can I let the world know about my records?</h4></a>
+<p>Read the section &quot;Score Registration&quot;
+<a href="$$support$$">here</a>
+or section 4.3 (&quot;Registering Scores&quot;) of the <a
+href="$$manual$$">manual</a>.</p>
+
+<a name="s3q11">
+<h4>Is it legal to send scores that have been achieved in 0.92?</h4></a>
+<p>Yes. All scores that are incompatible to the 1.00 version of levels will not
+be considered in the statistics. You will notice a small red triangle on the
+level preview icons in the level menu. If you solve these levels again with
+1.00 your new score will be registered next time.</p>
+
+<a name="s3q12">
+<h4>Some of the world records seem to be impossible -- are they cheated?</h4></a>
+<p>There may be some levels with shortcuts that are not intended by the
+authors. Some levels do have unconventional solutions. But we are not aware
+that someone is intenionally cheating. Have a look at the user forum
+<a href="http://www.mag-heut.net/blackball/index.php" >http://www.mag-heut.net/</a>.
+Many &quot;professional&quot; players are listening and may
+even give you some hints.</p>
+
+<a name="s3q13">
+<h4>I had a world record on a level. After restarting Enigma it is gone!</h4></a>
+<p>Your score should still be the same. But you are competing with other players
+world wide for the best score. If you set the option &quot;Ratings
+update&quot; to &quot;Auto&quot; Enigma will download a list of updated
+statistics and world records about once in a month. Sorry, someone else will
+have beaten your world record.</p>
+
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section4">Developing Enigma</a>
+</h3>
+
+<a name="s4q1">
+<h4>How can I help you?</h4></a>
+<p><ul>
+<li>First of all, some nice words to <a href="mailto:enigma-devel@nongnu.org"
+>enigma-devel@nongnu.org</a>
+always help to keep on developing ;-)
+What did you like, what does annoy you?</li>
+
+<li>Then, you can spread the word of Enigma! Give copies of Enigma
+to friends and help them in their first steps.</li>
+
+<li>Send us bug reports!</li>
+
+<li>Or help other users on <a href="http://www.mag-heut.net/blackball/index.php" >http://www.mag-heut.net/</a>.</li>
+
+<li>You can construct new levels and send them us or post them
+to <a href="http://www.mag-heut.net/blackball/index.php"
+>http://www.mag-heut.net/</a>; see: &quot;How can I write a level for
+Enigma?&quot;</li>
+
+<li>You can translate Enigma into other languages. This needs
+some patience, as nearly all texts in Enigma can be translated
+(including those in the levels, the manuals, homepage and this FAQ!).</li>
+
+<li>You can sign up for the devel-mailing list and respond
+to users that have problems, e.g. to install Enigma.</li>
+
+<li>But the most important: If you know how to program, are able to
+draw graphics, or synthesize sounds, and willing to invest some
+time in a non-profit project; then you are most welcome to enter
+our team! Please write a mail to <a href="mailto:enigma-devel@nongnu.org"
+>enigma-devel@nongnu.org</a> in which you state what you're interested in and
+would like to do. There are some ideas in the
+<a href="$$development$$#wishlist" >developers section</a>.</li>
+</ul></p>
+
+<a name="s4q2">
+<h4>Can I support you financially?</h4></a>
+<p>We are working on this &#8230; Well, indeed what we most need is your time
+to help us with the tasks mentioned <a href="#s4q1">above</a>.</p>
+
+<a name="s4q3">
+<h4>How can I write a level for Enigma?</h4></a>
+<p>Read the <a href="$$refman$$">reference manual</a>, visit <a
+href="http://www.mag-heut.net" >mag-heut.net</a>, or study the
+existing levels; they're in the subdirectories &quot;data/levels/&#8727;&quot;
+of your installation path. You might also find the Enigma Wiki at
+<a href="$$wiki$$" >$$wiki$$</a> interesting.
+</p><p>
+If it's too difficult for you to program your level, ask people
+on mag-heut.net for help -- they might convert your ideas to
+a real level!</p>
+
+<a name="s4q4">
+<h4>Is there an editor for Enigma?</h4></a>
+<p>Yes and no. For earlier versions of Enigma, there are editors
+like Star.LUA and BlackballEd. However, Enigma continued evolution
+and at the moment (Feb.2007) those editors are not compatible
+with Enigma 1.00 anymore. You can use them to create outlines
+of your future level, but you'll still have to work with the
+code to make it compatible.
+</p><p>
+BBE and Star.LUA are designed for Windows and Linux only.
+For Mac-users there is no editor yet.
+</p><p>
+See <a href="http://blackballed.sourceforge.net/" >http://blackballed.sourceforge.net/</a> and
+<a href="http://www.capkoh.narod.ru/SL_MainPage.html" >http://www.capkoh.narod.ru/SL_MainPage.html</a>.</p>
+
+<a name="s4q5">
+<h4>I created new levels, would you consider them for inclusion in Enigma?</h4></a>
+<p>Yes, we certainly will. Please send an email to enigma-devel if you have
+levels that you would like to share with others. The mailing list has a
+message size limit of 40k, so please ask before you want to send files larger
+than this.
+</p><p>
+Note that we generally only accept levels that have the same or a more
+liberal license as the rest of Enigma.</p>
+
+<a name="s4q6">
+<h4>I want to use an object in my new level but don't know its name.</h4></a>
+<p>Visit the Enigma Wiki
+<a href="$$wiki$$" >$$wiki$$</a> or analyze a level in which it appears.</p>
+
+<a name="s4q7">
+<h4>How can I compile Enigma on/for Windows?</h4></a>
+<p>Building the Windows version of Enigma is a little more difficult than
+building the Unix versions. The main development of Enigma happens on Linux,
+so that's what the build process is optimized for.
+</p><p>
+The official Enigma releases for Windows are in fact compiled on a Linux
+machine, using MinGW as a cross-compiler. MinGW is also available as a native
+compiler that runs on Windows, but you need quite a few additional Unix tools
+to actually build the game. Please refer to the file doc/README.mingw32 for a
+few more instructions on how to build Enigma using MinGW.
+</p><p>
+With a little work it should be possible to build Enigma using recent versions
+of VisualStudio, but so far no one has bothered to adapt Enigma's source code
+accordingly and to create suitable project files.</p>
+
+<a name="s4q8">
+<h4>How can I convert my old 0.92/0.81/&#8230; levels to 1.00?</h4></a>
+<p>This is not that an easy project. If you use a lua-based level, it's
+definitely easier than one of the few old-version-xml's in existence.
+</p><p>
+First of all, you have to encapsulate the lua in a 1.00-xml-corset.
+You can read about this in the <a href="$$refman$$">reference manual</a>,
+sections 3.2, 3.3, and possibly 3.5. You might also take a look at
+<a href="http://enigma.mal2.ch/index.php?title=XML-Metadaten" >http://enigma.mal2.ch/index.php?title=XML-Metadaten</a>
+but this is in German (English version?).
+</p><p>
+As next, you have to remove all &quot;Require&quot; or
+&quot;dofile&quot;-lines from the lua code and replace them with library-calls
+from the xml-part, see section 3.3.6, element &quot;dependency&quot;.
+</p><p>
+Finally, some game objects have to be replaced; in particular,
+&quot;fl-ice_001&quot; doesn't exist anymore. Replace it with
+&quot;fl-ice&quot;. If you used BBE, some attribute names might have to be
+corrected, e.g. of &quot;it-magnet&quot;. At this point, your level should
+already run in Enigma. Give it some fine-tuning and test whether all parts
+work correctly. If you still observe a problem and can't solve it yourself
+(the reference manual gives extensive information about each game object),
+then post it to <a href="mailto:enigma-devel@nongnu.org"
+>enigma-devel@nongnu.org</a>. 
+We might be able to detect the problem and repair your level.</p>
+
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section5">Copyrights &#38; Warranties</a>
+</h3>
+
+<a name="s5q1">
+<h4>May I give copies of Enigma to my friends?</h4></a>
+<p>YES!  Please do so.  Or give them the link to our download
+section.</p>
+
+<a name="s5q2">
+<h4>May I sell Enigma? Or include it in my commercial/non-commercial game
+compilation?</h4></a>
+<p>In principle: Yes. Make sure, that Enigma is complete, in particular
+all copyright-notes and credits (don't change the author-names!), a
+copy of the <a href="$$gpl$$">GPL</a>, and the source code (at least a link to
+where download the source code, see GPL for details). In case your game
+compilation is commercial, you are not allowed to receive money for the
+program Enigma itself -- only a fee for the physical act of copying it and the
+media you are using.
+</p><p>
+You're allowed to modify and extend Enigma, as long as you hold on to
+the specifications of the GPL: The new program has again to be licensed
+as GPL, in particular the source code has to be available. If you just
+write additional levels for Enigma, these need not be part of the GPL,
+and you might sell them as you like. Note however, that level-files are
+source code by themselves, so there is no way you could prohibite their
+distribution by copying and sharing.</p>
+
+<a name="s5q3">
+<h4>Enigma broke my computer! (Pay me!)</h4></a>
+<p>There is no way I can imagine that Enigma might damage your
+computer. However; whatever might have happened, we're not able
+to pay you any kind of compensation. You can not even sue us,
+as the license under which Enigma is distributed, explicitly
+doesn't grant any kind of warranty: <a href="$$gpl$$">GPL</a>
+-- no exceptions. So, you download, start and play Enigma on
+your own risk.
+</p><p>
+But we're nevertheless interested in what has happened. Please
+send us a bug report, so that we can analyze the problem and
+repair Enigma if neccessary. This might save others from what
+happened to you.</p>
+
+
+<h3><a class="arrowup" href="faq.html"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
+<a name="section6">Other</a>
+</h3>
+
+<a name="s6q1">
+<h4>Is there something like an Enigma party or Enigma convention?</h4></a>
+<p>Not yet, but maybe you want to organize one?</p>
+
+<a name="s6q2">
+<h4>Are there similar games?</h4></a>
+<p>You might want to try some of the old Oxyd&#174; games, visit yahoos
+<a href="http://games.groups.yahoo.com/group/oxyd/">Oxyd group</a> for
+this. In particular, take a look at <a
+href="http://www.oxyd-game.com" >www.oxyd-game.com</a>,
+where you can download Oxyd&#174; Extra 2.0 and new games might be
+announced.
+</p><p>
+Then you should try Ozone, which adds the third dimension to Enigma:
+<a href="http://ozone.game-host.org/wiki/index.php?title=Main_Page"
+>http://ozone.game-host.org/wiki/index.php?title=Main_Page</a>
+</p><p>
+Finally, there is Mulg, a game similar to Oxyd&#174; for Palms, with over 370
+levels, a Java-based level-editor and a feature to use with a tilt sensor!
+Visit <a href="http://www.harbaum.org/till/palm/mulg"
+> http://www.harbaum.org/till/palm/mulg</a>.</p>
+
+<a name="s6q3">
+<h4>What is your connection to the old Oxyd&#174; games?</h4></a>
+<p>The original Oxyd&#174; series by Meinolf Schneider (at Dongleware) was
+the main inspiration for Enigma, and still gives impulses to its
+development. If you can, take a look at them, and as well at its
+latest descendant: Oxyd&#174; Extra v2.0 (<a href="http://www.oxyd-game.com" >www.oxyd-game.com</a>) by Jens Duttke.
+</p><p>
+However, Enigma evolved beyond this. It absorbed ideas from many
+other games, and emulates them in special levels, like &quot;Enigris&quot;.
+And it developed totally new objects and gaming ideas; and still
+keeps on living &#8230;</p>
+</div>
