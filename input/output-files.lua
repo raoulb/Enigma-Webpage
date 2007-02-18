@@ -13,7 +13,8 @@ general = {
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
     title_fr = "Enigma Homepage",
-    refman = "http://www.nongnu.org/enigma/manual/enigma-ref.html",
+    --refman = "http://www.nongnu.org/enigma/manual/enigma-ref.html",
+    refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
@@ -32,9 +33,13 @@ general = {
     bottombar = {"bottombar"},
     parse_news_1 = function(v,s,l0)  return parse_news(newsdir,l0,newsfield)  end,
     parse_news_2 = function(v,s,l0)  return parse_news(newsdir,l0)  end,
-    imagedir = "images"
+    imagedir = "images",
+    lastupdate = "$Date$",
+    lastauthor = "$Author$",
+    lastrev = "$Rev$"
 }
 
+--------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- index.html
 ----------------------------------------------------------------------
@@ -53,9 +58,20 @@ html.about = {
     outfile = "about.html",
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
-    body = {"features", "testimonials", "screenshots", "impressum"}
+    body = {"features", "testimonials"}
 }
 
+----------------------------------------------------------------------
+-- screenshots.html
+----------------------------------------------------------------------
+html.screenshots = {
+    outfile = "screenshots.html",
+    title = "Screenshots of Enigma",
+    title_de = "Screenshots von Enigma",
+    body = {"screenshots"}
+}
+
+--------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- download.html
 ----------------------------------------------------------------------
@@ -63,9 +79,30 @@ html.download = {
     outfile = "download.html",
     title = "Download Engima",
     title_de = "Enigma herunterladen",
-    body = {"download", "compiling", "download_dev_old"}
+    body = {"download"}
 }
 
+----------------------------------------------------------------------
+-- compiling.html
+----------------------------------------------------------------------
+html.compiling = {
+    outfile = "compiling.html",
+    title = "Compiling Engima on Linux",
+    title_de = "Enigma kompilieren unter Linux",
+    body = {"compiling"}
+}
+
+----------------------------------------------------------------------
+-- download_old.html
+----------------------------------------------------------------------
+html.download_old = {
+    outfile = "download_old.html",
+    title = "Download Engima, older Versions",
+    title_de = "Enigma herunterladen, alte Versionen",
+    body = {"download_dev_old"}
+}
+
+--------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- support.html
 ----------------------------------------------------------------------
@@ -73,7 +110,27 @@ html.support = {
     outfile = "support.html",
     title = "User-Support",
     title_de = "Spieler-Support",
-    body = {"scores", "documentation"}
+    body = {} --{"scores", "documentation"}
+}
+
+----------------------------------------------------------------------
+-- documentation.html
+----------------------------------------------------------------------
+html.documentation = {
+    outfile = "documentation.html",
+    title = "Documentation",
+    title_de = "Dokumentation",
+    body = {"documentation"}
+}
+
+----------------------------------------------------------------------
+-- scores.html
+----------------------------------------------------------------------
+html.scores = {
+    outfile = "scores.html",
+    title = "Score submit",
+    title_de = "Spielergebnisse einsenden",
+    body = {"scores"}
 }
 
 ----------------------------------------------------------------------
@@ -83,17 +140,7 @@ html.faq = {
     outfile = "faq.html",
     title = "Frequently Asked Questions",
     title_de = "H&auml;ufig gestellte Fragen",
-    body = {"faq_core"}
-}
-
-----------------------------------------------------------------------
--- faq.html
-----------------------------------------------------------------------
-html.faqq = {
-    outfile = "faqq.html",
-    title = "Frequently Asked Questions - Index",
-    title_de = "H&auml;ufig gestellte Fragen - Index",
-    body = {"faq_questions"}
+    body = {"faq_questions", "faq_core"}
 }
 
 ----------------------------------------------------------------------
@@ -113,7 +160,7 @@ html.links = {
     outfile = "links.html",
     title = "Links",
     title_de = "Links",
-    body = {"links"}
+    body = {"links", "impressum"}
 }
 
 ----------------------------------------------------------------------
