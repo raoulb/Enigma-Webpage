@@ -213,6 +213,18 @@ li {
     color: #555;
 }
 
+.screenshot img {
+    border-width: 4px;
+}
+
+.screenshot a:link, .screenshot  a:visited {
+    color: #777;   /* IE needs body attributes for image coloring */
+}
+
+.screenshot a:link:hover, .screenshot a:visited:hover {
+    color: #333;   /* IE needs body attributes for image coloring */
+}
+
 .bottombar {
     /*  border-top: 1px solid black; */
     padding: 1px;
@@ -283,7 +295,8 @@ li {
 }
 
 .faq ul ul {
-    padding-left: 1em;
+    margin-left: 0em;    /* overwrite IE indention */
+    padding-left: 1em;   /* overwrite Firefox indention */
 }
 
 table.download {

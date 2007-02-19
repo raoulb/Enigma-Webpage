@@ -140,7 +140,7 @@ html.faq = {
     outfile = "faq.html",
     title = "Frequently Asked Questions",
     title_de = "H&auml;ufig gestellte Fragen",
-    body = {"faq_questions", "faq_core"}
+    body = {"faq_core", "faq_questions"}
 }
 
 ----------------------------------------------------------------------
