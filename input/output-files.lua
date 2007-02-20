@@ -58,7 +58,7 @@ html.about = {
     outfile = "about.html",
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
-    body = {"features", "testimonials"}
+    body = {"about", "features", "testimonials"}
 }
 
 ----------------------------------------------------------------------

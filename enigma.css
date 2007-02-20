@@ -225,6 +225,19 @@ li {
     color: #333;   /* IE needs body attributes for image coloring */
 }
 
+.powered-by {
+    margin-top: 1.5em;
+    border-top: 1px solid #666;
+}
+
+.powered-by a:link, .powered-by  a:visited {
+    color: #777;   /* IE needs body attributes for image coloring */
+}
+
+.powered-by a:link:hover, .powered-by a:visited:hover {
+    color: #333;   /* IE needs body attributes for image coloring */
+}
+
 .bottombar {
     /*  border-top: 1px solid black; */
     padding: 1px;
@@ -278,6 +291,23 @@ li {
 
 .news .date {
     color: gray;
+}
+
+.testimonial .quote {
+    padding-right: 3em;
+    padding-left: 2em;
+    font-family: serif;
+    margin-top: 1.7em;
+    margin-bottom: 0px;
+}
+
+.testimonial .author {
+    margin-top: 0px;
+    margin-bottom: 0pxs;
+    padding-right: 3em;
+    padding-left: 2em;
+    text-align: right;
+    font-size: 90%;
 }
 
 .faq h4 {
