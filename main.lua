@@ -34,6 +34,44 @@ function add_lang_to_filename(filename, lang)
     end
 end
 
+function parse_text(v, text, lang, context)
+    return string.gsub(text, "%$%$(.-)%$%$", function (s)
+        local process = v[s] or general[s]
+        local process_with_lang = v[s..lang] or general[s..lang]
+        local stype = type(process)
+        if stype == "nil" then
+            -- Assume the entry is short for an html-output-file
+            mydebug(" --> "..s.."\n")
+            if type(html[s]) == "table" and type(html[s].outfile) == "string" then
+                return add_lang_to_filename(html[s].outfile, lang)
+            else
+                error("Error during evaluation of "..context..": Entry "..s.." not defined.")
+            end
+        end
+        if stype == "string" then
+            if type(process_with_lang) == "string" then
+                return process_with_lang
+            else
+                io.write("  Missing entry "..s..lang.." for "
+                         ..context..", using fallback.\n")
+                return process
+            end
+        end
+        if stype == "function" then
+            return process(v,s,lang)
+        end
+        if stype == "table" then
+            local addstring = ""
+            for j,f in process do
+                addstring = addstring.."<a name=\""..f.."\" id=\""..f.."\"></a>\n"
+                addstring = addstring..parse_html(v, directory..f..suffix, lang)
+            end
+            return addstring
+        end
+        error("Error during evaluation of "..context..", "..s.." (type "..stype..").")
+    end)
+end
+
 function parse_html(v, infilename0, lang)
     if not infilename0 then
         error("Error during creation of "..v.title..": Expected filename, got nil.")
@@ -59,42 +97,7 @@ function parse_html(v, infilename0, lang)
 
     local body = infile:read("*a")
     infile:close()
-
-    return string.gsub(body, "%$%$(.-)%$%$", function (s)
-        local process = v[s] or general[s]
-        local process_with_lang = v[s..lang] or general[s..lang]
-        local stype = type(process)
-        if stype == "nil" then
-            -- Assume the entry is short for an html-output-file
-            mydebug(" --> "..s.."\n")
-            if type(html[s]) == "table" and type(html[s].outfile) == "string" then
-                return add_lang_to_filename(html[s].outfile, lang)
-            else
-                error("Error during evaluation of "..infilename..": Entry "..s.." not defined.")
-            end
-        end
-        if stype == "string" then
-            if type(process_with_lang) == "string" then
-                return process_with_lang
-            else
-                io.write("  Missing entry "..s..lang.." for "
-                         ..infilename0..", using fallback.\n")
-                return process
-            end
-        end
-        if stype == "function" then
-            return process(v,s,lang)
-        end
-        if stype == "table" then
-            local addstring = ""
-            for j,f in process do
-                addstring = addstring.."<a name=\""..f.."\" id=\""..f.."\"></a>\n"
-                addstring = addstring..parse_html(v, directory..f..suffix, lang)
-            end
-            return addstring
-        end
-        error("Error during evaluation of "..infilename..", "..s.." (type "..stype..").")
-    end)
+    return parse_text(v, body, lang, infilename)
 end
 
 -- First create the two news-files

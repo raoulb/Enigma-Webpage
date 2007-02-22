@@ -31,8 +31,12 @@ general = {
     rightcolumn = {},
     body = {},
     bottombar = {"bottombar"},
-    parse_news_1 = function(v,s,l0)  return parse_news(newsdir,l0,newsfield)  end,
-    parse_news_2 = function(v,s,l0)  return parse_news(newsdir,l0)  end,
+    parse_news_1 = function(v,s,l0)
+                     return parse_text(v, parse_news(newsdir,l0,newsfield), l0, "news1")
+                   end,
+    parse_news_2 = function(v,s,l0)
+                     return parse_text(v, parse_news(newsdir,l0), l0, "news2")
+                   end,
     imagedir = "images",
     lastupdate = "$Date$",
     lastauthor = "$Author$",
