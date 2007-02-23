@@ -1,57 +1,140 @@
-<h3><a name="stable">Stable Release (Version 1.00)</a></h3>
+<h2>Get Enigma</h2>
 
-<p>Please report problems with any of these packages to the <a
-href="mailto:enigma-devel@nongnu.org">Enigma mailing list</a>. </p>
+All links and some hints for downloading Enigma are provided on this page sorted
+by the following critera:
+
 <ul>
-<li> Windows '95 and later
+  <li><a href="$$download$$#stable">Stable Release</a> - The most up to date release packages - start here.
+  <li><a href="$$download$$#compilation">Compilation from Sourcecode</a> - Hints for Unix. 
+  <li><a href="$$download$$#announce">Announce Maillist</a> - Get a mail notification on new Enigma releases.
+  <li><a href="$$download$$#devel">Development Versions</a> - Download the leading edge source.
+  <li><a href="$$download$$#oldversions">Old Versions</a>
+</ul>
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="stable">Stable Release (Version 1.00)</a></h3>
+
+  <p>Besides &apos;Full&apos; packages we provide size reduzed 'Minimum' packages
+  for users with a low bandwidth. 'Minimum' and 'Source' packages do not include
+  the 'Previews' package. The packages are still complete as missing previews
+  are generate on the fly at the cost of a few seconds at the first level menu
+  calls.</p>
+
+  <ul>
+  <li> Windows '95 and later
     <a href="http://download.berlios.de/enigma-game/Enigma-1.00.exe">
-        Full Installer (1.00)</a> appr. 15 MB
-</li>
+        Full Installer (1.00)</a> appr. 15 MB</li>
 
-<li> Windows '95 and later
+  <li> Windows '95 and later
     <a href="http://download.berlios.de/enigma-game/Enigma-1.00-min.exe">
-        Minimum Installer (1.00)</a> appr. 11 MB
-</li>
+        Minimum Installer (1.00)</a> appr. 11 MB</li>
 
-<li> Windows '95 and later
+  <li> Windows '95 and later
     <a href="http://download.berlios.de/enigma-game/Enigma-w32-1.00.zip">
-        Minimum Zip (1.00)</a> appr. 11 MB
-</li>
+        Minimum Zip (1.00)</a> appr. 11 MB</li>
 
-<li> Mac OS X universal 
+  <li> Mac OS X universal 
     <a href="http://download2.berlios.de/enigma-game/Enigma-1.00-OSX.dmg">
-        Full Installer (1.00)</a> appr. 16 MB
-</li>
+        Full Installer (1.00)</a> appr. 16 MB</li>
 
-<li>Source Code
+  <li>Source Code
     <a href="http://download.berlios.de/enigma-game/enigma-1.00.tar.gz"> 
-	tar.gz (1.00)</a> appr. 10 MB
-</li>
+	tar.gz (1.00)</a> appr. 10 MB</li>
         
-<li>Previews
+  <li>Previews
     <a href="http://download.berlios.de/enigma-game/enigma-1.00-previews.zip"> 
-	Zip (1.00)</a> appr. 4 MB
-</li>
+	Zip (1.00)</a> appr. 4 MB</li>
         
-</ul>
+  </ul>
 
-<p>The 'Minimum' and 'Source' packages do not include the 'Previews' package.
-The packages are still complete as missing previews are generate on the fly
-at the cost of a few seconds at the first level menu calls.</p>
+  <p>All packages are available at Berlios. In case of download problems try a 
+  direct download from <a href="http://developer.berlios.de/project/showfiles.php?group_id=3972">
+  Berlios</a> and give all servers that are offered a chance.<p>
 
-<p>All packages are available at <a href="http://developer.berlios.de/project/showfiles.php?group_id=3972"> 
-	Berlios</a>.<p>
+  <p>Please report problems with any of these packages to the <a
+    href="mailto:enigma-devel@nongnu.org">Enigma mailing list</a>.</p>
 
-<p>Packages for some other operating systems are made available by
-third parties:</p>
 
-<ul>
-<li><a href="http://packages.debian.org/unstable/games/enigma.html">
+  <p>Packages for some other operating systems are made available by
+  third parties:</p>
+
+  <ul>
+  <li><a href="http://packages.debian.org/unstable/games/enigma.html">
 	Debian</a>
-<li><a href="http://www.freshports.org/games/enigma/">
+  <li><a href="http://www.freshports.org/games/enigma/">
 	FreeBSD (version 0.92)</a>
-<li><a href="http://packages.gentoo.org/ebuilds/?enigma-1.00-r1">
+  <li><a href="http://packages.gentoo.org/ebuilds/?enigma-1.00-r1">
     Gentoo Linux</a>
-<li><a href="http://packages.ubuntu.com/cgi-bin/search_packages.pl?searchon=names&version=all&exact=1&keywords=enigma">
+  <li><a href="http://packages.ubuntu.com/cgi-bin/search_packages.pl?searchon=names&version=all&exact=1&keywords=enigma">
 	Ubuntu</a>
-</ul>
+  </ul>
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="compilation">Compiling from Source Code under Unix</a></h3>
+
+  <p>In case your Unix distribution does not provide Enigma packages you may
+  want to download the source package and compile Enigma for your own. This
+  is usually a simple straight forward task.</p>
+  
+  <p>Enigma depends on a few libraries and tools. Most Unix systems come with
+  these libraries pre-installed these days.  But for compilation you may need
+  additional &apos;-devel&apos; packages besides the runtime packages of the
+  libraries.  Please verify that the libraries SDL, SDL_ttf, SDL_image, SDL_mixer
+  and Xerces are installed on your system.</p>
+  
+  <p>For a complete list of libraries and programs that must be installed to
+  compile Enigma, please refer to the file &apos;doc/REQUIREMENTS&apos; that is
+  included in the Enigma source package.</p>
+
+  <p>Once you have everything installed, building Enigma is as easy as typing
+
+   <pre>./configure && make && make install</pre>
+
+  in the enigma directory.</p>
+  
+  <p>If your distribution does not provide the necessary packages, you can
+  download them from the following web sites:</p>
+
+  <ul>
+    <li><a href="http://www.libsdl.org">SDL</a>&emsp;(&ge; 1.2)
+    <li><a href="http://www.libsdl.org/projects/SDL_ttf">SDL_ttf</a>&emsp;(&ge; 2.0.6)
+    <li><a href="http://www.libsdl.org/projects/SDL_mixer">SDL_mixer</a>&emsp;
+      (&ge; 1.2.4)
+    <li><a href="http://www.libsdl.org/projects/SDL_image">SDL_image</a>&emsp;
+      (&ge; 1.2.0)
+    <li><a href="http://xml.apache.org/xerces-c">Xerces</a>&emsp;(&ge; 2.4)
+  </ul>
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="announce">Announce Maillist</a></h3>
+
+If your are keen on being up to date on Enigma we offer an annoucement service
+for new releases via email. Just register yourself on the 
+<a href="http://lists.nongnu.org/mailman/listinfo/enigma-announce">announce 
+maillist</a>. The mail volume is limited to one mail per beta or final relase
+version of Enigma, which did not yet exceed half a dozen mails per year.
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="devel">Development version</a></h3>
+
+  <p>Interested in the leading edge development version of Enigma?
+  Enigma's development version can be downloaded from its source code
+  repository. 
+  <pre>svn://svn.berlios.de/enigma-game</pre>
+  Please refer to the <a href="$$development$$">development
+  page</a> for detailed instructions.</p>
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="oldversions">Old versions</a></h3>
+
+  <p>Due to changes in source code repository and download servers old versions
+  of Enigma can be found on different servers. Have a look at
+  <ul>
+  <li><a href="http://developer.berlios.de/project/showfiles.php?group_id=3972">
+    Berlios</a>&emsp;for recent releases.</li>
+  <li><a href="http://savannah.nongnu.org/download/enigma/">
+    http://savannah.nongnu.org/download/enigma/</a>&emsp;for previous releases</li>
+  <li><a href="http://www.mag-heut.net/blackball/index.php?act=ST&f=2&t=118&s=1b5eee7f424b7bd5f9ef75e927a549e9">
+    mag-heut.net</a>&emsp;for old Windows versions.</li>
+  </ul>
+

@@ -115,6 +115,7 @@ li {
 .leftcolumn {
     float: left;
     width: 20%;
+    min-width: 144px;
 }
 
 
@@ -320,7 +321,7 @@ li {
     padding-left: 1em;
 }
 
-.faq .arrowup {
+.arrowup {
     float: right;
 }
 
