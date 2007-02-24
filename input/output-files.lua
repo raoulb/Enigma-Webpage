@@ -86,26 +86,6 @@ html.download = {
     body = {"download"}
 }
 
-----------------------------------------------------------------------
--- compiling.html
-----------------------------------------------------------------------
-html.compiling = {
-    outfile = "compiling.html",
-    title = "Compiling Engima on Linux",
-    title_de = "Enigma kompilieren unter Linux",
-    body = {"compiling"}
-}
-
-----------------------------------------------------------------------
--- download_old.html
-----------------------------------------------------------------------
-html.download_old = {
-    outfile = "download_old.html",
-    title = "Download Engima, older Versions",
-    title_de = "Enigma herunterladen, alte Versionen",
-    body = {"download_dev_old"}
-}
-
 --------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- support.html
