@@ -6,6 +6,7 @@ directory = "input/"
 newsdir = "news/"
 suffix = ".html"
 
+language_list = {"", "_de"} -- "_fr"
 newsfield = {15, 16, 17, 18}
 
 general = {
@@ -38,6 +39,8 @@ general = {
                      return parse_text(v, parse_news(newsdir,l0), l0, "news2")
                    end,
     imagedir = "images",
+    imagedir_de = "images",
+    imagedir_fr = "images",
     lastupdate = "$Date$",
     lastauthor = "$Author$",
     lastrev = "$Rev$"

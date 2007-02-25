@@ -110,7 +110,7 @@ dofile("news/read_news.lua")
 
 -- Now glue everything together
 
-for lang_nr, lang in {"", "_de", "_fr"} do
+for lang_nr, lang in language_list do
   for k,v in html do
     if type(v.outfile) ~= "string" then
         error("Error during main.lua: Outfile not properly defined.")
@@ -121,3 +121,4 @@ for lang_nr, lang in {"", "_de", "_fr"} do
     outfile:close()
   end
 end
+
