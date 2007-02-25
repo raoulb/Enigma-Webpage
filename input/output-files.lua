@@ -94,28 +94,9 @@ html.support = {
     outfile = "support.html",
     title = "User-Support",
     title_de = "Spieler-Support",
-    body = {} --{"scores", "documentation"}
+    body = {"support"} --{"scores", "documentation"}
 }
 
-----------------------------------------------------------------------
--- documentation.html
-----------------------------------------------------------------------
-html.documentation = {
-    outfile = "documentation.html",
-    title = "Documentation",
-    title_de = "Dokumentation",
-    body = {"documentation"}
-}
-
-----------------------------------------------------------------------
--- scores.html
-----------------------------------------------------------------------
-html.scores = {
-    outfile = "scores.html",
-    title = "Score submit",
-    title_de = "Spielergebnisse einsenden",
-    body = {"scores"}
-}
 
 ----------------------------------------------------------------------
 -- faq.html
@@ -148,10 +129,10 @@ html.links = {
 }
 
 ----------------------------------------------------------------------
--- users.html
+-- statistics.html
 ----------------------------------------------------------------------
-html.users = {
-    outfile = "users.html",
+html.statistics = {
+    outfile = "statistics.html",
     title = "User Statistics",
     title_de = "Spieler-Statistiken",
     leftcolumn = {"menu", "userlist"},
