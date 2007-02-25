@@ -1,22 +1,153 @@
 <h2>Development</h2>
 
-<h3>Becoming involved</h3>
-
-<p>Enigma is developed by a small group of volunteers.  We all work on it in
+<p>Do you like to become involved? Enigma is developed by a small group of volunteers.  We all work on it in
 our spare time, which is naturally scarce.  If you would like to help out,
-you're always welcome.  If you are interested in contributing to Enigma, please
-<a
-href="http://mail.nongnu.org/mailman/listinfo/enigma-devel">subscribe to 
-Enigma's development mailing list</a>.</p>
+you're always welcome.</p>
 
-<h3>Getting the development version </h3>
+<ul>
+  <li><a href="$$development$$#maillist">Development Maillist</a> - Becoming involved.</li>
+  <li><a href="$$development$$#tasks">Open Tasks and Whishes</a> - Suggested areas of improvement.</li>
+  <li><a href="$$development$$#level">Level Development</a> - Resources and Hints.</li>
+  <li><a href="$$development$$#app">Application Development</a> - Download and Compilation.</li>
+</ul>
 
-<p><a href="https://developer.berlios.de/svn/?group_id=3972">Enigma's
-Subversion repository</a> is now hosted on Berlios.  For anonymous
-access, simply run
-<pre>
-svn checkout svn://svn.berlios.de/enigma-game/trunk
-</pre>
-Please contact us if you need write access to the repository.
-</p>
+<h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="maillist">Development Maillist</a></h3>
+
+  If you are interested in contributing to Enigma, please
+  <a href="http://mail.nongnu.org/mailman/listinfo/enigma-devel">subscribe to 
+  Enigma's development mailing list</a>. Listen and ask your questions. Answer
+  questions of others, publish own contributions like levels or patches, or offer
+  your help.</p>
+  
+  <p>Please note that due to the international group of developers all mailings
+  to the list have to be written in English. If you need to attach files to your
+  mail check that the size does not exceed the mailing list limit of 300 kBytes.
+  Mails that are larger than the limit will just be discarded!</p>
+
+<h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="tasks">Open Tasks and Whishes</a></h3>
+
+  <p>Here is a list of open tasks, most of which we currently don't have 
+  the resources to tackle ourselves.  We <i>definitely need</i> your help
+  with these.  If you have the necessary skills and some spare time,
+  please consider helping us out. </p>
+
+  <ul>
+  <li><b>Translation</b>.  Enigma has proper support for languages other than
+      English.  If you would like to help us localize Enigma to your native
+      language, please contact us.  This concerns not only the buttons and
+      levels in Enigma, but also the manuals, the FAQ, the Wiki and this
+      homepage.  (Translation into different dialects are interesting,
+      too!) <i>Easy</i></li>
+      
+  <li><b>Better graphics</b>.  We're currently lacking in the arts
+      department, as you may have noticed.  If you have more talent than we
+      have, we'd be only too glad to replace our sprites, logos, and other
+      images with better ones. <i>Easy-Medium</i></li>
+
+  <li><b>Network game</b>.  This is a big and non-trivial undertaking.
+      If you like challenges and have some experience in network
+      programming, feel free to join us. <i>Difficult</i></li>
+
+  <li><b>Level editor</b>.  This has been requested by many
+      users, and would in fact be a great addition.  It's a good deal
+      of work, but reasonably easy.  Use of Java seems sensible, however, you
+      could as well work with the existing editors and update
+      them.  (Well, Mac-users would like to have an editor,
+      too.) <i>Medium</i></li>
+      
+  <li><b>Levels</b>.  We're constantly searching (good) levels.  Although
+      there currently is no editor for 1.00 available, programming levels
+      isn't too difficult, given the existing tools. <i>Easy-Medium</i></li>
+
+  <li><b>Sounds</b>.  Sounds are currently incomplete, and some of the
+      existing ones might (do!) need some polish. <i>Medium</i></li>
+
+  <li><b>Ports</b>.  Although Enigma already covers most important platforms,
+      there are still many open points: More packs for the different
+      Linux-distributions, tests to compile Enigma with Visual Studio, another
+      active programmer to help us fix bugs that occur on Macs, exotic targets
+      like game consoles or handhelds. <i>Easy-Difficult</i></li>
+
+  <li><b>Maintaining the homepage</b>.  Someone has to add news and monthly
+      updates (like ratings user statistics) to the homepage.  This is not
+      much work, dependent on what is planned for the homepage.  But
+      nevertheless we need someone who does this regularly for
+      us. <i>Easy</i></li>
+
+  <li><b>Tech-support</b>.  The larger Enigmas code gets, the more technical
+      questions and problems arise on mag-heut.net and devel-ml.  This
+      sometimes involves the monthly repetition of the ever same answers,
+      sometimes really nasty bug-chases, and sometimes just the redirection of
+      the question to the right people. We'd be glad if someone who's also
+      able to dive into foreign code could help us with this
+      task. <i>Easy-Medium</i></li>
+
+  </ul>
+
+<h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="level">Level Development</a></h3>
+
+  <p>Even though Enigma does not include a level editor and you may have to dig
+  into the simple script language Lua developing a level is easier than you may
+  assume.</p>
+  
+  <p>The Enigma <a href="$$refman$$">reference manual</a> explains the level 
+  format and all objects you can use in detail. You should at least cross read 
+  chapters 1 - 3 and remember that you can look up details about every object.<p>
+  
+  <p>For your first experiments and as a practical guide to level coding you 
+  should have a look at the <a href="$$wiki$$">level development wiki</a>. It 
+  focuses on the most common object features and gives you valuable code 
+  snippets for many common tasks.</p>
+  
+  <p>You will find help on the <a href="$$development$$#maillist">developer 
+  mailing list</a> as well as in the <a href="http://www.mag-heut.net">forum</a>.
+  As soon as you think that your level is finished, set the level XML
+  attribut &apos;status&apos; to &apos;stable&apos; and publish the level to
+  the mailing list and/or to the forum. People will test and comment your level.
+  When no shortcuts are found and you finish the development of a level you
+  should set the status to &apos;released&apos; and republish this version.
+  We collect the levels from these sources and will contact you on remaining
+  issues.</p>
+  
+<h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top">
+  <a name="app">Application Development</a></h3>
+
+  <p>If you want to download the leading edge version of Enigma you need to
+  check it out from our <a href="https://developer.berlios.de/svn/?group_id=3972">
+  subversion source code repository at Berlios</a>. For anonymous access, simply 
+  run
+  <pre>svn checkout svn://svn.berlios.de/enigma-game/trunk</pre>
+  to download the current revision of the next major Enigma release. Please note
+  that this will be a snapshot of development and the revision might be incomplete
+  and still unstable.</p>
+  
+  <p>The repository provides several branches of the project.
+  <table class="repository">
+  <tr><td class="path">/trunk</td><td>next major release (1.1 branch)</td></tr>
+  <tr><td class="path">/branches/1.0</td><td>next minor release (1.01)</td></tr>
+  <tr><td class="path">/branches/eval</td><td>current stable release (1.00) with score evaluation software</td></tr>
+  <tr><td class="path">/tags/0.92</td><td>stable 0.92 release</td></tr>
+  <tr><td class="path">/tags/1.00</td><td>stable 1.00 release</td></tr>
+  <tr><td class="path">/homepage</td><td>guess what</td></tr>
+  </table>
+  
+  You can get an up to date preview of the existing branches with
+  <a href="http://svn.berlios.de/wsvn/enigma-game">Berlios WebSVN</a>
+  </p>
+  
+  <p>For the development we recommend a Unix platform as the compilation
+  and installation is as simple as typing
+  
+  <pre>./autogen.sh && ./configure && make && make install</pre>
+
+  <p>For information how to compile the application for Windows read the file
+  
+  <pre>doc/README.mingw32</pre>
+  </p>
+  
+  <p>Please contact us via the <a href="$$development$$#maillist">mailing list</a>
+  if you need write access to therepository.</p>
 

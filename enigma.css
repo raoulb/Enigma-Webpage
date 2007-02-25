@@ -383,3 +383,16 @@ table.download {
     text-align: left;
 }
 
+.repository {
+    font-size: 90%;
+    margin-bottom: 1em;
+}
+
+.repository td {
+    padding-left: 2em;
+    line-height: 120%;
+}
+
+.repository .path {
+    font-family: Courier, monospace;
+}

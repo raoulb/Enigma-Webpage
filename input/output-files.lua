@@ -118,7 +118,7 @@ html.development = {
     outfile = "devel.html",
     title = "Development",
     title_de = "Entwicklung",
-    body = {"development", "wishlist"}
+    body = {"development"}
 }
 
 ----------------------------------------------------------------------
