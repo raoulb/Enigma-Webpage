@@ -282,7 +282,6 @@ li {
 }
 
 .main h2 {
-
 }
 
 .main h3 {
@@ -328,17 +327,6 @@ li {
 .faq ul ul {
     margin-left: 0em;    /* overwrite IE indention */
     padding-left: 1em;   /* overwrite Firefox indention */
-}
-
-table.download {
-  background-color: lightgray;
-  border-spacing: 0.6em;
-}
-
-.download th {
-  padding: 5px;
-  font-size: 120%;
-  border-bottom: thin solid black;
 }
 
 .usernames {

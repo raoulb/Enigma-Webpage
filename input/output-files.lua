@@ -65,7 +65,7 @@ html.about = {
     outfile = "about.html",
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
-    body = {"about", "features", "testimonials"}
+    body = {"about", "features", "testimonials", "press"}
 }
 
 ----------------------------------------------------------------------
@@ -128,7 +128,17 @@ html.links = {
     outfile = "links.html",
     title = "Links",
     title_de = "Links",
-    body = {"links", "impressum"}
+    body = {"links"}
+}
+
+----------------------------------------------------------------------
+-- impressum.html
+----------------------------------------------------------------------
+html.impressum = {
+    outfile = "impressum.html",
+    title = "Impressum",
+    title_de = "Impressum",
+    body = {"impressum", "longline"}
 }
 
 ----------------------------------------------------------------------
