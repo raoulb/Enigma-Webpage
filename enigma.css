@@ -384,3 +384,8 @@ li {
 .repository .path {
     font-family: Courier, monospace;
 }
+
+.tasks .diff {
+    text-align: right;
+    font-style: italic;
+}

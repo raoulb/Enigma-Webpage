@@ -28,69 +28,96 @@ you're always welcome.</p>
 <h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
   <a name="tasks">Open Tasks and Wishes</a></h3>
 
-  <p>Here is a list of open tasks, most of which we currently don't have 
-  the resources to tackle ourselves.  We <i>definitely need</i> your help
-  with these.  If you have the necessary skills and some spare time,
-  please consider helping us out. </p>
+  <p>Even though Enigma reached release 1.00 a long list of open tasks remain
+  to be done. Often we do not have the resources or sometimes the skills to
+  tackle them. Here is a list of open tasks, for which we definitely need your
+  help. If you have the necessary skills and some spare time, please consider 
+  helping us out.</p>
 
+  <div class="tasks">
+  <h4>Non Programming Tasks</h4>
   <ul>
   <li><b>Translation</b>.  Enigma has proper support for languages other than
-      English.  If you would like to help us localize Enigma to your native
-      language, please contact us.  This concerns not only the buttons and
-      levels in Enigma, but also the manuals, the FAQ, the Wiki and this
-      homepage.  (Translation into different dialects are interesting,
-      too!) <i>Easy</i></li>
+      English. If you would like to localize Enigma to your native language
+      concerning application menus and levels, the manuals, this homepage or
+      the level developer wiki, please contact us.
+      <div class="diff">Easy</div></li>
       
   <li><b>Better graphics</b>.  We're currently lacking in the arts
       department, as you may have noticed.  If you have more talent than we
       have, we'd be only too glad to replace our sprites, logos, and other
-      images with better ones. <i>Easy-Medium</i></li>
-
-  <li><b>Network game</b>.  This is a big and non-trivial undertaking.
-      If you like challenges and have some experience in network
-      programming, feel free to join us. <i>Difficult</i></li>
-
-  <li><b>Level editor</b>.  This has been requested by many
-      users, and would in fact be a great addition.  It's a good deal
-      of work, but reasonably easy.  Use of Java seems sensible, however, you
-      could as well work with the existing editors and update
-      them.  (Well, Mac-users would like to have an editor,
-      too.) <i>Medium</i></li>
-      
-  <li><b>Levels</b>.  We're constantly searching (good) levels.  Although
-      there currently is no editor for 1.00 available, programming levels
-      isn't too difficult, given the existing tools. <i>Easy-Medium</i></li>
+      images with better ones.
+      <div class="diff">Medium</div></li>
 
   <li><b>Sounds</b>.  Sounds are currently incomplete, and some of the
-      existing ones might (do!) need some polish. <i>Medium</i></li>
+      existing ones might (do!) need some polish.
+      <div class="diff">Medium</div></li>
 
-  <li><b>Ports</b>.  Although Enigma already covers most important platforms,
-      there are still many open points: More packs for the different
-      Linux-distributions, tests to compile Enigma with Visual Studio, another
-      active programmer to help us fix bugs that occur on Macs, exotic targets
-      like game consoles or handhelds. <i>Easy-Difficult</i></li>
+  <li><b>Tech Support</b>.  The more popular Enigma gets, the more technical
+      questions and problems arise on mag-heut.net and the developer mailinglist.
+      Some questions may have already been answered in thread or even be listed 
+      in the FAQ's. Any Enigma power user with experience of the installion on
+      one or several operating systems can help us figuring out the reason of the 
+      problems and answering the questions. New FAQ should arise of repeating 
+      questions.
+      <div class="diff">Easy-Medium</div></li>
 
-  <li><b>Maintaining the homepage</b>.  Someone has to add news and monthly
-      updates (like ratings user statistics) to the homepage.  This is not
-      much work, dependent on what is planned for the homepage.  But
-      nevertheless we need someone who does this regularly for
-      us. <i>Easy</i></li>
-
-  <li><b>Tech-support</b>.  The larger Enigmas code gets, the more technical
-      questions and problems arise on mag-heut.net and devel-ml.  This
-      sometimes involves the monthly repetition of the ever same answers,
-      sometimes really nasty bug-chases, and sometimes just the redirection of
-      the question to the right people. We'd be glad if someone who's also
-      able to dive into foreign code could help us with this
-      task. <i>Easy-Medium</i></li>
-
-  <li><b>Juristic support</b>. We try to keep Enigma GPL-compliant. However,
+  <li><b>Open License Consulting</b>. We try to integrate as many useful 
+      additions to Enigma as possible. But we want to ensure that Enigma can
+      always be distributed without restrictions. However, the involved
       licenses are sometimes hard to interpret and difficult to combine - and
       we already nudged on some little nuissances of this kind. We wished we
-      had a contact person who knows about how to embed arts and software of
-      other licenses in our project. <i>Medium</i></li>
+      had a contact person who is familar with this topic and could advise us
+      from time to time.
+      <div class="diff">Easy-Medium</div></li>
+  </ul>
+  
+  <h4>Programming Tasks</h4>
+  <ul>
+  <li><b>Levels</b>.  Enigma lives from a constant stream of new (good) levels.
+      Do not wait until you have played all levels starting writing your own
+      ones. Collect your ideas, look for help in the 
+      <a href="$$development$$#level">Level Development</a> section and
+      do not forget to publish your results!
+      <div class="diff">Easy-Medium</div></li>
+
+  <li><b>Ports and Packaging</b>.  Are you familar with application development
+      and packaging on a platform? We would like to improve the packaging for the
+      already supported platforms (Windows installer, Linux packages for more
+      distributions,...). We need programmers who constantly test and maintain
+      the development versions of Enigma on as many platforms as possible
+      (Mac OS X, Visual Studio,...). Would you like to port Enigma to a new
+      platform like game consoles or handhelds?
+      <div class="diff">Easy-Difficult</div></li>
+
+  <li><b>Automization of score upload</b>.  We would like to offer an auto
+      upload of new scores and ratings like the automatic download of the
+      evaluated ratings. Client and server parts are needed.
+      <div class="diff">Medium</div></li>
+
+  <li><b>Keyboard Input Method, Pasteboard Access</b>. Enigma is based on SDL
+      which does not support a proper input of umlauts or non-ASCII characters.
+      Uniform support for the input of all characters on all operating systems
+      would be desired. We are looking for a support of copy and paste, too.
+      <div class="diff">Medium</div></li>
+  
+  <li><b>Level editor</b>.  As the existing editors are not up to date and
+      are not as portable as Enigma we think of a Java based editor, an extension
+      of the XML level format and an interface to Enigma. A useful editor is
+      a good deal of work and all but easy.
+      <div class="diff">Medium-Difficult</div></li>
+      
+  <li><b>Network game</b>.  This is a big and non-trivial undertaking as Enimga
+      has not been designed for a networking game mode from the very beginning.
+      Thus the main tasks are internal reengineering. If you like challenges 
+      and like to dig into the C++ core part of Enigma, feel free to join us.
+      <div class="diff">Difficult</div></li>
 
   </ul>
+  </div>
+  <p>Please offer your help on the developer mailing list. There are much more
+  open tasks than listed above and of course you are invited to submit your own
+  ideas and contributions.</p>
 
 <h3><a class="arrowup" href="$$development$$"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
   <a name="level">Level Development</a></h3>
@@ -111,10 +138,10 @@ you're always welcome.</p>
   <p>You will find help on the <a href="$$development$$#maillist">developer 
   mailing list</a> as well as in the <a href="http://www.mag-heut.net">forum</a>.
   As soon as you think that your level is finished, set the level XML
-  attribut &apos;status&apos; to &apos;stable&apos; and publish the level to
+  attribut 'status' to 'stable' and publish the level to
   the mailing list and/or to the forum. People will test and comment your level.
   When no shortcuts are found and you finish the development of a level you
-  should set the status to &apos;released&apos; and republish this version.
+  should set the status to 'released' and republish this version.
   We collect the levels from these sources and will contact you on remaining
   issues.</p>
   
