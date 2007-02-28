@@ -7,7 +7,7 @@ newsdir = "news/"
 suffix = ".html"
 
 language_list = {"", "_de"} -- "_fr"
-newsfield = {15, 16, 17, 18}
+newsfield = {16, 17, 18}
 
 general = {
     infile = directory.."schema"..suffix,
