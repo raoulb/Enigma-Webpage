@@ -200,7 +200,7 @@ li {
     font-size: 110%;
 }
 
-.info .imagetitle {
+.imagetitle {
     text-align: center;
     padding-top: 1em;
 }
@@ -289,7 +289,7 @@ li {
     border-bottom: 1px dotted #777;
 }
 
-.news .date {
+.date {
     color: gray;
 }
 
@@ -389,3 +389,44 @@ li {
     text-align: right;
     font-style: italic;
 }
+
+.lotmpic {
+    float: right;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.lotm .lotmpic img {
+    border-width: 4px;
+    border-color: #777;
+    padding-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.lotmpic .imagetitle {
+    font-size: 90%;
+}
+
+.lotm img {
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.lotm .quote {
+    padding-right: 3em;
+    padding-left: 2em;
+    font-family: serif;
+    margin-top: 1em;
+    margin-bottom: 0px;
+}
+
+.lotm .author {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 3em;
+    padding-left: 2em;
+    text-align: right;
+    font-size: 90%;
+}
+
