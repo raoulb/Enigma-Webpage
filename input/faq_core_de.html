@@ -335,11 +335,10 @@ l&ouml;schen wollen, gehen Sie ins Levelmen&uuml;, zeigen Sie mit dem Mauszeiger
 Level (nicht klicken!) und dr&uuml;cken Sie &quot;u&quot;.
 </p><p>
 Wenn Sie alle Ihre Ergebnisse l&ouml;schen wollen (wollen Sie das wirklich?), dann
-benennen Sie die Dateien &quot;state.xml&quot; und &quot;enigma.score&quot; um
-oder l&ouml;schen Sie sie, ebenso s&auml;mtliche Backups der Form
-&quot;enigma.score&#732;&#8727;&quot; (ansonsten wird ein Backup
-genommen). Sie wollen dann vielleicht auch Ihre 0.92-Ergebnisse l&ouml;schen oder
-umbenennen (&quot;enigmarc.lua2&quot;).</p>
+entfernen Sie die Datei &quot;enigma.score&quot;. Sie wollen dann vielleicht
+auch Ihre 0.92-Ergebnisse l&ouml;schen oder umbenennen (&quot;enigmarc.lua2&quot;).
+Bitte bedenken Sie, dass mit dem L&ouml;schen der Datei &quot;enigma.score&quot;
+auch alle Ihre pers&ouml;nlichen Bewertungen von Levlen verloren gehen!</p>
 
 <a name="s3q9">
 <h4>Ich habe einen Level gesehen und m&ouml;chte ihn nochmal spielen; aber ich habe
@@ -542,6 +541,23 @@ Sie an <a href="mailto:enigma-devel@nongnu.org">enigma-devel@nongnu.org</a>.
 Wir sind vielleicht in der Lage, den Fehler in Ihrem Level aufzusp&uuml;ren und zu
 beseitigen.</p>
 
+<a name="s4q9">
+<h4>Ich habe eine Idee f&uuml;r ein neues Enigma Objekt.</h4></a>
+Wir begr&uuml;&szlig;en stets neue Ideen und Anmerkungen. Enigma hat schon einen
+recht gro&szlig;en Zoo an Objekten. Jedes neue mu&szlig; daher einige Kriterien
+erf&uuml;llen um als wertvolle Erg&auml;nzung in Betracht gezogen werden zu 
+k&ouml;nnen.
+<ul>
+<li>Es muss neue Aspekte ins Spiel bringen, die bisher nicht durch andere Objekte
+abgedeckt sind.</li>
+<li>Es muss gut f&uuml;r neue Level sein und sollte m&ouml;glichst viele Level
+inspirieren.</li> 
+<li>Es muss wohl definiert in seinem Verhalten bez&uuml;glich allen anderen 
+bereits bestenenden Objekten sein.</li> 
+</ul>
+Ferner ben&ouml;tigen wir Grafiken, den C++ Code und evtl. spezielle Ger&auml;usche.
+Je mehr Sie davon neben der grundlegenden Idee beitragen k&ouml;nnen, desto schneller
+k&ouml;nnen wir die Idee auswerten und diskutieren.
 
 <h3><a class="arrowup" href="$$faq$$#faq_core"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
 <a name="section5">Kopierrechte und Garantien</a>
@@ -553,24 +569,21 @@ beseitigen.</p>
 Download-Seite.</p>
 
 <a name="s5q2">
-<h4>Darf ich Enigma verkaufen? Oder in meine kommerzielle/nicht-kommerzielle
-Spielesammlung eingliedern?</h4></a>
-<p>Im Prinzip: Ja. Stellen sie sicher, dass Enigma vollst&auml;ndig ist,
-insbesondere mit allen Copyright-Texten, Danksagungen (&auml;ndern Sie nicht die
-Autorennamen!), eine Kopie der <a href="$$gpl$$">GPL</a>, und den Quelltext
-(zumindest in Form eines Links, wo man den Quelltext herunterladen kann; f&uuml;r
-Details lesen Sie bitte die GPL). Falls Ihre Spielesammlung kommerziell ist,
-d&uuml;rfen Sie kein Geld f&uuml;r das Programm Enigma verlangen - lediglich f&uuml;r das
-physische Kopieren und das Medium, das Sie verwenden.
-</p><p>
-Sie d&uuml;rfen Enigma ver&auml;ndern und erweitern, so lange Sie sich an die
-Spezifikationen der GPL halten: Das neue Programm muss erneut als GPL
-lizensiert sein, insbesondere muss also der Quelltext zur Verf&uuml;gung
-stehen. Falls Sie lediglich neue Level f&uuml;r Enigma geschrieben haben, so
-brauchen diese nicht unter die GPL gestellt werden, und Sie d&uuml;rfen sie
-verkaufen, wie Sie m&ouml;chten. Beachten Sie dabei aber, dass Leveldateien von
-Natur aus Quellcode sind, entsprechend k&ouml;nnen Sie ihre Verbreitung durch
-Kopieren und Teilen nicht verhindern.</p>
+<h4>Darf ich Enigma in meiner kommerzielle Spielesammlung eingliedern?
+W&uuml;rden Sie mir eine spezielle Lizenz gew&auml;hren?</h4></a>
+<p>Sie m&uuml;ssen nur die Bedingungen der <a href="$$gpl$$">GPL</a> befolgen, 
+die Ihnen sogar erlauben Enigma unter gewissen Bedingugnen zu verkaufen. Wir
+k&ouml;nnen niemand spezielle Sonderbedingungen jenseits dieser offenen Lizenz
+gew&auml;hren. Bitte fragen Sie Ihren Anwalt, ob Ihren Anforderungen mit der
+GPL vertr&auml;glich sind. Falls Sie sich nicht mit der GPL auskennen kann
+<a href="http://de.wikipedia.org/wiki/GPL">Wikipedia</a>
+Ihnen einen ersten &Uuml;berblick &uuml;ber die wichtigsten Pflichten und Rechte
+der GPL geben.</p>
+
+<p>Wir sind daran interessiert zu Wissen wo Enigma distributiert wird. Bitte
+informieren Sie uns, und wir setzen evtl. einen Link auf Ihre Seite. Falls Sie
+Enigma distributieren oder einen Artikel &uuml;ber Enigma in einer Zeitschrift
+schreiben w&uuml;rden wir uns freuen ein kostenloses Belegexemplar zu erhalten.</p>
 
 <a name="s5q3">
 <h4>Enigma hat meinen Computer besch&auml;digt! (Bezahlt mich!)</h4></a>
@@ -590,6 +603,33 @@ passiert ist.</p>
 <h3><a class="arrowup" href="$$faq$$#faq_core"><img src="$$imagedir$$/nav_up.gif" border="0" title="back to top"></a>
 <a name="section6">Weiteres</a>
 </h3>
+
+<a name="s6q4">
+<h4>Warum sind die Enigma Dienste an so vielen unterschiedlichen Adressen?
+Was ist bei Berlios, was bei nongnu, was bei enigma-game.org usw.?</h4></a>
+<p>Als Enigma &ouml;ffentlich verf&uuml;gbar wurde schienen die Dienste die
+<a href="http://savannah.nongnu.org">Savannah (nongnu.org)</a> anbot hinreichend.
+Mit der Zeit wechselte die Entwicklung zwischen verschiedenen Quellcodearchiven
+wie <a href="http://www.gnu.org/software/gnu-arch/">Arch</a> und
+<a href="http://www.nongnu.org/cvs">CVS</a>. Letztendlich nach dem Enigma 0.92
+Release wurde ein Anbieter gesucht, der 
+<a href="http://subversion.tigris.org/">Subversion</a> anbot. Zu diesen 
+Zeitpunkt war <a href="http://developer.berlios.de">Berlios</a> einer der wenigen
+die diesen ben&ouml;tigten Dienst anboten. Deshalb finden Sie die Entwicklung
+nach 0.92 auf <a href="http://developer.berlios.de/projects/enigma-game">Berlios</a>
+und &auml;ltere Archive auf <a href="http://savannah.nongnu.org/projects/enigma/">Savannah</a>.
+</p>
+
+<p>Andere Dienste wie das <a href="http://www.mag-heut.net">Forum</a> und das
+<a href="$$wiki$$">Wiki</a> wurden als private Dienste von Enigma Nutzern gestartet
+und laufen nach wie vor unver&auml;ndert unter ihren Adressen.</p>
+
+<p>Die Homepage steht nach wie vor auf Savannah. Dies limitiert uns auf statischen
+Inhalt. Deshalb haben wir die Domain <a href="http://enigma-game.org">enigma-game.org</a>
+reserviert, die uns in Zukunft dynamische Dienste wie eine Registrierung von
+Spielergebnissen, einen Netzwerk Spielserver und mehr erm&ouml;glicht. Zur Zeit
+wird die Adresse auf Savannah umgelenkt und wir nutzen nur Email Dienste unter
+dieser Adresse.</p>
 
 <a name="s6q1">
 <h4>Gibt es so etwas wie eine Enigma Party oder Enigma Convention?</h4></a>
