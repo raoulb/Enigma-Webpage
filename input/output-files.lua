@@ -69,6 +69,17 @@ html.about = {
 }
 
 ----------------------------------------------------------------------
+-- news.html
+----------------------------------------------------------------------
+html.news = {
+    outfile = "news.html",
+    title = "News and Olds",
+    title_de = "Neues und Altes",
+    rightcolumn = {},
+    body = {"news2"}
+}
+
+----------------------------------------------------------------------
 -- screenshots.html
 ----------------------------------------------------------------------
 html.screenshots = {
@@ -122,6 +133,19 @@ html.faq = {
 }
 
 ----------------------------------------------------------------------
+-- statistics.html
+----------------------------------------------------------------------
+html.statistics = {
+    outfile = "statistics.html",
+    title = "User Statistics",
+    title_de = "Spieler-Statistiken",
+    leftcolumn = {"menu", "validation", "userlist"},
+    rightcolumn = {},
+    body = {"stat-head", "table-wr", "table-solved", "stat-help", "table-hcp", "stat-tail"}
+}
+
+--------------------------------------------------------------------------------
+----------------------------------------------------------------------
 -- development.html
 ----------------------------------------------------------------------
 html.development = {
@@ -131,6 +155,7 @@ html.development = {
     body = {"development"}
 }
 
+--------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- links.html
 ----------------------------------------------------------------------
@@ -151,30 +176,7 @@ html.impressum = {
     body = {"impressum", "longline"}
 }
 
-----------------------------------------------------------------------
--- statistics.html
-----------------------------------------------------------------------
-html.statistics = {
-    outfile = "statistics.html",
-    title = "User Statistics",
-    title_de = "Spieler-Statistiken",
-    leftcolumn = {"menu", "userlist"},
-    rightcolumn = {},
-    body = {"stat-head", "table-wr", "table-solved", "stat-help", "table-hcp", "stat-tail"}
-}
-
-----------------------------------------------------------------------
--- news.html
-----------------------------------------------------------------------
-html.news = {
-    outfile = "news.html",
-    title = "News and Olds",
-    title_de = "Neues und Altes",
-    leftcolumn = {"menu"},
-    rightcolumn = {},
-    body = {"news2"}
-}
-
+--------------------------------------------------------------------------------
 ----------------------------------------------------------------------
 -- lotm.html
 ----------------------------------------------------------------------
@@ -182,7 +184,6 @@ html.lotm = {
     outfile = "lotm.html",
     title = "Level of the Month",
     title_de = "Level des Monats",
-    leftcolumn = {"menu"},
     rightcolumn = {},
     body = {"lotm/lotm_core"}
 }
