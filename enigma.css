@@ -134,7 +134,7 @@ li {
 }
 
 .mlist {
-    margin-bottom: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .mlist li {
@@ -303,7 +303,7 @@ li {
 
 .testimonial .author {
     margin-top: 0px;
-    margin-bottom: 0pxs;
+    margin-bottom: 0px;
     padding-right: 3em;
     padding-left: 2em;
     text-align: right;
