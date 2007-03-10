@@ -28,7 +28,7 @@ general = {
     same_de = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_de")  end,
     same_fr = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_fr")  end,
     navbar = {"navbar"},
-    leftcolumn = {"menu"},
+    leftcolumn = {"menu","validation"},
     rightcolumn = {},
     body = {},
     bottombar = {"bottombar"},
@@ -76,6 +76,16 @@ html.screenshots = {
     title = "Screenshots of Enigma",
     title_de = "Screenshots von Enigma",
     body = {"screenshots"}
+}
+
+----------------------------------------------------------------------
+-- credits.html
+----------------------------------------------------------------------
+html.credits = {
+    outfile = "credits.html",
+    title = "Credits",
+    title_de = "Credits",
+    body = {"credits"}
 }
 
 --------------------------------------------------------------------------------
