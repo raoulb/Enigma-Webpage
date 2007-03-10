@@ -430,3 +430,6 @@ li {
     font-size: 90%;
 }
 
+.credits table td {
+    padding-right: 1em;
+}
