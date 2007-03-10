@@ -3,7 +3,7 @@
 ----------------------------------------------------------------------
 
 directory = "input/"
-newsdir = "news/"
+newsdir = "input/news/"
 suffix = ".html"
 
 language_list = {"", "_de"} -- "_fr"

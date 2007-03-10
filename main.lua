@@ -102,7 +102,7 @@ end
 
 -- First create the two news-files
 
-dofile("news/read_news.lua")
+dofile("input/news/read_news.lua")
 --for lang_nr, lang in {"", "_de"} do
 --  write_news_page("news/", "input/news1"..lang..".html", lang, newsfield)
 --  write_news_page("news/", "input/news2"..lang..".html", lang)

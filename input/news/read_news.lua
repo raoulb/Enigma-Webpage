@@ -38,8 +38,8 @@ function parse_news(dir, lang0, num_array)
 end
 --------------------------------------------------------------------------------
 function parse_this_news(dir, n, lang)
-    local separator_begin = "<!-- --- "
-    local separator_end = " --- -->\n"
+    local separator_begin = "<!-- - - - "
+    local separator_end = " - - - -->\n"
     local the_content = ""
 
     local newsfilename = "news_issue"..tostring(n)..lang..".html"
