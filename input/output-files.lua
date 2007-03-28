@@ -11,6 +11,9 @@ newsfield = {16, 17, 18, 19}
 
 general = {
     infile = directory.."schema"..suffix,
+    lang = "",
+    lang_de = "_de",
+    lang_fr = "_fr",
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
     title_fr = "Enigma Homepage",
@@ -186,6 +189,22 @@ html.lotm = {
     title_de = "Level des Monats",
     rightcolumn = {},
     body = {"lotm/lotm_core"}
+}
+
+html.lotm_200703 = {
+    outfile = "lotm_200703.html",
+    title = "Level of the Month: March 2007",
+    title_de = "Level des Monats: M&auml;rz 2007",
+    rightcolumn = {},
+    body = {"lotm/lotm_200703"}
+}
+
+html.lotm_200704 = {
+    outfile = "lotm_200704.html",
+    title = "Level of the Month: April 2007",
+    title_de = "Level des Monats: April 2007",
+    rightcolumn = {},
+    body = {"lotm/lotm_200704"}
 }
 
 ----------------------------------------------------------------------
