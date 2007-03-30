@@ -387,6 +387,10 @@ li {
     text-align: left;
 }
 
+.statistics .normalcaption {
+    font-size: 100%;
+}
+
 .repository {
     font-size: 90%;
     margin-bottom: 1em;
