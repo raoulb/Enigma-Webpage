@@ -207,4 +207,12 @@ html.lotm_200704 = {
     body = {"lotm/lotm_200704"}
 }
 
+html.lotm_200705 = {
+    outfile = "lotm_200705.html",
+    title = "Level of the Month: May 2007",
+    title_de = "Level des Monats: Mai 2007",
+    rightcolumn = {},
+    body = {"lotm/lotm_200705"}
+}
+
 ----------------------------------------------------------------------
