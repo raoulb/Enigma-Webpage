@@ -144,7 +144,7 @@ html.statistics = {
     title_de = "Spieler-Statistiken",
     leftcolumn = {"menu", "validation", "userlist"},
     rightcolumn = {},
-    body = {"stat-head", "table-wr", "table-solved", "stat-help", "table-hcp", "stat-tail"}
+    body = {"stat-head", "table-wr", "table-solved", "stat-help", "table-hcp", "stat-other", "table-rat", "stat-tail"}
 }
 
 --------------------------------------------------------------------------------
