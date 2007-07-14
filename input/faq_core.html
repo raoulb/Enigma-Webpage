@@ -140,6 +140,19 @@ the 9-hour-score only). Save &quot;enigmarc.lua2&quot; and delete
 recreate them. Restart Enigma twice and check if everything is working.</p>
 
 
+<h4><a name="s2q8">When playing Enigma or in the menus, the mouse cursor only
+moves down and right. (Linux)</a></h4>
+<p>This is a bug in SDL, one of the libraries Enigma uses. Try:</p>
+<pre>export SDL_VIDEO_X11_DGAMOUSE=0
+enigma</pre>
+<p>This should already suffice. If it works, you can alias enigma to include the
+export command. Please drop a note to our mailinglist at <a
+href="mailto:enigma-devel@nongnu.org" >enigma-devel@nongnu.org</a>, including
+information about your computer, Linux distribution and SDL version, so we're
+informed how often and on which systems this strange bug appears.
+</p>
+
+
 <h4><a name="s2q4">When I enter a level pack, it takes so long to load the images?</a></h4>
 <p>This happens only the first time you start Enigma, and only
 if no thumbnails had been downloaded with Enigma. It's normal

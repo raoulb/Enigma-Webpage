@@ -152,6 +152,22 @@ Enigma gezwungen ist, sie neu zu erzeugen. Starten Sie Enigma zweimal neu und
 testen Sie, ob der Fehler verschwunden ist.</p>
 
 
+<h4><a name="s2q8">W&auml;hrend dem Spiel oder in den Men&uuml;s bewegt sich der
+Mauscursor nur nach unten und rechts. (Linux)</a></h4>
+<p>Dies ist ein Fehler in SDL, einer der Bibliotheken, die Enigma benutzt.
+Versuchen Sie folgendes:</p>
+<pre>export SDL_VIDEO_X11_DGAMOUSE=0
+enigma</pre>
+<p>Das sollte bereits reichen. Falls es funktioniert, k&ouml;nnen Sie enigma so
+aliasen, dass der export-Befehl enthalten ist. Bitte schicken Sie auch eine
+kurze Mitteilung an unsere Mailingliste auf <a
+href="mailto:enigma-devel@nongnu.org" >enigma-devel@nongnu.org</a>, mit
+Informationen &uuml;ber Ihren Computer, Ihre Linuxdistribution und SDL-Version,
+damit wir dar&uuml;ber informiert sind, wie oft und auf welchen Systemen dieser
+seltsame Bug auftritt.
+</p>
+
+
 <h4><a name="s2q4">Wenn ich ein Levelpaket &ouml;ffne, dauert es so lange, bis die Bilder geladen
 sind?</a></h4>
 <p>Das geschieht nur zu Beginn, und auch nur, wenn Sie keine Vorschaubilder
