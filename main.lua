@@ -62,7 +62,7 @@ function parse_text(v, text, lang, context)
         end
         if stype == "table" then
             local addstring = ""
-            for j,f in process do
+            for j,f in pairs(process) do
                 -- remove slash for name- and id-tags
                 fn = string.gsub(f, "/", "_")
                 if f ~= fn then
@@ -116,8 +116,8 @@ dofile("input/news/read_news.lua")
 
 -- Now glue everything together
 
-for lang_nr, lang in language_list do
-  for k,v in html do
+for lang_nr, lang in pairs(language_list) do
+  for k,v in pairs(html) do
     if type(v.outfile) ~= "string" then
         error("Error during main.lua: Outfile not properly defined.")
     end
