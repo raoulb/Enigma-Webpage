@@ -3,7 +3,27 @@ general = {}
 html = {}
 
 --
+--  Enigma Lua Homepage Gluer - main program
+--  (c) 2007 Enigma Team
+--  The Enigma Lua Homepage Gluer is licenced under GPL v.2 or above,
+--  please find a copy of it here:
+--    http://www.gnu.org/licenses/gpl-2.0.html
+--  This program and some of its input files are loosely based on 
+--  a predecessor by Daniel Heck.
+--
+--  The Enigma Lua Homepage Gluer incorporates the subprograms
+--  "read_news.lua" and "read_lotm.lua" and calls "output-files.lua"
+--  and "lotm_archive_data.lua" for input. All of them are under the
+--  GPL v.2 as stated above.
+--
 --   Syntax:
+--
+--  Call without arguments. The main input file is
+--    input/output-files.lua,
+--  where all input files and the overall structure of the homepage
+--  as well as the meaning of the $$...$$-macros are defined.
+--  This main program only replaces the $$...$$-macros according to
+--  the rules specified in output-files.lua.
 --
 --  Each file to be created has an own structure, holding the
 --  strings infile (mostly schema.html) and outfile (name of result).
@@ -15,8 +35,6 @@ html = {}
 --    a function -> start this function
 --    a table -> parse each entry as a new html-file
 --
-
-dofile("input/output-files.lua")
 
 ----------------------------------------------------------------------
 -- Output
@@ -106,13 +124,15 @@ function parse_html(v, infilename0, lang)
     return parse_text(v, body, lang, infilename)
 end
 
--- First create the two news-files
+-- Get general data and LotM archive data
+
+dofile("input/output-files.lua")
+dofile("input/lotm/lotm_archive_data.lua")
+
+-- Add functions for parsing the news and LotM archive
 
 dofile("input/news/read_news.lua")
---for lang_nr, lang in {"", "_de"} do
---  write_news_page("news/", "input/news1"..lang..".html", lang, newsfield)
---  write_news_page("news/", "input/news2"..lang..".html", lang)
---end
+dofile("input/lotm/read_lotm.lua")
 
 -- Now glue everything together
 

@@ -7,7 +7,18 @@ newsdir = "input/news/"
 suffix = ".html"
 
 language_list = {"", "_de"} -- "_fr"
+
+-- The newsfield declares the news (by number) to be shown on the main page.
+
 newsfield = {16, 17, 18, 19, 20, 21}
+
+-- General $$mystring$$-macros. Strings are taken as-is, tables are
+-- constellations of html input files, functions are executed, with the
+-- following syntax: 
+--   function(v,s,l0)  ...  end
+--     v = the current field (like html.index), mostly equals the file
+--     s = "mystring" itself (as a string -> selfreferential!)
+--    l0 = language code (see language_list: "" is English, "_de" German)
 
 general = {
     infile = directory.."schema"..suffix,
@@ -36,11 +47,26 @@ general = {
     body = {},
     bottombar = {"bottombar"},
     parse_news_1 = function(v,s,l0)
-                     return parse_text(v, parse_news(newsdir,l0,newsfield), l0, "news1")
-                   end,
+        return parse_text(v, parse_news(newsdir,l0,newsfield), l0, "news1")
+      end,
     parse_news_2 = function(v,s,l0)
-                     return parse_text(v, parse_news(newsdir,l0), l0, "news2")
-                   end,
+        return parse_text(v, parse_news(newsdir,l0), l0, "news2")
+      end,
+    parse_lotm_by_rating = function(v,s,l0)
+        return parse_text(v, parse_lotm("current_rating", true, l0), l0,
+          add_lang_to_filename(v.outfile, l0))
+      end,
+    parse_lotm_chronological = function(v,s,l0)
+        return parse_text(v, parse_lotm("chronological", false, l0), l0,
+          add_lang_to_filename(v.outfile, l0))
+      end,
+    parse_lotm_by_position = function(v,s,l0)
+        return parse_text(v, parse_lotm("position_num", false, l0), l0,
+          add_lang_to_filename(v.outfile, l0))
+    end,
+    lotm_archive_data_from = function(v,s,l0)
+        return lotm_archive_date(l0)
+      end,
     imagedir = "images",
     imagedir_de = "images",
     imagedir_fr = "images",
@@ -180,9 +206,11 @@ html.impressum = {
 }
 
 --------------------------------------------------------------------------------
+
 ----------------------------------------------------------------------
--- lotm.html
+-- LotM - Archive Pages
 ----------------------------------------------------------------------
+
 html.lotm = {
     outfile = "lotm.html",
     title = "Level of the Month",
@@ -191,6 +219,26 @@ html.lotm = {
     body = {"lotm/lotm_core"}
 }
 
+html.lotm_chronological = {
+    outfile = "lotm_chronological.html",
+    title = "Level of the Month (chronological)",
+    title_de = "Level des Monats (chronologisch)",
+    rightcolumn = {},
+    body = {"lotm/lotm_chronological"}
+}
+
+html.lotm_by_position = {
+    outfile = "lotm_by_position.html",
+    title = "Level of the Month (by position)",
+    title_de = "Level des Monats (nach Position)",
+    rightcolumn = {},
+    body = {"lotm/lotm_by_position"}
+}
+
+----------------------------------------------------------------------
+-- LotM - Articles
+----------------------------------------------------------------------
+ 
 html.lotm_200703 = {
     outfile = "lotm_200703.html",
     title = "Level of the Month: March 2007",
@@ -229,6 +277,14 @@ html.lotm_200707 = {
     title_de =  "Level des Monats: Juli 2007",
     rightcolumn = {},
     body = {"lotm/lotm_200707"}
+}
+
+html.lotm_200708 = {
+    outfile = "lotm_200708.html",
+    title = "Level of the Month: August 2007",
+    title_de =  "Level des Monats: August 2007",
+    rightcolumn = {},
+    body = {"lotm/lotm_200708"}
 }
 
 ----------------------------------------------------------------------

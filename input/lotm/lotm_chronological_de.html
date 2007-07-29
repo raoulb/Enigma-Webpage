@@ -13,8 +13,8 @@
   ist die aktuelle Bewertung durch Spieler, die Zahl in Klammern gibt an,
   wieviele Spieler diesen Level bereits bewertet haben.</p>
 
-  <p>Die Daten sind vom <b>$$lotm_archive_data_from$$</b>, geordnet nach
-  <b>Bewertung</b>:</p> 
+  <p>Die Daten sind vom <b>$$lotm_archive_data_from$$</b>, <b>chronologisch</b>
+  geordnet:</p> 
 
   <table>
     <colgroup>
@@ -25,13 +25,13 @@
        <col width="270">
        <col width="80">
     </colgroup>
-    <tr><th colspan="2" class="right">Bewertung</th>
-        <th class="right"><a href="$$lotm_chronological$$">Monat</a></th>
+    <tr><th colspan="2" class="right"><a href="$$lotm$$">Bewertung</a></th>
+        <th class="right">Monat</th>
         <th class="left">Titel</th>
         <th class="left">Autor</th>
         <th class="num"><a href="$$lotm_by_position$$">Position (1.01)</a></th>
     </tr>
-$$parse_lotm_by_rating$$
+    $$parse_lotm_chronological$$
   </table>
    
 </div>
