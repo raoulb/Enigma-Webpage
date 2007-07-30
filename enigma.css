@@ -56,6 +56,10 @@ li {
     padding: 1px 4px;
 }
 
+li ul {
+    padding: 1px 0px;
+}
+
 .note {
     background-color: #eeeeee;
     border: thin solid black;
