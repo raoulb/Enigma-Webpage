@@ -75,8 +75,8 @@ lotm_archive_data[6] = {
   name           = "<a href=\"$$lotm_200708$$\">Houdini</a>",
   addition       = "<b>(newcomer)</b>",
   author         = "Ronald Lamprecht",
-  position       = "V/74",
-  position_num   = "5074"
+  position       = "VI/74",
+  position_num   = "6074"
 }
 
 -- Don't forget to adjust the archive dates:
