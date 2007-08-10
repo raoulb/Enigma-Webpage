@@ -22,6 +22,8 @@ newsfield = {16, 17, 18, 19, 20, 21}
 
 general = {
     infile = directory.."schema"..suffix,
+    charset = "ISO-8859-1",
+    charset_ru = "KOI8-R",
     lang = "",
     lang_de = "_de",
     lang_fr = "_fr",
@@ -336,7 +338,7 @@ html.lotm_by_position = {
     outfile = "lotm_by_position.html",
     title = "$$lotm_expansion$$ (by position)",
     title_de = "$$lotm_expansion$$ (nach Position)",
-    --ru-- title_ru = "Level of the Month (by position)",
+    --ru-- title_ru = "$$lotm_expansion$$ (by position)",
     rightcolumn = {},
     body = {"lotm/lotm_by_position"}
 }
