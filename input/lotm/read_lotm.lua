@@ -23,24 +23,57 @@ end
 function lotm_to_html(lotm_data, lang)
   local html_text = ""
   for k, v in pairs(lotm_data) do
-    local level_name = v.name
+    local level_name = "<a href=\"$$"..lotm_macro_name(v).."$$\">"
+      ..v.name.."</a> "
     if v.addition ~= "" then
-      level_name = v.name.." "..v.addition
+      level_name = level_name..v.addition
     end
     local level_rating = string.format("%.2f", v.current_rating)
+    local level_date = translate_month(lang, v.date)
     html_text = html_text
-      .."    <tr><td class=\"right\">" .. level_rating     .. "</td>\n"
-      .."        <td class=\"right\">(".. v.current_votes  ..")</td>\n"
-      .."        <td class=\"right\">" .. v["month"..lang] .. "</td>\n"
-      .."        <td class=\"left\">"  .. level_name       .. "</td>\n"
-      .."        <td class=\"left\">"  .. v.author         .. "</td>\n"
-      .."        <td class=\"num\">"   .. v.position       .. "</td>\n"
+      .."    <tr><td class=\"right\">" .. level_rating    .. "</td>\n"
+      .."        <td class=\"right\">(".. v.current_votes ..")</td>\n"
+      .."        <td class=\"right\">" .. level_date      .. "</td>\n"
+      .."        <td class=\"left\">"  .. level_name      .. "</td>\n"
+      .."        <td class=\"left\">"  .. v.author        .. "</td>\n"
+      .."        <td class=\"num\">"   .. v.position      .. "</td>\n"
       .."    </tr>\n"
   end
   return html_text
 end
       
 function lotm_archive_date(lang)
-  return lotm_archive_data_from[lang]
+  return translate_month(lang, lotm_archive_data_from)
+end
+
+-- lotm_macro_name returns a string of the kind "lotm_200708"
+-- out of the archive data table of an LotM-entry
+-- (cf. lotm_archive_data.lua)
+function lotm_macro_name(v)
+  if (type(v) ~= "table") or (type(v.date) ~= "table") then
+    error ("Tried to create a macro name for an LotM, but the type is not table!")
+  end
+  if (v.date.year == nil) or (v.date.month == nil) then
+    error ("Tried to create a macro name for an LotM, but the dates are empty!")
+  end
+  return "lotm_"..v.date.year..string.format("%02d", v.date.month)
+end
+
+-- Add LotM-entries to the html-field (cf. output-files.lua)
+function generate_lotm_entries(html)
+  for k, v in pairs(lotm_archive_data) do
+    local macroname = lotm_macro_name(v)
+    if html[macroname] ~= nil then
+      error ("Tried to create LotM-entry for "..v.name..", but entry already exists!")
+    end
+    html[macroname] = {}
+    html[macroname].outfile = macroname..".html"
+    html[macroname].rightcolumn = {}
+    html[macroname].body = {"lotm/"..macroname}    
+    for j, l0 in pairs(language_list) do
+      html[macroname]["title"..l0] = "$$lotm_expansion$$: "
+        ..translate_month(l0, v.date)
+    end
+  end
 end
 

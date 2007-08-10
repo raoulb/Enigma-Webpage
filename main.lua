@@ -37,7 +37,7 @@ html = {}
 --
 
 ----------------------------------------------------------------------
--- Output
+-- Tools
 ----------------------------------------------------------------------
 
 function mydebug(st)
@@ -52,6 +52,53 @@ function add_lang_to_filename(filename, lang)
     end
 end
 
+-- translate_month returns a translated string of the month number
+-- MONTH in the year YEAR. If year is nil, no year is appended.
+-- Data for translation is provided in output-files.lua.
+function translate_month(lang, date_table)
+  if type(date_table) ~= "table" then
+    error("Trying to translate month, but argument is "..type(date_table).."!")
+  end
+  local month = date_table.month
+  if month == nil then
+    error("Trying to translate month, but month is NIL!")
+  end
+  local translation_table = date_translation_field["months"..lang]
+  if translation_table == nil then
+    translation_table = date_translation_field.months
+  end
+  month = translation_table[month]
+  local year = date_table.year
+  if year == nil then
+    return month
+  else
+    year = math.fmod(year, 100)
+    year = string.format("%02d", year)
+    return month.." '"..year
+  end
+end
+
+-- scribble writes string s to output if and only if it wasn't
+-- written there before. Hence, double infos are omitted.
+scribbleblock = {}
+function scribble(s)
+  if type(s) ~= "string" then
+    error("Can't scribble that, it's type is "..type(s).."!")
+  end
+  for k, t in pairs(scribbleblock) do
+    if t == s then
+      mydebug("  repeat: ["..s.."]")
+      return
+    end
+  end
+  io.write(s)
+  table.insert(scribbleblock, s)
+end
+
+----------------------------------------------------------------------
+-- Parsing and Macro-Replacing - The Program's Recursive Heartbeat
+----------------------------------------------------------------------
+ 
 function parse_text(v, text, lang, context)
     return string.gsub(text, "%$%$(.-)%$%$", function (s)
         local process = v[s] or general[s]
@@ -63,16 +110,17 @@ function parse_text(v, text, lang, context)
             if type(html[s]) == "table" and type(html[s].outfile) == "string" then
                 return add_lang_to_filename(html[s].outfile, lang)
             else
-                error("Error during evaluation of "..context..": Entry "..s.." not defined.")
+                error("Error during evaluation of "..context
+                      ..": Entry "..s.." not defined.")
             end
         end
         if stype == "string" then
             if type(process_with_lang) == "string" then
-                return process_with_lang
+                return parse_text(v, process_with_lang, lang, context)
             else
-                io.write("  Missing entry "..s..lang.." for "
+                scribble("  Missing entry "..s..lang.." for "
                          ..context..", using fallback.\n")
-                return process
+                return parse_text(v, process, lang, context)
             end
         end
         if stype == "function" then
@@ -84,7 +132,7 @@ function parse_text(v, text, lang, context)
                 -- remove slash for name- and id-tags
                 fn = string.gsub(f, "/", "_")
                 if f ~= fn then
-                    io.write("  Note: changed anchors for "..f.." to "..fn..
+                    scribble("  Note: changed anchors for "..f.." to "..fn..
                              ". Please correct href's.\n")
                 end
                 addstring = addstring.."<a name=\""..fn.."\" id=\""..fn.."\"></a>\n"
@@ -110,11 +158,11 @@ function parse_html(v, infilename0, lang)
         if infile == nil then
             error("Error: Neither "..infilename.." nor "..infilename0.." exist.")
         else        
-            io.write ("No file "..infilename..", using fallback "..infilename0.."...\n")
+            scribble ("No file "..infilename..", using fallback "..infilename0.."...\n")
             infilename = infilename0
         end
     else
-        io.write ("Reading input from "..infilename.." ...\n")
+        scribble ("Reading input from "..infilename.." ...\n")
     end
 
     -- Read and process infile
@@ -123,6 +171,10 @@ function parse_html(v, infilename0, lang)
     infile:close()
     return parse_text(v, body, lang, infilename)
 end
+
+----------------------------------------------------------------------
+-- Main Routine
+----------------------------------------------------------------------
 
 -- Get general data and LotM archive data
 
@@ -133,6 +185,10 @@ dofile("input/lotm/lotm_archive_data.lua")
 
 dofile("input/news/read_news.lua")
 dofile("input/lotm/read_lotm.lua")
+
+-- Autogenerate LotM-entries into the html-field (see read_lotm.lua)
+
+generate_lotm_entries(html)
 
 -- Now glue everything together
 

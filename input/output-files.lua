@@ -6,7 +6,7 @@ directory = "input/"
 newsdir = "input/news/"
 suffix = ".html"
 
-language_list = {"", "_de"} -- "_fr"
+language_list = {"", "_de", "_ru"} -- "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
@@ -25,14 +25,16 @@ general = {
     lang = "",
     lang_de = "_de",
     lang_fr = "_fr",
+    lang_ru = "_ru",
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
-    title_fr = "Enigma Homepage",
-    --refman = "http://www.nongnu.org/enigma/manual/enigma-ref.html",
+    --fr-- title_fr = "Enigma Homepage",
+    --ru-- title_ru = "Enigma Homepage",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
+    manual_ru = "manual/enigma_ru.html", -- existing?
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
@@ -41,6 +43,7 @@ general = {
     same_en = function(v,s,l0)  return add_lang_to_filename(v.outfile, "")     end,
     same_de = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_de")  end,
     same_fr = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_fr")  end,
+    same_ru = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_ru")  end,
     navbar = {"navbar"},
     leftcolumn = {"menu","validation"},
     rightcolumn = {},
@@ -67,15 +70,43 @@ general = {
     lotm_archive_data_from = function(v,s,l0)
         return lotm_archive_date(l0)
       end,
+    lotm_expansion = "Level of the Month",
+    lotm_expansion_de = "Level des Monats",
+    --ru-- lotm_expansion_ru = "Level of the Month",
+    month_1 = function(v,s,l0)  return  translate_month(l0, {month=1})  end,
+    month_2 = function(v,s,l0)  return  translate_month(l0, {month=2})  end,
+    month_3 = function(v,s,l0)  return  translate_month(l0, {month=3})  end,
+    month_4 = function(v,s,l0)  return  translate_month(l0, {month=4})  end,
+    month_5 = function(v,s,l0)  return  translate_month(l0, {month=5})  end,
+    month_6 = function(v,s,l0)  return  translate_month(l0, {month=6})  end,
+    month_7 = function(v,s,l0)  return  translate_month(l0, {month=7})  end,
+    month_8 = function(v,s,l0)  return  translate_month(l0, {month=8})  end,
+    month_9 = function(v,s,l0)  return  translate_month(l0, {month=9})  end,
+    month_10 = function(v,s,l0)  return  translate_month(l0, {month=10})  end,
+    month_11 = function(v,s,l0)  return  translate_month(l0, {month=11})  end,
+    month_12 = function(v,s,l0)  return  translate_month(l0, {month=12})  end,
     imagedir = "images",
     imagedir_de = "images",
     imagedir_fr = "images",
+    imagedir_ru = "images",
     lastupdate = "$Date$",
     lastauthor = "$Author$",
     lastrev = "$Rev$"
 }
 
+----------------------------------------------------------------------
+-- Date translation
+----------------------------------------------------------------------
+
+date_translation_field = {
+  months = {"January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"},
+  months_de = {"Januar", "Februar", "M&auml;rz", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"}
+}
+
 --------------------------------------------------------------------------------
+
 ----------------------------------------------------------------------
 -- index.html
 ----------------------------------------------------------------------
@@ -83,6 +114,7 @@ html.index = {
     outfile = "index.html",
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
+    --ru-- title_ru = "Enigma Homepage",
     rightcolumn = {"infobox"},
     body = {"introduction", "intro-links", "news1", "powered-by"}
 }
@@ -94,6 +126,7 @@ html.about = {
     outfile = "about.html",
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
+    --ru-- title_ru = "About Enigma",
     body = {"about", "features", "testimonials", "press"}
 }
 
@@ -104,6 +137,7 @@ html.news = {
     outfile = "news.html",
     title = "News and Olds",
     title_de = "Neues und Altes",
+    --ru-- title_ru = "News and Olds",
     rightcolumn = {},
     body = {"news2"}
 }
@@ -115,6 +149,7 @@ html.screenshots = {
     outfile = "screenshots.html",
     title = "Screenshots of Enigma",
     title_de = "Screenshots von Enigma",
+    --ru-- title_ru = "Screenshots of Enigma",
     body = {"screenshots"}
 }
 
@@ -125,6 +160,7 @@ html.credits = {
     outfile = "credits.html",
     title = "Credits",
     title_de = "Credits",
+    --ru-- title_ru = "Credits",
     body = {"credits"}
 }
 
@@ -134,8 +170,9 @@ html.credits = {
 ----------------------------------------------------------------------
 html.download = {
     outfile = "download.html",
-    title = "Download Engima",
+    title = "Download Enigma",
     title_de = "Enigma herunterladen",
+    --ru-- title_ru = "Download Enigma",
     body = {"download"}
 }
 
@@ -147,6 +184,7 @@ html.support = {
     outfile = "support.html",
     title = "User-Support",
     title_de = "Spieler-Support",
+    --ru-- title_ru = "User-Support",
     body = {"support"} --{"scores", "documentation"}
 }
 
@@ -158,6 +196,7 @@ html.faq = {
     outfile = "faq.html",
     title = "Frequently Asked Questions",
     title_de = "H&auml;ufig gestellte Fragen",
+    --ru-- title_ru = "Frequently Asked Questions",
     body = {"faq_core", "faq_questions"}
 }
 
@@ -168,9 +207,71 @@ html.statistics = {
     outfile = "statistics.html",
     title = "User Statistics",
     title_de = "Spieler-Statistiken",
+    --ru-- title_ru = "User Statistics",
+    average = "average",
+    average_de = "Durchschnitt",
+    --ru-- average_ru = "average",
+    count = "count",
+    count_de = "Anzahl",
+    --ru-- count_ru = "count",
+    user = "user",
+    user_de = "Spieler",
+    --ru-- user_ru = "user",
+    solved_hcp = "solved hcp",
+    solved_hcp_de = "gel&ouml;stes hcp",
+    --ru-- solved_hcp_ru = "solved hcp",
+    difficult = "difficult",
+    difficult_de = "schwer",
+    --ru-- difficult_ru = "difficult",
+    easy = "easy",
+    easy_de = "leicht",
+    --ru-- easy_ru = "easy",
+    total = "total",
+    total_de = "gesamt",
+    --ru-- total_ru = "total",
+    shared = "shared",
+    shared_de = "geteilt",
+    --ru-- shared_ru = "shared",
+    rating = "rating",
+    rating_de = "Bewertung",
+    --ru-- rating_ru = "rating",
+    Handicap_Statistics = "Handicap Statistics of",
+    Handicap_Statistics_de = "Handicap-Statistiken vom",
+    --ru-- Handicap_Statistics_ru = "Handicap Statistics of", -- (month)
+    Rating_Statistics = "Rating Statistics of",
+    Rating_Statistics_de = "Bewertungs-Statistiken vom",
+    --ru-- Rating_Statistics = "Rating Statistics of", -- (month)
+    Solved_Level_Statistics = "Solved Level Statistics of",
+    Solved_Level_Statistics_de = "Statistik der gel&ouml;sten Levels vom",
+    --ru-- Solved_Level_Statistics_ru = "Solved Level Statistics of", -- (month)
+    Worldrecord_Statistics = "Worldrecord Statistics of",
+    Worldrecord_Statistics_de = "Weltrekord-Statistik vom",
+    --ru-- Worldrecord_Statistics_ru = "Worldrecord Statistics of", -- (month)
+    Other_Statistics = "Other Statistics",
+    Other_Statistics_de = "Weitere Statistiken",
+    --ru-- Other_Statistics_ru = "Other Statistics",
+    Scores = "Scores",
+    Scores_de = "Ergebnisse",
+    --ru-- Scores_ru = "Scores",
+    Ratings = "Ratings",
+    Ratings_de = "Bewertungen",
+    --ru-- Ratings_ru = "Ratings",
+    single_level_scores = "single level scores have been registered.",
+    single_level_scores_de = "einzelne Levelscores wurden registriert.",
+    --ru-- single_level_scores_ru = "single level scores have been registered.",
+    single_level_ratings = "single level ratings have been registered with an average of",
+    single_level_ratings_de = "einzelne Levelbewertungen wurden registriert, mit einem Durchschnitt von",
+    --ru-- single_level_ratings_ru = "single level ratings have been registered with an average of",
+    and_distribution = "and the following distribution:",
+    and_distribution_de = "und der folgenden Verteilung:",
+    --ru-- and_distribution_ru = "and the following distribution:",
+    names_in_use = "Names in use:",
+    names_in_use_de = "Vergebene Namen:",
+    --ru-- names_in_use_ru = "Names in use:",
     leftcolumn = {"menu", "validation", "userlist"},
     rightcolumn = {},
-    body = {"stat-head", "table-wr", "table-solved", "stat-help", "table-hcp", "stat-other", "table-rat", "stat-tail"}
+    body = {"stat-head", "table-wr", "table-solved", "stat-help",
+            "table-hcp", "stat-other", "table-rat", "stat-tail"}
 }
 
 --------------------------------------------------------------------------------
@@ -181,6 +282,7 @@ html.development = {
     outfile = "devel.html",
     title = "Development",
     title_de = "Entwicklung",
+    --ru-- title_ru = "Development",
     body = {"development"}
 }
 
@@ -192,6 +294,7 @@ html.links = {
     outfile = "links.html",
     title = "Links",
     title_de = "Links",
+    --ru-- title_ru = "Links",
     body = {"links"}
 }
 
@@ -202,6 +305,7 @@ html.impressum = {
     outfile = "impressum.html",
     title = "Impressum",
     title_de = "Impressum",
+    --ru-- title_ru = "Impressum",
     body = {"impressum", "longline"}
 }
 
@@ -213,78 +317,26 @@ html.impressum = {
 
 html.lotm = {
     outfile = "lotm.html",
-    title = "Level of the Month",
-    title_de = "Level des Monats",
+    title = "$$lotm_expansion$$",
     rightcolumn = {},
     body = {"lotm/lotm_core"}
 }
 
 html.lotm_chronological = {
     outfile = "lotm_chronological.html",
-    title = "Level of the Month (chronological)",
-    title_de = "Level des Monats (chronologisch)",
+    title = "$$lotm_expansion$$ (chronological)",
+    title_de = "$$lotm_expansion$$ (chronologisch)",
+    --ru-- title_ru = "$$lotm_expansion$$ (chronological)",
     rightcolumn = {},
     body = {"lotm/lotm_chronological"}
 }
 
 html.lotm_by_position = {
     outfile = "lotm_by_position.html",
-    title = "Level of the Month (by position)",
-    title_de = "Level des Monats (nach Position)",
+    title = "$$lotm_expansion$$ (by position)",
+    title_de = "$$lotm_expansion$$ (nach Position)",
+    --ru-- title_ru = "Level of the Month (by position)",
     rightcolumn = {},
     body = {"lotm/lotm_by_position"}
 }
 
-----------------------------------------------------------------------
--- LotM - Articles
-----------------------------------------------------------------------
- 
-html.lotm_200703 = {
-    outfile = "lotm_200703.html",
-    title = "Level of the Month: March 2007",
-    title_de = "Level des Monats: M&auml;rz 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200703"}
-}
-
-html.lotm_200704 = {
-    outfile = "lotm_200704.html",
-    title = "Level of the Month: April 2007",
-    title_de = "Level des Monats: April 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200704"}
-}
-
-html.lotm_200705 = {
-    outfile = "lotm_200705.html",
-    title = "Level of the Month: May 2007",
-    title_de = "Level des Monats: Mai 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200705"}
-}
-
-html.lotm_200706 = {
-    outfile = "lotm_200706.html",
-    title = "Level of the Month: June 2007",
-    title_de = "Level des Monats: Juni 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200706"}
-}
-
-html.lotm_200707 = {
-    outfile = "lotm_200707.html",
-    title = "Level of the Month: July 2007",
-    title_de =  "Level des Monats: Juli 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200707"}
-}
-
-html.lotm_200708 = {
-    outfile = "lotm_200708.html",
-    title = "Level of the Month: August 2007",
-    title_de =  "Level des Monats: August 2007",
-    rightcolumn = {},
-    body = {"lotm/lotm_200708"}
-}
-
-----------------------------------------------------------------------

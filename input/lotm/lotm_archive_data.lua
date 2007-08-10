@@ -4,10 +4,9 @@ lotm_archive_data = {}
 lotm_archive_data[1] = {
   current_rating = 9.29,
   current_votes  = 7,
-  month          = "March '07",
-  month_de       = "M&auml;rz '07",
+  date           = { month = 3, year = 2007 },
   chronological  = 1,
-  name           = "<a href=\"$$lotm_200703$$\">Island Labyrinth</a>",
+  name           = "Island Labyrinth",
   addition       = "",
   author         = "Jacob Scott",
   position       = "V/100",
@@ -17,10 +16,9 @@ lotm_archive_data[1] = {
 lotm_archive_data[2] = {
   current_rating = 7.70,
   current_votes  = 18,
-  month          = "April '07",
-  month_de       = "April '07",
+  date           = { month = 4, year = 2007 },
   chronological  = 2,
-  name           = "<a href=\"$$lotm_200704$$\">Pneumatic Delivery</a>",
+  name           = "Pneumatic Delivery",
   addition       = "",
   author         = "Manuel K&ouml;nig",
   position       = "V/59",
@@ -30,10 +28,9 @@ lotm_archive_data[2] = {
 lotm_archive_data[3] = {
   current_rating = 9.17,
   current_votes  = 6,
-  month          = "May '07",
-  month_de       = "Mai '07",
+  date           = { month = 5, year = 2007 },
   chronological  = 3,
-  name           = "<a href=\"$$lotm_200705$$\">The Aztec Temple</a>",
+  name           = "The Aztec Temple",
   addition       = "",
   author         = "Dominik Lehmann",
   position       = "VI/100",
@@ -43,10 +40,9 @@ lotm_archive_data[3] = {
 lotm_archive_data[4] = {
   current_rating = 8.60,
   current_votes  = 10,
-  month          = "June '07",
-  month_de       = "Juni '07",
+  date           = { month = 6, year = 2007 },
   chronological  = 4,
-  name           = "<a href=\"$$lotm_200706$$\">Labyrinth of Puzzles</a>",
+  name           = "Labyrinth of Puzzles",
   addition       = "(1 up)",
   author         = "Jacob Scott",
   position       = "IV/19",
@@ -56,10 +52,9 @@ lotm_archive_data[4] = {
 lotm_archive_data[5] = {
   current_rating = 8.57,
   current_votes  = 7,
-  month          = "July '07",
-  month_de       = "Juli '07",
+  date           = { month = 7, year = 2007 },
   chronological  = 5,
-  name           = "<a href=\"$$lotm_200707$$\">Elaborate</a>",
+  name           = "Elaborate",
   addition       = "(1 down)",
   author         = "Jacob Scott",
   position       = "V/65",
@@ -69,10 +64,9 @@ lotm_archive_data[5] = {
 lotm_archive_data[6] = {
   current_rating = 8.67,
   current_votes  = 9,
-  month          = "August '07",
-  month_de       = "August '07",
+  date           = { month = 8, year = 2007 },
   chronological  = 6,
-  name           = "<a href=\"$$lotm_200708$$\">Houdini</a>",
+  name           = "Houdini",
   addition       = "<b>(newcomer)</b>",
   author         = "Ronald Lamprecht",
   position       = "VI/74",
@@ -81,7 +75,5 @@ lotm_archive_data[6] = {
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = {    [""] = "June 2007",
-                           ["_de"] = "Juni 2007" }
-
+lotm_archive_data_from = { month = 6, year = 2007 }
 
