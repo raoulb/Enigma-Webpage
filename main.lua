@@ -72,7 +72,13 @@ function translate_month(lang, date_table)
   if year == nil then
     return month
   else
-    year = math.fmod(year, 100)
+    -- circumvent mod->fmod change in 5.1!
+    --year = math.fmod(year, 100)
+    if year >= 2000 then
+      year = year - 2000
+    else
+      year = year - 1900
+    end
     year = string.format("%02d", year)
     return month.." '"..year
   end
