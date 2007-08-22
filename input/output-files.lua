@@ -31,7 +31,7 @@ general = {
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
     --fr-- title_fr = "Enigma Homepage",
-    --ru-- title_ru = "Enigma Homepage",
+    title_ru = "Домашняя страница Enigma",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
@@ -75,7 +75,7 @@ general = {
     lotm_expansion = "Level of the Month",
     lotm_expansion_de = "Level des Monats",
     lotm_header = {"lotm/lotm_header"},
-    --ru-- lotm_expansion_ru = "Level of the Month",
+    lotm_expansion_ru = "Уровень Месяца",
     January   = function(v,s,l0)  return  translate_month(l0, {month=1})  end,
     February  = function(v,s,l0)  return  translate_month(l0, {month=2})  end,
     March     = function(v,s,l0)  return  translate_month(l0, {month=3})  end,
@@ -105,7 +105,9 @@ date_translation_field = {
   months = {"January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"},
   months_de = {"Januar", "Februar", "M&auml;rz", "April", "Mai", "Juni",
-    "Juli", "August", "September", "Oktober", "November", "Dezember"}
+    "Juli", "August", "September", "Oktober", "November", "Dezember"},
+  months_ru = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"},
 }
 
 --------------------------------------------------------------------------------
@@ -117,7 +119,7 @@ html.index = {
     outfile = "index.html",
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
-    --ru-- title_ru = "Enigma Homepage",
+    title_ru = "Домашняя страница Enigma",
     rightcolumn = {"infobox"},
     body = {"introduction", "intro-links", "news1", "powered-by"}
 }
@@ -129,7 +131,7 @@ html.about = {
     outfile = "about.html",
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
-    --ru-- title_ru = "About Enigma",
+    title_ru = "Об Enigma",
     body = {"about", "features", "testimonials", "press"}
 }
 
@@ -140,7 +142,7 @@ html.news = {
     outfile = "news.html",
     title = "News and Olds",
     title_de = "Neues und Altes",
-    --ru-- title_ru = "News and Olds",
+    title_ru = "Новости и архив",
     rightcolumn = {},
     body = {"news2"}
 }
@@ -152,7 +154,7 @@ html.screenshots = {
     outfile = "screenshots.html",
     title = "Screenshots of Enigma",
     title_de = "Screenshots von Enigma",
-    --ru-- title_ru = "Screenshots of Enigma",
+    title_ru = "Скриншоты Enigma",
     body = {"screenshots"}
 }
 
@@ -163,7 +165,7 @@ html.credits = {
     outfile = "credits.html",
     title = "Credits",
     title_de = "Credits",
-    --ru-- title_ru = "Credits",
+    title_ru = "Благодарности",
     body = {"credits"}
 }
 
@@ -175,7 +177,7 @@ html.download = {
     outfile = "download.html",
     title = "Download Enigma",
     title_de = "Enigma herunterladen",
-    --ru-- title_ru = "Download Enigma",
+    title_ru = "Загрузка Enigma",
     body = {"download"}
 }
 
@@ -187,7 +189,7 @@ html.support = {
     outfile = "support.html",
     title = "User-Support",
     title_de = "Spieler-Support",
-    --ru-- title_ru = "User-Support",
+    title_ru = "Поддержка пользователя",
     body = {"support"} --{"scores", "documentation"}
 }
 
@@ -199,7 +201,7 @@ html.faq = {
     outfile = "faq.html",
     title = "Frequently Asked Questions",
     title_de = "H&auml;ufig gestellte Fragen",
-    --ru-- title_ru = "Frequently Asked Questions",
+    title_ru = "Часто задаваемые вопросы",
     body = {"faq_core", "faq_questions"}
 }
 
@@ -210,67 +212,67 @@ html.statistics = {
     outfile = "statistics.html",
     title = "User Statistics",
     title_de = "Spieler-Statistiken",
-    --ru-- title_ru = "User Statistics",
+    title_ru = "Статистика пользователей",
     average = "average",
     average_de = "Durchschnitt",
-    --ru-- average_ru = "average",
+    average_ru = "В среднем",
     count = "count",
     count_de = "Anzahl",
-    --ru-- count_ru = "count",
+    count_ru = "Оценено",
     user = "user",
     user_de = "Spieler",
-    --ru-- user_ru = "user",
+    user_ru = "Пользователь",
     solved_hcp = "solved hcp",
     solved_hcp_de = "gel&ouml;stes hcp",
-    --ru-- solved_hcp_ru = "solved hcp",
+    solved_hcp_ru = "Решенный гандикап",
     difficult = "difficult",
     difficult_de = "schwer",
-    --ru-- difficult_ru = "difficult",
+    difficult_ru = "Сложные",
     easy = "easy",
     easy_de = "leicht",
-    --ru-- easy_ru = "easy",
+    easy_ru = "Простые",
     total = "total",
     total_de = "gesamt",
-    --ru-- total_ru = "total",
+    total_ru = "Всего",
     shared = "shared",
     shared_de = "geteilt",
-    --ru-- shared_ru = "shared",
+    shared_ru = "Совместных",
     rating = "rating",
     rating_de = "Bewertung",
-    --ru-- rating_ru = "rating",
+    rating_ru = "Рейтинг",
     Handicap_Statistics = "Handicap Statistics of",
     Handicap_Statistics_de = "Handicap-Statistiken vom",
-    --ru-- Handicap_Statistics_ru = "Handicap Statistics of", -- (month)
+    Handicap_Statistics_ru = "Статистика мастерства за", -- (month)
     Rating_Statistics = "Rating Statistics of",
     Rating_Statistics_de = "Bewertungs-Statistiken vom",
-    --ru-- Rating_Statistics = "Rating Statistics of", -- (month)
+    Rating_Statistics_ru = "Статистика оценок за", -- (month)
     Solved_Level_Statistics = "Solved Level Statistics of",
     Solved_Level_Statistics_de = "Statistik der gel&ouml;sten Levels vom",
-    --ru-- Solved_Level_Statistics_ru = "Solved Level Statistics of", -- (month)
+    Solved_Level_Statistics_ru = "Статистика решенных уровней за", -- (month)
     Worldrecord_Statistics = "Worldrecord Statistics of",
     Worldrecord_Statistics_de = "Weltrekord-Statistik vom",
-    --ru-- Worldrecord_Statistics_ru = "Worldrecord Statistics of", -- (month)
+    Worldrecord_Statistics_ru = "Статистика мировых рекордов за", -- (month)
     Other_Statistics = "Other Statistics",
     Other_Statistics_de = "Weitere Statistiken",
-    --ru-- Other_Statistics_ru = "Other Statistics",
+    Other_Statistics_ru = "Другие показатели",
     Scores = "Scores",
     Scores_de = "Ergebnisse",
-    --ru-- Scores_ru = "Scores",
+    Scores_ru = "Достижения",
     Ratings = "Ratings",
     Ratings_de = "Bewertungen",
-    --ru-- Ratings_ru = "Ratings",
+    Ratings_ru = "Оценки",
     single_level_scores = "single level scores have been registered.",
     single_level_scores_de = "einzelne Levelscores wurden registriert.",
-    --ru-- single_level_scores_ru = "single level scores have been registered.",
+    single_level_scores_ru = "результатов прохождения уровней зарегистрировано.",
     single_level_ratings = "single level ratings have been registered with an average of",
     single_level_ratings_de = "einzelne Levelbewertungen wurden registriert, mit einem Durchschnitt von",
-    --ru-- single_level_ratings_ru = "single level ratings have been registered with an average of",
+    single_level_ratings_ru = "оценок уровней зарегистрировано со средней оценкой",
     and_distribution = "and the following distribution:",
     and_distribution_de = "und der folgenden Verteilung:",
-    --ru-- and_distribution_ru = "and the following distribution:",
+    and_distribution_ru = "и следующим разбросом:",
     names_in_use = "Names in use:",
     names_in_use_de = "Vergebene Namen:",
-    --ru-- names_in_use_ru = "Names in use:",
+    names_in_use_ru = "Уже используемые имена:",
     leftcolumn = {"menu", "validation", "userlist"},
     rightcolumn = {},
     body = {"stat-head", "table-wr", "table-solved", "stat-help",
@@ -285,7 +287,7 @@ html.development = {
     outfile = "devel.html",
     title = "Development",
     title_de = "Entwicklung",
-    --ru-- title_ru = "Development",
+    title_ru = "Разработка",
     body = {"development"}
 }
 
@@ -297,7 +299,7 @@ html.links = {
     outfile = "links.html",
     title = "Links",
     title_de = "Links",
-    --ru-- title_ru = "Links",
+    title_ru = "Ссылки",
     body = {"links"}
 }
 
@@ -308,7 +310,7 @@ html.impressum = {
     outfile = "impressum.html",
     title = "Impressum",
     title_de = "Impressum",
-    --ru-- title_ru = "Impressum",
+    title_ru = "Поддержка сайта",
     body = {"impressum", "longline"}
 }
 
@@ -329,7 +331,7 @@ html.lotm_chronological = {
     outfile = "lotm_chronological.html",
     title = "$$lotm_expansion$$ (chronological)",
     title_de = "$$lotm_expansion$$ (chronologisch)",
-    --ru-- title_ru = "$$lotm_expansion$$ (chronological)",
+    title_ru = "$$lotm_expansion$$ (по хронологии)",
     rightcolumn = {},
     body = {"lotm/lotm_chronological"}
 }
@@ -338,7 +340,7 @@ html.lotm_by_position = {
     outfile = "lotm_by_position.html",
     title = "$$lotm_expansion$$ (by position)",
     title_de = "$$lotm_expansion$$ (nach Position)",
-    --ru-- title_ru = "$$lotm_expansion$$ (by position)",
+    title_ru = "$$lotm_expansion$$ (по положению)",
     rightcolumn = {},
     body = {"lotm/lotm_by_position"}
 }
