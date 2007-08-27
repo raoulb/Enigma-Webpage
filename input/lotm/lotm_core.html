@@ -11,24 +11,30 @@
   current user rating, the number in brackets is the number of people who rated
   this level.</p>
 
-  <p>Data is from <b>$$lotm_archive_data_from$$</b>, ordered by <b>rating</b>:</p>
+  <p>Data is from <b>$$lotm_archive_data_from$$</b>, ordered
+  $$kind_of_order$$:</p>
 
   <table>
     <colgroup>
        <col width="50">
        <col width="50">
-       <col width="100">
+       <col width="130">
        <col width="270">
-       <col width="270">
+       <col width="240">
        <col width="80">
     </colgroup>
-    <tr><th colspan="2" class="right">Rating</th>
-        <th class="right"><a href="$$lotm_chronological$$">Month</a></th>
-        <th class="left">Title</th>
-        <th class="left">Author</th>
-        <th class="num"><a href="$$lotm_by_position$$">Position (1.01)</a></th>
+    <tr><th colspan="2" class="right">$$lotm_anchor_rating$$</th>
+        <th class="right">$$lotm_anchor_month$$</th>
+        <th class="left">$$lotm_anchor_title$$</th>
+        <th class="left">$$lotm_anchor_author$$</th>
+        <th class="num">$$lotm_anchor_position$$</th>
     </tr>
-$$parse_lotm_by_rating$$
+$$parse_lotm$$
   </table>
+
+  <div class="lotmhistory">
+    <img src="$$imagedir$$/lotm/lotm-history.png" alt="$$lotm_history$$" border="0">
+    <div class="imagetitle">$$lotm_history$$</div>
+  </div>
 
 </div>

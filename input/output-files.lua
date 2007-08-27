@@ -72,10 +72,45 @@ general = {
     lotm_archive_data_from = function(v,s,l0)
         return lotm_archive_date(l0)
       end,
+    lotm_header = {"lotm/lotm_header"},
     lotm_expansion = "Level of the Month",
     lotm_expansion_de = "Level des Monats",
-    lotm_header = {"lotm/lotm_header"},
     lotm_expansion_ru = "Уровень Месяца",
+
+    lotm_anchor_rating   = "<a href=\"$$lotm$$\">Rating</a>",
+    lotm_anchor_month    = "<a href=\"$$lotm_chronological$$\">Month</a>",
+    lotm_anchor_title    = "Title",
+    lotm_anchor_author   = "Author",
+    lotm_anchor_position = "<a href=\"$$lotm_by_position$$\">Position (1.01)</a>",
+
+    lotm_anchor_rating_de   = "<a href=\"$$lotm$$\">Bewertung</a>",
+    lotm_anchor_month_de    = "<a href=\"$$lotm_chronological$$\">Monat</a>",
+    lotm_anchor_title_de    = "Titel",
+    lotm_anchor_author_de   = "Autor",
+    lotm_anchor_position_de = "<a href=\"$$lotm_by_position$$\">Position (1.01)</a>",    
+    
+    lotm_anchor_rating_ru   = "<a href=\"$$lotm$$\">Рейтинг</a>",
+    lotm_anchor_month_ru    = "<a href=\"$$lotm_chronological$$\">Месяц</a>",
+    lotm_anchor_title_ru    = "Название",
+    lotm_anchor_author_ru   = "Автор",
+    lotm_anchor_position_ru = "<a href=\"$$lotm_by_position$$\">Размещение (1.01)</a>",
+
+    lotm_history = "History of LotM",
+    lotm_history_de = "Geschichte des LdM",
+    --ru-- lotm_history_ru = "History of LotM",
+
+    lotm_current = function(v,s,l0)
+        return parse_text(v, "$$"..lotm_macro_name(lotm_current).."$$", l0,
+          "lotm_current")
+      end,
+    lotm_current_image = function(v,s,l0)
+        return parse_text(v, "$$imagedir$$/lotm/"
+          ..lotm_macro_name(lotm_current)..".png", l0, "lotm_current_image")
+      end,
+    lotm_current_name = function(v,s,l0)
+        return parse_text(v, lotm_current.name, l0, "lotm_current_name")
+      end,
+
     January   = function(v,s,l0)  return  translate_month(l0, {month=1})  end,
     February  = function(v,s,l0)  return  translate_month(l0, {month=2})  end,
     March     = function(v,s,l0)  return  translate_month(l0, {month=3})  end,
@@ -324,7 +359,14 @@ html.lotm = {
     outfile = "lotm.html",
     title = "$$lotm_expansion$$",
     rightcolumn = {},
-    body = {"lotm/lotm_core"}
+    body = {"lotm/lotm_core"},
+    kind_of_order = "by <b>rating</b>",
+    kind_of_order_de = "geordnet nach <b>Bewertung</b>",
+    kind_of_order_ru = "<b>рейтингу</b>",
+    parse_lotm = "$$parse_lotm_by_rating$$",
+    lotm_anchor_rating = "<b>Rating</b>",
+    lotm_anchor_rating_de = "<b>Bewertung</b>",
+    lotm_anchor_rating_ru = "<b>Рейтинг</b>",
 }
 
 html.lotm_chronological = {
@@ -333,7 +375,14 @@ html.lotm_chronological = {
     title_de = "$$lotm_expansion$$ (chronologisch)",
     title_ru = "$$lotm_expansion$$ (по хронологии)",
     rightcolumn = {},
-    body = {"lotm/lotm_chronological"}
+    body = {"lotm/lotm_core"},
+    kind_of_order = "<b>chronologically</b>",
+    kind_of_order_de = "<b>chronologisch</b> geordnet",
+    kind_of_order_ru = "<b>хронологии</b>",
+    parse_lotm = "$$parse_lotm_chronological$$",
+    lotm_anchor_month = "<b>Month</b>",
+    lotm_anchor_month_de = "<b>Monat</b>",
+    lotm_anchor_month_ru = "<b>Месяц</b>",
 }
 
 html.lotm_by_position = {
@@ -342,6 +391,12 @@ html.lotm_by_position = {
     title_de = "$$lotm_expansion$$ (nach Position)",
     title_ru = "$$lotm_expansion$$ (по положению)",
     rightcolumn = {},
-    body = {"lotm/lotm_by_position"}
+    body = {"lotm/lotm_core"},
+    kind_of_order = "by <b>position</b>",
+    kind_of_order_de = "geordnet nach <b>Position</b>",
+    kind_of_order_ru = "<b>размещению</b>",
+    parse_lotm = "$$parse_lotm_by_position$$",
+    lotm_anchor_position = "<b>Position (1.01)</b>",
+    lotm_anchor_position_de = "<b>Position (1.01)</b>",
+    lotm_anchor_position_ru = "<b>Размещение (1.01)</b>",
 }
-
