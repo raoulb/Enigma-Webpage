@@ -89,5 +89,5 @@ lotm_archive_data[7] = {
 
 lotm_archive_data_from = { month = 7, year = 2007 }
 
-lotm_current = lotm_archive_data[table.maxn(lotm_archive_data)]
+lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
