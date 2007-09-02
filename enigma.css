@@ -458,3 +458,23 @@ li ul {
 .credits table td {
     padding-right: 1em;
 }
+
+.lotmhistory {
+    text-align: center;
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.lotmhistory img {
+    border-width: 4px;
+}
+
+.lotmhistory a:link, .lotmhistory  a:visited {
+    color: #777;   /* IE needs body attributes for image coloring */
+}
+
+.lotmhistory a:link:hover, .lotmhistory a:visited:hover {
+    color: #333;   /* IE needs body attributes for image coloring */
+}
+
