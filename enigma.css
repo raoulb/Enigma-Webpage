@@ -462,8 +462,8 @@ li ul {
 .lotmhistory {
     text-align: center;
     padding-top: 5em;
-    padding-left: 2em;
-    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-bottom: 0em;
 }
 
 .lotmhistory img {
