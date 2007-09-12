@@ -6,7 +6,7 @@ directory = "input/"
 newsdir = "input/news/"
 suffix = ".html"
 
-language_list = {"", "_de", "_ru"} -- "_fr"
+language_list = {"", "_de", "_ru", "_es"} -- "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
@@ -28,10 +28,12 @@ general = {
     lang_de = "_de",
     lang_fr = "_fr",
     lang_ru = "_ru",
+    lang_es = "_es",
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
     --fr-- title_fr = "Enigma Homepage",
     title_ru = "Домашняя страница Enigma",
+    --sp-- title_es = "Enigma Homepage",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
@@ -46,6 +48,7 @@ general = {
     same_de = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_de")  end,
     same_fr = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_fr")  end,
     same_ru = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_ru")  end,
+    same_es = function(v,s,l0)  return add_lang_to_filename(v.outfile, "_es")  end,
     navbar = {"navbar"},
     leftcolumn = {"menu","validation"},
     rightcolumn = {},
@@ -76,6 +79,7 @@ general = {
     lotm_expansion = "Level of the Month",
     lotm_expansion_de = "Level des Monats",
     lotm_expansion_ru = "Уровень Месяца",
+    --es-- lotm_expansion_es = "",
 
     lotm_anchor_rating   = "<a href=\"$$lotm$$\">Rating</a>",
     lotm_anchor_month    = "<a href=\"$$lotm_chronological$$\">Month</a>",
@@ -127,6 +131,7 @@ general = {
     imagedir_de = "images",
     imagedir_fr = "images",
     imagedir_ru = "images",
+    imagedir_es = "images",
     lastupdate = "$Date$",
     lastauthor = "$Author$",
     lastrev = "$Rev$"
