@@ -77,3 +77,20 @@ function generate_lotm_entries(html)
   end
 end
 
+-- Add ratings and additional texts to LotM-entries
+function lotm_rating(title, rating, votes, addition)
+  local found = false
+  for k, v in pairs(lotm_archive_data) do
+    if v.name == title then
+      if found then
+        error ("Name collision for LotM article "..title.."!")
+      else
+        v.current_rating = rating
+        v.current_votes = votes
+        v.addition = (v.addition or "")..(addition or "")
+        found = true
+      end
+    end
+  end
+end
+

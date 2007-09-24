@@ -33,7 +33,7 @@ general = {
     title_de = "Enigma Hauptseite",
     --fr-- title_fr = "Enigma Homepage",
     title_ru = "Домашняя страница Enigma",
-    --sp-- title_es = "Enigma Homepage",
+    title_es = "P&aacute;gina principal de Enigma",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
@@ -79,6 +79,7 @@ general = {
     lotm_expansion = "Level of the Month",
     lotm_expansion_de = "Level des Monats",
     lotm_expansion_ru = "Уровень Месяца",
+    lotm_expansion_es = "Nivel de este mes",
     --es-- lotm_expansion_es = "",
 
     lotm_anchor_rating   = "<a href=\"$$lotm$$\">Rating</a>",
@@ -99,9 +100,16 @@ general = {
     lotm_anchor_author_ru   = "Автор",
     lotm_anchor_position_ru = "<a href=\"$$lotm_by_position$$\">Размещение (1.01)</a>",
 
+    lotm_anchor_rating_es   = "<a href=\"$$lotm$$\">Clasificaci&oacute;n</a>",
+    lotm_anchor_month_es    = "<a href=\"$$lotm_chronological$$\">Mes</a>",
+    lotm_anchor_title_es    = "T&iacute;tulo",
+    lotm_anchor_author_es   = "Autor",
+    lotm_anchor_position_es = "<a href=\"$$lotm_by_position$$\">Posici&oacute;n (1.01)</a>",
+    
     lotm_history = "History of LotM",
     lotm_history_de = "Geschichte des LdM",
     --ru-- lotm_history_ru = "History of LotM",
+    lotm_history_es = "Historia de LotM",
 
     lotm_current = function(v,s,l0)
         return parse_text(v, "$$"..lotm_macro_name(lotm_current).."$$", l0,
@@ -148,6 +156,8 @@ date_translation_field = {
     "Juli", "August", "September", "Oktober", "November", "Dezember"},
   months_ru = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"},
+  months_es = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}
 }
 
 --------------------------------------------------------------------------------
@@ -160,6 +170,7 @@ html.index = {
     title = "Enigma Homepage",
     title_de = "Enigma Hauptseite",
     title_ru = "Домашняя страница Enigma",
+    title_es = "P&aacute;gina principal de Enigma",
     rightcolumn = {"infobox"},
     body = {"introduction", "intro-links", "news1", "powered-by"}
 }
@@ -172,6 +183,7 @@ html.about = {
     title = "About Enigma",
     title_de = "&Uuml;ber Enigma",
     title_ru = "Об Enigma",
+    title_es = "Acerca de Enigma",
     body = {"about", "features", "testimonials", "press"}
 }
 
@@ -183,6 +195,7 @@ html.news = {
     title = "News and Olds",
     title_de = "Neues und Altes",
     title_ru = "Новости и архив",
+    title_es = "Noticias y art&iacute;culos anteriores",
     rightcolumn = {},
     body = {"news2"}
 }
@@ -195,6 +208,7 @@ html.screenshots = {
     title = "Screenshots of Enigma",
     title_de = "Screenshots von Enigma",
     title_ru = "Скриншоты Enigma",
+    title_es = "Pantallazos de Enigma",
     body = {"screenshots"}
 }
 
@@ -206,6 +220,7 @@ html.credits = {
     title = "Credits",
     title_de = "Credits",
     title_ru = "Благодарности",
+    title_es = "Cr&eacute;ditos",
     body = {"credits"}
 }
 
@@ -218,6 +233,7 @@ html.download = {
     title = "Download Enigma",
     title_de = "Enigma herunterladen",
     title_ru = "Загрузка Enigma",
+    title_es = "Desc&aacute;rgate Enigma",
     body = {"download"}
 }
 
@@ -230,6 +246,7 @@ html.support = {
     title = "User-Support",
     title_de = "Spieler-Support",
     title_ru = "Поддержка пользователя",
+    title_es = "Soporte para usuarios",
     body = {"support"} --{"scores", "documentation"}
 }
 
@@ -242,6 +259,7 @@ html.faq = {
     title = "Frequently Asked Questions",
     title_de = "H&auml;ufig gestellte Fragen",
     title_ru = "Часто задаваемые вопросы",
+    title_es = "Preguntas de Uso Frecuente",
     body = {"faq_core", "faq_questions"}
 }
 
@@ -253,66 +271,87 @@ html.statistics = {
     title = "User Statistics",
     title_de = "Spieler-Statistiken",
     title_ru = "Статистика пользователей",
+    title_es = "Estadisticas de Usuario",
     average = "average",
     average_de = "Durchschnitt",
     average_ru = "В среднем",
+    average_es = "Promedio",
     count = "count",
     count_de = "Anzahl",
     count_ru = "Оценено",
+    count_es = "Cuenta",
     user = "user",
     user_de = "Spieler",
     user_ru = "Пользователь",
+    user_es = "Usuario",
     solved_hcp = "solved hcp",
     solved_hcp_de = "gel&ouml;stes hcp",
     solved_hcp_ru = "Решенный гандикап",
+    solved_hcp_es = "hcp resuelto",
     difficult = "difficult",
     difficult_de = "schwer",
     difficult_ru = "Сложные",
+    difficult_es = "Dificultad",
     easy = "easy",
     easy_de = "leicht",
     easy_ru = "Простые",
+    easy_es = "F&aacute;cil",
     total = "total",
     total_de = "gesamt",
     total_ru = "Всего",
+    total_es = "total",
     shared = "shared",
     shared_de = "geteilt",
     shared_ru = "Совместных",
+    shared_es = "Compartido",
     rating = "rating",
     rating_de = "Bewertung",
     rating_ru = "Рейтинг",
+    rating_es = "Clasificaci&oacute;n",
     Handicap_Statistics = "Handicap Statistics of",
     Handicap_Statistics_de = "Handicap-Statistiken vom",
-    Handicap_Statistics_ru = "Статистика мастерства за", -- (month)
+    Handicap_Statistics_ru = "Статистика мастерства за",
+    Handicap_Statistics_es = "Estad&iacute;sticas de Handicap de",
     Rating_Statistics = "Rating Statistics of",
     Rating_Statistics_de = "Bewertungs-Statistiken vom",
-    Rating_Statistics_ru = "Статистика оценок за", -- (month)
+    Rating_Statistics_ru = "Статистика оценок за",
+    Rating_Statistics_es = "Estad&iacute;sticas de clasificaci&oacute;n de",    
     Solved_Level_Statistics = "Solved Level Statistics of",
     Solved_Level_Statistics_de = "Statistik der gel&ouml;sten Levels vom",
-    Solved_Level_Statistics_ru = "Статистика решенных уровней за", -- (month)
+    Solved_Level_Statistics_ru = "Статистика решенных уровней за",
+    Solved_Level_Statistics_es = "Estad&iacute;sticas de niveles resueltos de",
     Worldrecord_Statistics = "Worldrecord Statistics of",
     Worldrecord_Statistics_de = "Weltrekord-Statistik vom",
-    Worldrecord_Statistics_ru = "Статистика мировых рекордов за", -- (month)
+    Worldrecord_Statistics_ru = "Статистика мировых рекордов за",
+    Worldrecord_Statistics_es = "Estad&iacute;sticas de Records mundiales de",        
     Other_Statistics = "Other Statistics",
     Other_Statistics_de = "Weitere Statistiken",
     Other_Statistics_ru = "Другие показатели",
+    Other_Statistics_es = "Otras estad&iacute;sticas",
     Scores = "Scores",
     Scores_de = "Ergebnisse",
     Scores_ru = "Достижения",
+    Scores_es = "Resultados",
     Ratings = "Ratings",
     Ratings_de = "Bewertungen",
     Ratings_ru = "Оценки",
+    Ratings_es = "Clasificaci&oacute;nes",
     single_level_scores = "single level scores have been registered.",
     single_level_scores_de = "einzelne Levelscores wurden registriert.",
     single_level_scores_ru = "результатов прохождения уровней зарегистрировано.",
+    single_level_scores_es = "Han sido registrados resultados de niveles sueltos",
     single_level_ratings = "single level ratings have been registered with an average of",
     single_level_ratings_de = "einzelne Levelbewertungen wurden registriert, mit einem Durchschnitt von",
     single_level_ratings_ru = "оценок уровней зарегистрировано со средней оценкой",
+    single_level_ratings_es = "Han sido registradas clasificaci&oacute;nes de niveles sueltos con promedio de",
     and_distribution = "and the following distribution:",
     and_distribution_de = "und der folgenden Verteilung:",
     and_distribution_ru = "и следующим разбросом:",
+    and_distribution_es = "y la siguiente distribuci&oacute;n:",
     names_in_use = "Names in use:",
     names_in_use_de = "Vergebene Namen:",
     names_in_use_ru = "Уже используемые имена:",
+    names_in_use_es = "Nombre en uso",
     leftcolumn = {"menu", "validation", "userlist"},
     rightcolumn = {},
     body = {"stat-head", "table-wr", "table-solved", "stat-help",
@@ -328,6 +367,7 @@ html.development = {
     title = "Development",
     title_de = "Entwicklung",
     title_ru = "Разработка",
+    title_es = "Desarrollo",
     body = {"development"}
 }
 
@@ -340,6 +380,7 @@ html.links = {
     title = "Links",
     title_de = "Links",
     title_ru = "Ссылки",
+    title_es = "Enlaces",
     body = {"links"}
 }
 
@@ -348,9 +389,10 @@ html.links = {
 ----------------------------------------------------------------------
 html.impressum = {
     outfile = "impressum.html",
-    title = "Impressum",
+    title = "Imprint",
     title_de = "Impressum",
     title_ru = "Поддержка сайта",
+    title_es = "Impreso",
     body = {"impressum", "longline"}
 }
 
@@ -368,11 +410,13 @@ html.lotm = {
     kind_of_order = "by <b>rating</b>",
     kind_of_order_de = "geordnet nach <b>Bewertung</b>",
     kind_of_order_ru = "<b>рейтингу</b>",
+    kind_of_order_es = "por clasificaci&oacute;n:",
     parse_lotm = "$$parse_lotm_by_rating$$",
     lotm_anchor_rating = "<b>Rating</b>",
     lotm_anchor_rating_de = "<b>Bewertung</b>",
     lotm_anchor_rating_ru = "<b>Рейтинг</b>",
-}
+    lotm_anchor_rating_es = "<b>Clasificaci&oacute;n</b>",
+}    
 
 html.lotm_chronological = {
     outfile = "lotm_chronological.html",
@@ -384,10 +428,12 @@ html.lotm_chronological = {
     kind_of_order = "<b>chronologically</b>",
     kind_of_order_de = "<b>chronologisch</b> geordnet",
     kind_of_order_ru = "<b>хронологии</b>",
+    kind_of_order_es = "<b>cronologicamente</b>",
     parse_lotm = "$$parse_lotm_chronological$$",
     lotm_anchor_month = "<b>Month</b>",
     lotm_anchor_month_de = "<b>Monat</b>",
     lotm_anchor_month_ru = "<b>Месяц</b>",
+    lotm_anchor_month_es = "<b>Mes</b>",
 }
 
 html.lotm_by_position = {
@@ -400,8 +446,10 @@ html.lotm_by_position = {
     kind_of_order = "by <b>position</b>",
     kind_of_order_de = "geordnet nach <b>Position</b>",
     kind_of_order_ru = "<b>размещению</b>",
+    kind_of_order_es = "<b>por posici&oacute;n</b>",
     parse_lotm = "$$parse_lotm_by_position$$",
     lotm_anchor_position = "<b>Position (1.01)</b>",
     lotm_anchor_position_de = "<b>Position (1.01)</b>",
     lotm_anchor_position_ru = "<b>Размещение (1.01)</b>",
+    lotm_anchor_position_es = "<b>Posici&oacute;n (1.01)</b>",
 }

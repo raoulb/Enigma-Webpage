@@ -52,8 +52,8 @@ function add_lang_to_filename(filename, lang)
     end
 end
 
--- translate_month returns a translated string of the month number
--- MONTH in the year YEAR. If year is nil, no year is appended.
+-- translate_month returns a translated string of the month and
+-- year in the DATE_TABLE. If year is nil, no year is appended.
 -- Data for translation is provided in output-files.lua.
 function translate_month(lang, date_table)
   if type(date_table) ~= "table" then
@@ -80,7 +80,11 @@ function translate_month(lang, date_table)
       year = year - 1900
     end
     year = string.format("%02d", year)
-    return month.." '"..year
+    if lang == "_es" then
+      return month.." del '"..year
+    else
+      return month.." '"..year
+    end
   end
 end
 
@@ -182,15 +186,15 @@ end
 -- Main Routine
 ----------------------------------------------------------------------
 
--- Get general data and LotM archive data
-
-dofile("input/output-files.lua")
-dofile("input/lotm/lotm_archive_data.lua")
-
 -- Add functions for parsing the news and LotM archive
 
 dofile("input/news/read_news.lua")
 dofile("input/lotm/read_lotm.lua")
+
+-- Get general data and LotM archive data
+
+dofile("input/output-files.lua")
+dofile("input/lotm/lotm_archive_data.lua")
 
 -- Autogenerate LotM-entries into the html-field (see read_lotm.lua)
 
