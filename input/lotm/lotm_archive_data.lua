@@ -80,11 +80,11 @@ lotm_archive_data[8] = {
 -- format: Level Title, current_rating, current_votes, additional text
 
 lotm_rating(    "Island Labyrinth",  9.25,   8,  "(1 up)")
-lotm_rating(  "Pneumatic Delivery",  7.58,  24,  "")
+lotm_rating(  "Pneumatic Delivery",  7.58,  12,  "")
 lotm_rating(    "The Aztec Temple",  9.14,   7,  "(1 down)")
 lotm_rating("Labyrinth of Puzzles",  8.92,  13,  "(1 up)")
 lotm_rating(           "Elaborate",  8.50,   8,  "")
-lotm_rating(             "Houdini",  8.86,  11,  "(1 down)")
+lotm_rating(             "Houdini",  8.86,  10,  "(1 down)")
 lotm_rating(           "Tool Time",  8.43,  14,  "")
 lotm_rating(         "Quadropolis",  9.40,   5,  "<b>(newcomer)</b>")
 
