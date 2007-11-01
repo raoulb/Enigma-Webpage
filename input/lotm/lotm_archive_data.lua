@@ -76,21 +76,31 @@ lotm_archive_data[8] = {
   position_num   = "6079"
 }
 
+lotm_archive_data[9] = {
+  date           = { month = 11, year = 2007 },
+  chronological  = 9,
+  name           = "Big Adventures",
+  author         = "Jon 'WB' Sneyers",
+  position       = "IV/100",
+  position_num   = "4100"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
 lotm_rating(    "Island Labyrinth",  9.25,   8,  "(1 up)")
-lotm_rating(  "Pneumatic Delivery",  7.58,  12,  "")
-lotm_rating(    "The Aztec Temple",  9.14,   7,  "(1 down)")
-lotm_rating("Labyrinth of Puzzles",  8.92,  13,  "(1 up)")
-lotm_rating(           "Elaborate",  8.50,   8,  "")
-lotm_rating(             "Houdini",  8.86,  10,  "(1 down)")
-lotm_rating(           "Tool Time",  8.43,  14,  "")
-lotm_rating(         "Quadropolis",  9.40,   5,  "<b>(newcomer)</b>")
+lotm_rating(  "Pneumatic Delivery",  7.77,  13,  "")
+lotm_rating(    "The Aztec Temple",  9.13,   8,  "")
+lotm_rating("Labyrinth of Puzzles",  8.92,  13,  "")
+lotm_rating(           "Elaborate",  8.63,   8,  "")
+lotm_rating(             "Houdini",  8.86,  10,  "")
+lotm_rating(           "Tool Time",  8.50,  16,  "")
+lotm_rating(         "Quadropolis",  9.25,   8,  "")
+lotm_rating(      "Big Adventures",  8.40,  15,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 8, year = 2007 }
+lotm_archive_data_from = { month = 9, year = 2007 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
