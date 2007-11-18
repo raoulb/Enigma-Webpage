@@ -5,7 +5,7 @@ html = {}
 --
 --  Enigma Lua Homepage Gluer - main program
 --  (c) 2007 Enigma Team
---  The Enigma Lua Homepage Gluer is licenced under GPL v.2 or above,
+--  The Enigma Lua Homepage Gluer is licensed under GPL v.2 or above,
 --  please find a copy of it here:
 --    http://www.gnu.org/licenses/gpl-2.0.html
 --  This program and some of its input files are loosely based on 
