@@ -85,22 +85,33 @@ lotm_archive_data[9] = {
   position_num   = "4100"
 }
 
+lotm_archive_data[10] = {
+  date           = { month = 12, year = 2007 },
+  chronological  = 10,
+  name           = "Temple of Gold",
+  author         = "J.Scott, R.Lamprecht",
+  position       = "VII/24",
+  position_num   = "7024"
+}
+
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.25,   8,  "(1 up)")
+lotm_rating(    "Island Labyrinth",  9.25,   8,  "")
 lotm_rating(  "Pneumatic Delivery",  7.77,  13,  "")
-lotm_rating(    "The Aztec Temple",  9.13,   8,  "")
+lotm_rating(    "The Aztec Temple",  9.13,   8,  "(1 up)")
 lotm_rating("Labyrinth of Puzzles",  8.92,  13,  "")
 lotm_rating(           "Elaborate",  8.63,   8,  "")
 lotm_rating(             "Houdini",  8.86,  10,  "")
 lotm_rating(           "Tool Time",  8.50,  16,  "")
-lotm_rating(         "Quadropolis",  9.25,   8,  "")
-lotm_rating(      "Big Adventures",  8.40,  15,  "<b>(newcomer)</b>")
+lotm_rating(         "Quadropolis",  9.11,   9,  "(2 down)")
+lotm_rating(      "Big Adventures",  8.33,  18,  "")
+lotm_rating(      "Temple of Gold",  9.00,   5,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 9, year = 2007 }
+lotm_archive_data_from = { month = 10, year = 2007 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
