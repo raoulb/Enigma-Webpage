@@ -453,3 +453,33 @@ html.lotm_by_position = {
     lotm_anchor_position_ru = "<b>Размещение (1.01)</b>",
     lotm_anchor_position_es = "<b>Posici&oacute;n (1.01)</b>",
 }
+
+--------------------------------------------------------------------------------
+
+----------------------------------------------------------------------
+-- Remaining Articles
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+-- End of Year Awards 2007
+----------------------------------------------------------------------
+html.eoya_2007 = {
+    outfile = "eoya_2007.html",
+    title = "End of Year Awards 2007",
+    title_de = "Jahresendauszeichnungen 2007",
+    --ru-- title_ru = "End of Year Awards 2007",
+    --es-- title_es = "End of Year Awards 2007",
+    rightcolumn = {},
+    body = {"articles/eoya_2007"}
+}    
+
+html.eoya_2007_statistics = {
+    outfile = "eoya_2007_statistics.html",
+    title = "End of Year Awards 2007 - Statistiken",
+    title_de = "Jahresendauszeichnungen 2007 - Statistiken",
+    --ru-- title_ru = "End of Year Awards 2007",
+    --es-- title_es = "End of Year Awards 2007",
+    rightcolumn = {},
+    body = {} --{"articles/eoya_2007_statistics"}
+}
+

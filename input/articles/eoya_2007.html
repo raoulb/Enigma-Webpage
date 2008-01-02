@@ -1,0 +1,235 @@
+<div class="lotm">
+<h2>End of Year Awards 2007</h2>
+
+<p>During the past month, we asked our dear readers to vote for the best levels Enigma has to offer, in five categories, and to answer some questions of a general nature. Many thanks to all those who took the time (and it was a long questionnaire after all) and gave us the answers we were longing for. Instead of a Level-of-the-Month-January article, we now present the results of this poll.</p>
+
+<h3>Results of the general questions</h3>
+
+<p>To maintain the tension, we start with the more general statistics: All in all, we registered 741 clicks; 73
+users and up to 40 votes per question, which gives us a broad insight in how our pro-gamers play. And slightly more than half of all voters requested the German questionnaire.</p>
+
+<p>Most people (42%) came to Enigma during version 0.8x. I remember that I was one of them, I found Enigma packed with SuSE, surfed the net and saw that Enigma 0.92 was already there.
+
+</p>
+
+<p>A remarkable majority of 69% of all players use Windows 2000 or XP, often together with some Linux. The preferred Linux versions are Debian and Ubuntu. Another fascinating aspect is that around twice as many gamers use Windows 95/98 or ME (6 of 39) than Vista (3 of 39). 3 of 39 gamers use Mac OS (&quot;Tiger&quot; 1 vs. &quot;Panther&quot; 2). One gamer uses (in addition to Windows) a completely different operating system, and I'm still wondering which system this might be ... Finally, 2 of 39 use a dualcore, and 1 uses a gp2x.
+Originally we thought, we could drop support for the older versions of Windows and Mac OS. But the poll showed us that these systems are still widely used today, far more than expected.</p>
+
+<p>A quite polarizing question focused on the difficulty of the levels. We got 37 answers to this question, and about the half (16) states that the difficulty is okay the way it is. However, 9 claimed the levels should be easier, while 3 gamers wanted them to be more difficult. The opinions on the scattering of the difficulty varied widely - 8 want it to be less scattered, 6 say it should be more so.  </p>
+
+<p>Next, we asked for people's favorite kind of levels, and here the community found some common ground: Large majorities (over 50%) prefer small, quickly playable puzzle levels and levels that explore new combinations and gaming objects. Some 38% like large adventure levels, and only a minority of 14% would like to see more dexterity-levels or levels with large, difficult puzzles. 32% would like to see more levels of &quot;other types&quot;, and unfortunately I'm unsure which types this might be. I'm surprised (and personally rather happy) about this outcome, though it shows that the &quot;Level of the Month&quot; is not necessarily the most popular.   
+Of course, all level authors are still free to program their favorite kind of levels - however these statistics might offer some direction.  </p>
+
+<p>We all know the importance of the mag-heut.net-forum to Enigma's community. This is reflected by the answers to our next question about the importance of  various information channels: From 1 to 5 points, the forum reached an average of 4.097, the homepage followed with 4.059. The other channels were of far less importance: the developer mailing list (2.86), private communication (2.75), other (2.4), announcement mailing list (2.14) and the yahoo oxyd group (1.58). This confirmed our assumptions.
+</p>
+
+<p>We also asked you for your opinions about the future development of Enigma, and asked you to rate several topics. The results were quite difficult to evaluate, particularly as 9 of the 34 votes did not include all topics - but as an overall result, many new levels should have the highest priority, followed by a level editor, new objects (remember that many gamers would like to see more levels to explore new objects and features) and bug-fixes. Of medium priority are the netplay mode, backstage info (incl. LotM), and a save-system for exploration. Far behind we found the urge for new graphics and sounds, for tournaments and ports of Enigma to other platforms. Surely, it's difficult to assign priorities to topics we would all like to have - however, I find these data quite interesting, though it will only have a minor influence on our short-termed plans.</p>
+
+<p>We also got lots of nice, encouraging comments, thanks to all of you for these! :-)</p>
+
+<div class="quote">
+Enigma 0.22 was finished on December 30, 2001: it was a small
+development snapshot I created for backup purposes, almost three
+months before the first public release.  The main reason Enigma 0.22
+never left my hard drive is that there wasn't anything to play yet: I
+hadn't even started to program the black marble and its interaction
+with the other game objects.  But the graphics for some game objects
+like dynamite, bombs and the umbrella were already in place (and
+haven't changed much since then) and there was one single ``level'' I
+had created for testing.  So, here it is, the <b>Level of the Year 2001</b>:
+
+</div>
+
+
+<div class="lotmpic">
+  <img src="$$imagedir$$/articles/eoya_2007_a.png" alt="Level of the Year 2001" border="0">
+  <div class="imagetitle">
+Level of the Year 2001</div>
+</div>
+
+<div class="quote">
+<nobr>For the technically</nobr> interested readers, here is the source file of this first level:
+
+<pre>(o2-create-world &quot;Test Level&quot; 40 40)
+
+(draw-stones &quot;st-brownie&quot; 5 5  1 1  5)
+(draw-stones &quot;st-brownie&quot; 11 11  1 -1  5)
+(draw-stones &quot;st-brownie&quot; 2 6  1 -1  5)
+(draw-items &quot;it-umbrella&quot; 3 3  1 0  10)
+(set-item &quot;it-document&quot; '(10 4) 'text &quot;There's treasure everywhere&quot;)
+
+(fill-floor &quot;fl-sand&quot; 0 0 40 40)
+(fill-floor &quot;fl-rock&quot; 5 5 8 8)
+
+(o2-set-actor 12 5 (o2-make-object &quot;ac-blackball&quot;))
+
+(set-stone &quot;st-grate1&quot;
+
+            (list 15 5 
+                  10 10
+                  10 11
+                  10 12))
+</pre>
+
+</div>
+
+
+<div class="quote">
+Today, almost six years later, choosing a Level of the Year is not
+quite that easy.  Since Enigma's humble beginnings in 2001, the number
+of levels has skyrocketed to more than 1000, and solving even half of
+them requires a lot of dedication.  That some players have
+nevertheless managed to finish more than 90% of all levels is
+therefore even more impressive!  And it appears unlikely that things
+will change: if the past six years are indicative of the future,
+Enigma aficionados will have to solve at least one level every two
+days just to keep up with the new ones...
+
+</div>
+
+
+<div class="quote">
+The levels that won this year's competition are clearly some of the
+finest levels available.  &quot;Find the proper key&quot;-style puzzles are
+ubiquitous in &quot;modern&quot; 3D games, but the Best One-Screener shows how
+to do it properly.  The Best Level Series contains two levels that
+were among the first levels to engage directly with the player,
+taunting and challenging him, which still create a very special
+gaming experience.  The winner in the Best Design category goes even
+further: the combination of an almost epic tale of mystery and
+adventure, hairy puzzles, and a beautiful visual design makes it one
+of the most challenging and rewarding Enigma levels of all time.  The
+two Funniest Levels are truly original in the way they turn the idea
+of a &quot;meditation&quot; level upside down, and the best Yin-Yang level is an
+old friend: it was one of the first levels that employed the Yin-Yang
+objects, and to this day it remains one of the best ones.
+
+
+</div>
+
+
+<div class="quote">
+The award for the &quot;Level of the Year 2007&quot; finally goes to an
+all-time favourite level created by one of Enigma's master level
+designers.  It's sprawling maze filled with puzzles, suprises and
+dangers, and solving it should definitely be on your list of New
+Year's resolutions, if it isn't already...</div>
+
+
+<div class="quote">
+This year's Level of the Year award is the first of its kind, and I
+truly hope that it will become a tradition in the small but vibrant
+Enigma community.  The creativity of Enigma's level designers
+continues to amaze me, and I think it is the true reason for the
+game's success and its lasting appeal.  And, let's not fool ourselves:
+it's really the levels that reward us, and not the other way around.
+
+</div>
+
+
+<div class="author">
+
+Daniel Heck</div>
+
+
+<p>And here they are:</p>
+
+<h3>Best Onescreener 2007: &quot;Doors Galore&quot; by Ray Wick</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_h.png" alt="Doors Galore, IV/9" border="0">
+
+Doors Galore, IV/9</p>
+
+<p>&quot;Doors Galore&quot; is one of the most surprising and &quot;oxydian&quot; levels in Enigma, utilizing standard objects in new and fascinating ways. With 3.89 of 5 possible points, Ray Wick got a remarkable winning margin over &quot;Plan Ahead&quot; (3.59) and &quot;Industrial Puzzles&quot; (3.50).</p>
+
+<h3>Best Levelseries 2007: &quot;Gods of Enigma&quot; by moonpearl</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_f.png" alt="Gods of Enigma, V/67" border="0">
+
+Gods of Enigma, V/67</p>
+
+<div class="lotmpic">
+  <img src="$$imagedir$$/articles/eoya_2007_g.png" alt="Gods of Enigma II, V/69" border="0">
+  <div class="imagetitle">
+
+Gods of Enigma II, V/69</div>
+</div>
+
+<p>The &quot;Gods of Enigma&quot; level series by moonpearl came to Enigma via the mag-heut.net forum and set out to conquer the hearts of Enigma's players, and absolutely successful: With the heighest score of all votes, 4.23 points, it outrivaled even the enormously high results of &quot;Little Puzzles &amp; Big Adventures&quot; (4.03), and the &quot;Seed Puzzles&quot; (3.70).</p>
+
+<h3><nobr>Best Design 2007: &quot;The Aztec Temple&quot; </nobr>by Dominik Lehmann</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_i.png" alt="The Aztec Temple, VI/100" border="0">
+
+The Aztec Temple, VI/100</p>
+
+<p>The design award was arranged among three giants:
+Yet, with 4.19 points, the Level of the Month May 2007 &quot;The Aztec Temple&quot; dwarfed &quot;Mountain Climbing&quot; (3.80) and &quot;Solar System&quot; (3.68), and established a new terrain for Enigma's levels: After space ships, forests, cities and dark caverns, from now on the jungle will be a new possible setting for our level authors.</p>
+
+<h3>Funniest Levels 2007: &quot;Advancing&quot; and &quot;Mountain Climbing&quot; by Joseph Dunne</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_d.png" alt="Advancing, VII/23" border="0">
+
+Advancing, VII/23</p>
+
+<div class="lotmpic">
+  <img src="$$imagedir$$/articles/eoya_2007_e.png" alt="Mountain Climbing, VII/22" border="0">
+  <div class="imagetitle">
+Mountain Climbing, VII/22</div>
+</div>
+
+<p>Joseph Dunne made the double strike: His grandious levels &quot;Advancing&quot; and &quot;Mountain Climbing&quot; both received 3.786 points out of 5, and show what Enigma can be as well: The unique design of his levels reflects the lightness of these levels' atmospheres, framed by not slightly that easy puzzles. He outwitted even &quot;Diving&quot; (3.55) and &quot;What's the Problem?&quot; (3.52).</p>
+
+<h3><nobr>Best Yin-Yang Level 2007: &quot;Teamwork&quot; </nobr>by Jacob Scott</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_c.png" alt="Teamwork, III/18" border="0">
+
+Teamwork, III/18</p>
+
+<p>&quot;Teamwork&quot; is the most accurate description of the best Yin-Yang level of Enigma: Jacob showed with this level of the great old ones, what cooperation really means, and with 3.83 points &quot;Teamwork&quot; still shows respect for its comrades &quot;Turnstiles for Two&quot; (3.75) and &quot;Manamana&quot; (3.64).</p>
+
+<p>And now, to the most important category:</p>
+
+<h3>Level of the Year 2007: &quot;Island Labyrinth&quot; by Jacob Scott!</h3>
+
+<p>
+  <img class="leftimage" src="$$imagedir$$/articles/eoya_2007_b.png" alt="Island Labyrinth, V/100" border="0">
+
+Island Labyrinth, V/100</p>
+
+<p>In the end, it really became exciting again, as four levels made large jumps up to become Level of the Year 2007: &quot;Quadropolis&quot; and &quot;Temple of Gold&quot; both overtook &quot;The Aztec Temple&quot;, and &quot;Houdini&quot; left &quot;Labyrinth of Puzzles&quot;, &quot;The Aztec Temple&quot; and even &quot;Temple of Gold&quot; behind itself - five levels between 9.10 and 9.25 points! But in the end, none of them was able to compete against &quot;Island Labyrinth&quot;: 5 of its 8 votes are the full 10 points, one 9, one 8 and one 7, which confirms Jacob Scott the undisputed title of Level Author of the Year 2007!</p>
+
+<h3>Coming to the end ...</h3>
+
+<p>This first round of our Level-of-the-Month series now amusingly ends the same way it started in March 2007: with &quot;Island Labyrinth&quot;. You may reread its article <a href="$$lotm_200703$$">here</a>. And at this point it's time for us to thank all those people who helped us over the last year with our articles: First of all to all contributors of comments; to 
+Alejandro Lacava,
+Ronald Lamprecht,
+Andreas Geldmacher,
+Hubai Andr&aacute;s,
+Tarim,
+Raoul Bourquin,
+illmind,
+Manfredi Carta,
+Manuel K&ouml;nig,
+Linda Mihalic,
+Mark Pulley,
+Lukas Sch&uuml;ller,
+Shoki,
+Spioni,
+Craven,
+and Daniel Heck.
+Greatest thanks go out to Clifford J. Tasner (Taztunes), who proofread every single article, and helped us with - believe it or not - five comments! He was always there when we needed one more contribution, and always on time. Great thanks also go to Yuriy, who takes the trouble to translate all our articles into Russian for our Russian friends, often within only 24 hours, and to Joe, who was the main author of July's article. Many thanks to all of you!</p>
+
+<p>We also want to thank our level authors, who wrote the ten terrific levels we were able to report on during the last year, and who contributed comments for our articles as well: Thank you, Jacob Scott, Manuel K&ouml;nig, Dominik Lehmann, Ronald Lamprecht, Barry and Lori Mead, Johannes Laire, Raoul Bourquin, and Jon 'WB' Sneyers. And thanks to the originator of the Enigma project, to Daniel Heck, as well as Meinolf Schneider, who gave birth to Esprit and Oxyd, our constant inspirations.</p>
+
+<p>You can find the current statistics of our ten LotM's in the <a href="$$lotm$$">LotM-archive</a>, and the exact statistical results of the poll will soon be online <a href="$$eoya_2007_statistics$$">here</a>.</p>
+
+<p>Happy New Year's Level,<br>
+<i>Andreas &amp;Harry</i></p>
+
+</div>
