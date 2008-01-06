@@ -475,11 +475,11 @@ html.eoya_2007 = {
 
 html.eoya_2007_statistics = {
     outfile = "eoya_2007_statistics.html",
-    title = "End of Year Awards 2007 - Statistiken",
-    title_de = "Jahresendauszeichnungen 2007 - Statistiken",
+    title = "End of Year Awards 2007 - Pure Statistics",
+    title_de = "Jahresendauszeichnungen 2007 - Pure Statistiken",
     --ru-- title_ru = "End of Year Awards 2007",
     --es-- title_es = "End of Year Awards 2007",
     rightcolumn = {},
-    body = {} --{"articles/eoya_2007_statistics"}
+    body = {"articles/eoya_2007_statistics"}
 }
 
