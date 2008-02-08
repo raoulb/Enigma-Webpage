@@ -94,24 +94,33 @@ lotm_archive_data[10] = {
   position_num   = "7024"
 }
 
+lotm_archive_data[11] = {
+  date           = { month = 2, year = 2008 },
+  chronological  = 11,
+  name           = "Puzzle Puzzles",
+  author         = "Raoul Bourquin",
+  position       = "VI/55",
+  position_num   = "6055"
+}
 
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.25,   8,  "")
-lotm_rating(  "Pneumatic Delivery",  7.86,  14,  "")
-lotm_rating(    "The Aztec Temple",  9.10,  10,  "(3 down)")
-lotm_rating("Labyrinth of Puzzles",  8.92,  13,  "(1 down)")
+lotm_rating(    "Island Labyrinth",  9.20,  10,  "")
+lotm_rating(  "Pneumatic Delivery",  8.07,  14,  "")
+lotm_rating(    "The Aztec Temple",  9.00,  11,  "")
+lotm_rating("Labyrinth of Puzzles",  8.81,  16,  "")
 lotm_rating(           "Elaborate",  8.63,   8,  "")
-lotm_rating(             "Houdini",  9.18,  10,  "(3 up)")
-lotm_rating(           "Tool Time",  8.60,  20,  "")
+lotm_rating(             "Houdini",  9.18,  10,  "")
+lotm_rating(           "Tool Time",  8.52,  21,  "")
 lotm_rating(         "Quadropolis",  9.20,  10,  "(1 up)")
-lotm_rating(      "Big Adventures",  8.43,  21,  "")
+lotm_rating(      "Big Adventures",  8.39,  23,  "")
 lotm_rating(      "Temple of Gold",  9.17,   6,  "")
+lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 12, year = 2007 }
+lotm_archive_data_from = { month = 1, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
