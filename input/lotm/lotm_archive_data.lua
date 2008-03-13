@@ -103,6 +103,15 @@ lotm_archive_data[11] = {
   position_num   = "6055"
 }
 
+lotm_archive_data[12] = {
+  date           = { month = 3, year = 2008 },
+  chronological  = 12,
+  name           = "Psycho Pushing",
+  author         = "Sven Siggelkow",
+  position       = "V/45",
+  position_num   = "5045"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
@@ -113,10 +122,11 @@ lotm_rating("Labyrinth of Puzzles",  8.81,  16,  "")
 lotm_rating(           "Elaborate",  8.63,   8,  "")
 lotm_rating(             "Houdini",  9.18,  10,  "")
 lotm_rating(           "Tool Time",  8.52,  21,  "")
-lotm_rating(         "Quadropolis",  9.20,  10,  "(1 up)")
+lotm_rating(         "Quadropolis",  9.20,  10,  "")
 lotm_rating(      "Big Adventures",  8.39,  23,  "")
 lotm_rating(      "Temple of Gold",  9.17,   6,  "")
-lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "<b>(newcomer)</b>")
+lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "")
+lotm_rating(      "Psycho Pushing",  8.38,   8,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
