@@ -483,3 +483,15 @@ html.eoya_2007_statistics = {
     body = {"articles/eoya_2007_statistics"}
 }
 
+----------------------------------------------------------------------
+-- April 2008 ("The Three Clouds")
+----------------------------------------------------------------------
+
+html.april_2008 = {
+    outfile = "april_2008.html",
+    title = "$$lotm_expansion$$: $$April$$ '08",
+    title_de = "$$lotm_expansion$$: $$April$$ '08",
+    title_ru = "$$lotm_expansion$$: $$April$$ '08",
+    rightcolumn = {},
+    body = {"articles/april_2008"},
+}    
