@@ -455,6 +455,13 @@ li ul {
     font-size: 90%;
 }
 
+.lotm .alter {
+    color: #eeeeee;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #aaaaaa;
+}
+
 .credits table td {
     padding-right: 1em;
 }

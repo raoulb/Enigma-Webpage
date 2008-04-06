@@ -112,6 +112,15 @@ lotm_archive_data[12] = {
   position_num   = "5045"
 }
 
+lotm_archive_data[13] = {
+  date           = { month = 4, year = 2008 },
+  chronological  = 13,
+  name           = "Turnstiles for Two",
+  author         = "Ronald Lamprecht",
+  position       = "VI/77",
+  position_num   = "6077"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
@@ -126,11 +135,12 @@ lotm_rating(         "Quadropolis",  9.20,  10,  "")
 lotm_rating(      "Big Adventures",  8.39,  23,  "")
 lotm_rating(      "Temple of Gold",  9.17,   6,  "")
 lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "")
-lotm_rating(      "Psycho Pushing",  8.38,   8,  "<b>(newcomer)</b>")
+lotm_rating(      "Psycho Pushing",  8.38,   8,  "")
+lotm_rating(  "Turnstiles for Two",  9.00,   5,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 1, year = 2008 }
+lotm_archive_data_from = { month = 2, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
