@@ -463,7 +463,7 @@ html.hp_archive = {
     outfile = "hp_archive.html",
     title = "Homepage Archive",
     title_de = "Homepage-Archiv",
-    --ru-- title_ru = "Homepage Archive",
+    title_ru = "Архив домашней страницы",
     --es-- title_es = "Homepage Archive",
     body = {"hp_archive", "top_news"}
 }
