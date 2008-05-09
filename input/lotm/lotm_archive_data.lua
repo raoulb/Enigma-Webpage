@@ -121,26 +121,36 @@ lotm_archive_data[13] = {
   position_num   = "6077"
 }
 
+lotm_archive_data[14] = {
+  date           = { month = 5, year = 2008 },
+  chronological  = 14,
+  name           = "Pleasure Garden",
+  author         = "Jacob Scott",
+  position       = "VI/95",
+  position_num   = "6095"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.20,  10,  "")
-lotm_rating(  "Pneumatic Delivery",  8.07,  14,  "")
+lotm_rating(    "Island Labyrinth",  9.27,  11,  "")
+lotm_rating(  "Pneumatic Delivery",  8.13,  15,  "")
 lotm_rating(    "The Aztec Temple",  9.00,  11,  "")
 lotm_rating("Labyrinth of Puzzles",  8.81,  16,  "")
-lotm_rating(           "Elaborate",  8.63,   8,  "")
-lotm_rating(             "Houdini",  9.18,  10,  "")
+lotm_rating(           "Elaborate",  8.44,   9,  "")
+lotm_rating(             "Houdini",  9.22,   7,  "")
 lotm_rating(           "Tool Time",  8.52,  21,  "")
 lotm_rating(         "Quadropolis",  9.20,  10,  "")
 lotm_rating(      "Big Adventures",  8.39,  23,  "")
-lotm_rating(      "Temple of Gold",  9.17,   6,  "")
+lotm_rating(      "Temple of Gold",  9.29,   7,  "")
 lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "")
-lotm_rating(      "Psycho Pushing",  8.38,   8,  "")
-lotm_rating(  "Turnstiles for Two",  9.00,   5,  "<b>(newcomer)</b>")
+lotm_rating(      "Psycho Pushing",  8.20,  10,  "")
+lotm_rating(  "Turnstiles for Two",  9.00,   4,  "")
+lotm_rating(     "Pleasure Garden",  8.36,  14,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 2, year = 2008 }
+lotm_archive_data_from = { month = 3, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
