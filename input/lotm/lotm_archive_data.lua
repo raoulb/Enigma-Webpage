@@ -130,11 +130,20 @@ lotm_archive_data[14] = {
   position_num   = "6095"
 }
 
+lotm_archive_data[15] = {
+  date           = { month = 6, year = 2008 },
+  chronological  = 15,
+  name           = "Block its way!",
+  author         = "Jon 'WB' Sneyers",
+  position       = "III/66",
+  position_num   = "3066"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.31,  13,  "(1 up)")
-lotm_rating(  "Pneumatic Delivery",  8.19,  16,  "(1 up)")
+lotm_rating(    "Island Labyrinth",  9.31,  13,  "")
+lotm_rating(  "Pneumatic Delivery",  8.19,  16,  "")
 lotm_rating(    "The Aztec Temple",  9.00,  11,  "")
 lotm_rating("Labyrinth of Puzzles",  8.82,  17,  "")
 lotm_rating(           "Elaborate",  8.50,  10,  "")
@@ -142,15 +151,16 @@ lotm_rating(             "Houdini",  9.28,   8,  "")
 lotm_rating(           "Tool Time",  8.52,  21,  "")
 lotm_rating(         "Quadropolis",  9.20,  10,  "")
 lotm_rating(      "Big Adventures",  8.42,  24,  "")
-lotm_rating(      "Temple of Gold",  9.29,   7,  "(1 down)")
+lotm_rating(      "Temple of Gold",  9.29,   7,  "")
 lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "")
-lotm_rating(      "Psycho Pushing",  8.18,  11,  "(1 down)")
+lotm_rating(      "Psycho Pushing",  8.18,  11,  "")
 lotm_rating(  "Turnstiles for Two",  9.00,   5,  "")
-lotm_rating(     "Pleasure Garden",  8.43,  14,  "<b>(newcomer)</b>")
+lotm_rating(     "Pleasure Garden",  8.43,  14,  "")
+lotm_rating(      "Block its way!",  8.00,  16,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 4, year = 2008 }
+lotm_archive_data_from = { month = 5, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 

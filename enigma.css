@@ -462,6 +462,18 @@ li ul {
     background-color: #aaaaaa;
 }
 
+.lotm .blue {
+    color: #0000ff;
+    font-style: italic;
+}
+
+.lotm .spoiler {
+    color: #aaaaaa;
+    background-color: #aaaaaa;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .credits table td {
     padding-right: 1em;
 }
