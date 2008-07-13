@@ -139,28 +139,38 @@ lotm_archive_data[15] = {
   position_num   = "3066"
 }
 
+lotm_archive_data[16] = {
+  date           = { month = 7, year = 2008 },
+  chronological  = 16,
+  name           = "Gods of Enigma II",
+  author         = "moonpearl",
+  position       = "V/69",
+  position_num   = "5069"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.31,  13,  "")
-lotm_rating(  "Pneumatic Delivery",  8.19,  16,  "")
+lotm_rating(    "Island Labyrinth",  9.31,  13,  "(1 down)")
+lotm_rating(  "Pneumatic Delivery",  8.19,  16,  "(1 up)")
 lotm_rating(    "The Aztec Temple",  9.00,  11,  "")
-lotm_rating("Labyrinth of Puzzles",  8.82,  17,  "")
-lotm_rating(           "Elaborate",  8.50,  10,  "")
+lotm_rating("Labyrinth of Puzzles",  8.82,  17,  "(1 up)")
+lotm_rating(           "Elaborate",  8.64,  11,  "(2 up)")
 lotm_rating(             "Houdini",  9.28,   8,  "")
-lotm_rating(           "Tool Time",  8.52,  21,  "")
+lotm_rating(           "Tool Time",  8.17,  23,  "(5 down)")
 lotm_rating(         "Quadropolis",  9.20,  10,  "")
-lotm_rating(      "Big Adventures",  8.42,  24,  "")
-lotm_rating(      "Temple of Gold",  9.29,   7,  "")
-lotm_rating(      "Puzzle Puzzles",  8.83,   6,  "")
-lotm_rating(      "Psycho Pushing",  8.18,  11,  "")
+lotm_rating(      "Big Adventures",  8.42,  24,  "(1 up)")
+lotm_rating(      "Temple of Gold",  9.38,   8,  "(1 up)")
+lotm_rating(      "Puzzle Puzzles",  8.63,   8,  "(2 down)")
+lotm_rating(      "Psycho Pushing",  8.18,  11,  "(1 up)")
 lotm_rating(  "Turnstiles for Two",  9.00,   5,  "")
-lotm_rating(     "Pleasure Garden",  8.43,  14,  "")
-lotm_rating(      "Block its way!",  8.00,  16,  "<b>(newcomer)</b>")
+lotm_rating(     "Pleasure Garden",  8.43,  14,  "(1 up)")
+lotm_rating(      "Block its way!",  8.00,  17,  "")
+lotm_rating(   "Gods of Enigma II",  8.35,  17,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 5, year = 2008 }
+lotm_archive_data_from = { month = 6, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
