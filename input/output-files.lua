@@ -60,6 +60,9 @@ general = {
     parse_news_2 = function(v,s,l0)
         return parse_text(v, parse_news(newsdir,l0), l0, "news2")
       end,
+    parse_level_archive = function(v,s,l0)
+        return parse_text(v, parse_level_archive(l0), l0, "level_archive")
+      end,
     parse_lotm_by_rating = function(v,s,l0)
         return parse_text(v, parse_lotm("current_rating", true, l0), l0,
           add_lang_to_filename(v.outfile, l0))
@@ -468,6 +471,15 @@ html.hp_archive = {
     body = {"hp_archive", "top_news"}
 }
 
+html.level_archive = {
+    outfile = "level_archive.html",
+    title = "Level Archive",
+    title_de = "Level-Archiv",
+    title_ru = "Level Archive",
+    --es-- title_es = "Level Archive",
+    body = {"level_archive"}
+}
+
 ----------------------------------------------------------------------
 -- Special Articles
 ----------------------------------------------------------------------
@@ -507,3 +519,17 @@ html.april_2008 = {
     rightcolumn = {},
     body = {"articles/april_2008"},
 }    
+
+----------------------------------------------------------------------
+-- The Apprentice
+----------------------------------------------------------------------
+
+html.apprentice_1 = {
+    outfile = "apprentice_1.html",
+    title = "The Apprentice, Part 1",
+    title_de = "Der Neuling, Teil 1",
+    title_ru = "The Apprentice, Part 1",
+    rightcolumn = {"articles/infobox_apprentice"},
+    body = {"articles/apprentice_1"},
+}    
+

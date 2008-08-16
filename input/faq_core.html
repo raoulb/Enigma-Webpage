@@ -109,7 +109,16 @@ if nothing happened?</a></h4>
 not noticed by the screen saver, and so it thinks you're not using
 your computer. You can either deactivate your screen saver, or try
 to toggle from window-mode to fullscreen-mode (see &quot;options
-menu&quot;).</p>
+menu&quot;).</p><p>
+If you are using GNOME, you can run this in a terminal window:
+<pre>
+gnome-screensaver-command --inhibit
+</pre>
+(it will not quit&mdash;just leave it running!) Then run Enigma. When you're done
+with Enigma, press Ctrl+C on the &quot;inhibit&quot; command, and your screen
+saver should be working again. Closing the terminal window should also stop the
+&quot;inhibit&quot; command.
+</p>
 
 
 <h4><a name="s2q2">Enigma doesn't start, it gives an error message of the kind

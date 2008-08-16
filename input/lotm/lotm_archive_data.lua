@@ -148,6 +148,92 @@ lotm_archive_data[16] = {
   position_num   = "5069"
 }
 
+-- Further levels standing data
+-- (no need to change these)
+
+level_archive_data = {}
+
+level_archive_data[1] = {
+  link = "$$eoya_2007$$#best_onescreener",
+  occasion = "Best Onescreener 2007",
+  name = "Doors Galore",
+  author = "Ray Wick",
+  position = "IV/9",
+  position_num = "4009"
+}
+
+level_archive_data[2] = {
+  link = "$$eoya_2007$$#best_levelseries",
+  occasion = "Best Levelseries 2007",
+  name = "Gods of Enigma",
+  author = "moonpearl",
+  position = "V/67",
+  position_num = "5067"
+}
+
+level_archive_data[3] = {
+  link = "$$eoya_2007$$#best_levelseries",
+  occasion = "Best Levelseries 2007",
+  name = "Gods of Enigma II",
+  author = "moonpearl",
+  position = "V/69",
+  position_num = "5069"
+}
+
+level_archive_data[4] = {
+  link = "$$eoya_2007$$#best_design",
+  occasion = "Best Design 2007",
+  name = "The Aztec Temple",
+  author = "Dominik Lehmann",
+  position = "VI/100",
+  position_num = "6100"
+}
+
+level_archive_data[5] = {
+  link = "$$eoya_2007$$#funniest_level",
+  occasion = "Funniest Level 2007",
+  name = "Advancing",
+  author = "Joseph Dunne",
+  position = "VII/23",
+  position_num = "7023"
+}
+
+level_archive_data[6] = {
+  link = "$$eoya_2007$$#funniest_level",
+  occasion = "Funniest Level 2007",
+  name = "Mountain Climbing",
+  author = "Joseph Dunne",
+  position = "VII/22",
+  position_num = "7022"
+}
+
+level_archive_data[7] = {
+  link = "$$eoya_2007$$#best_yinyang",
+  occasion = "Best Yin-Yang Level 2007",
+  name = "Teamwork",
+  author = "Jacob Scott",
+  position = "III/18",
+  position_num = "3018"
+}
+
+level_archive_data[8] = {
+  link = "$$eoya_2007$$#loty",
+  occasion = "Level of the Year 2007",
+  name = "Island Labyrinth",
+  author = "Jacob Scott",
+  position = "V/100",
+  position_num = "5100"
+}
+
+level_archive_data[9] = {
+  link = "$$april_2008$$",
+  occasion = "April Fool's Day Joke 2008",
+  name = "The Three Clouds",
+  author = "Kate Lever",
+  position = "VII+/25",
+  position_num = "7925"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 

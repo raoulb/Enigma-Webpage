@@ -101,6 +101,16 @@ Enigma автоматически обновит список мировых рекордов, если Вы выбрали такое пове
 не воспринимаются хранителем экрана, и поэтому он считает, что Вы не пользуетесь компьютером.
 Вы можете как отключить Ваш храниитель экрана, так и попытаться
 переключиться из оконного режима в полноэкранный (поищите &quot;меню настроек&quot;).</p>
+<p>
+If you are using GNOME, you can run this in a terminal window:
+<pre>
+gnome-screensaver-command --inhibit
+</pre>
+(it will not quit&mdash;just leave it running!) Then run Enigma. When you're done
+with Enigma, press Ctrl+C on the &quot;inhibit&quot; command, and your screen
+saver should be working again. Closing the terminal window should also stop the
+&quot;inhibit&quot; command.
+</p>
 
 
 <h4><a name="s2q2">Enigma не запускается, она выдает сообщение наподобие

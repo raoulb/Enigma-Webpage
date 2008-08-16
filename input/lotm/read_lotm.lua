@@ -94,3 +94,71 @@ function lotm_rating(title, rating, votes, addition)
   end
 end
 
+-- Returns a string representing NUMBER in Roman numerals.
+-- It works only for small numbers.
+function roman_numeral(number)
+  local rn = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI",
+              "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"} 
+  if rn[number] then
+    return rn[number]
+  else
+    error("roman_numeral: Number not defined. Please increase my 'rn'-table.")
+  end
+end
+
+-- Create the level article archive page.
+function parse_level_archive(lang)
+  -- Collect all data.
+  local ordered_data = {}
+  local function insert_by_occasion(entry)
+    local found = false
+    for _, first in ipairs(ordered_data) do
+      if first.position_num == entry.position_num then
+        found = true
+        first.full_link = first.full_link 
+          ..", <a href=\""..entry.link.."\">"..entry.occasion.."</a>"
+      end
+    end
+    if not found then
+      entry.full_link = "<a href=\""..entry.link.."\">"..entry.occasion.."</a>"
+      table.insert(ordered_data, entry)
+    end
+  end
+  for _, entry in pairs(lotm_archive_data) do
+    entry.occasion = "LotM "..entry.date.month.."/"..entry.date.year
+    entry.link = "$$"..lotm_macro_name(entry).."$$"
+    insert_by_occasion(entry)
+  end
+  for _, entry in pairs(level_archive_data) do
+    insert_by_occasion(entry)
+  end
+  -- Sort data.
+  table.sort(ordered_data, function (a, b)
+                             if a.position_num == b.position_num then
+                               return (a.occasion < b.occasion)
+                             else
+                               return (a.position_num < b.position_num)
+                             end
+                           end)
+  -- Create html.
+  local html_text = ""
+  local current_pack = -1
+  for _, entry in ipairs(ordered_data) do
+    local pack = math.floor(entry.position_num / 1000)
+    if pack ~= current_pack then
+      if current_pack ~= -1 then
+        html_text = html_text.."</ul>\n\n"
+      end
+      html_text = html_text.."<h4>Enigma "..roman_numeral(pack).."</h4>\n\n<ul>"
+      current_pack = pack
+    end
+    html_text = html_text.."<li>"..entry.position.."&nbsp;&nbsp;&nbsp;<i>"
+                  ..entry.name.."</i>&nbsp;&nbsp;&nbsp;"..entry.full_link.."</li>\n"
+  end
+  if current_pack ~= -1 then
+    html_text = html_text.."</ul>\n\n"
+  end
+  return html_text
+end
+
+
