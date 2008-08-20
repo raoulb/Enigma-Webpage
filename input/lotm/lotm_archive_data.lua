@@ -234,6 +234,15 @@ level_archive_data[9] = {
   position_num = "7925"
 }
 
+level_archive_data[10] = {
+  link = "$$level_andreas11$$",
+  occasion = "Independent Level Article 8/2008",
+  name = "Patterns of Impulse",
+  author = "Andreas Lochmann",
+  position = "IV/44",
+  position_num = "4044"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 

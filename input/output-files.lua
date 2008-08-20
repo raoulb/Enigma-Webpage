@@ -533,3 +533,16 @@ html.apprentice_1 = {
     body = {"articles/apprentice_1"},
 }    
 
+----------------------------------------------------------------------
+-- Independent Level Articles
+----------------------------------------------------------------------
+
+html.level_andreas11 = {
+    outfile = "level_andreas11.html",
+    title = "Patterns of Impulse",
+    title_de = "Patterns of Impulse",
+    title_ru = "Patterns of Impulse",
+    rightcolumn = {},
+    body = {"articles/level_andreas11"},
+}    
+
