@@ -475,7 +475,7 @@ html.level_archive = {
     outfile = "level_archive.html",
     title = "Level Archive",
     title_de = "Level-Archiv",
-    title_ru = "Level Archive",
+    title_ru = "Архив статей об уровнях",
     --es-- title_es = "Level Archive",
     body = {"level_archive"}
 }
@@ -528,7 +528,7 @@ html.apprentice_1 = {
     outfile = "apprentice_1.html",
     title = "The Apprentice, Part 1",
     title_de = "Der Neuling, Teil 1",
-    title_ru = "The Apprentice, Part 1",
+    title_ru = "Уроки мастерства, Часть 1",
     rightcolumn = {"articles/infobox_apprentice"},
     body = {"articles/apprentice_1"},
 }    
