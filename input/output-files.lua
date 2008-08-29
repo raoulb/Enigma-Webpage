@@ -521,17 +521,17 @@ html.april_2008 = {
 }    
 
 ----------------------------------------------------------------------
--- The Apprentice
+-- Marbleous!
 ----------------------------------------------------------------------
 
-html.apprentice_1 = {
-    outfile = "apprentice_1.html",
-    title = "The Apprentice, Part 1",
-    title_de = "Der Neuling, Teil 1",
+html.marbleous_1 = {
+    outfile = "marbleous_1.html",
+    title = "Marbleous! &mdash; The Novice, Part 1",
+    title_de = "Gemurmel! &mdash; Der Neuling, Teil 1",
     title_ru = "Уроки мастерства, Часть 1",
-    rightcolumn = {"articles/infobox_apprentice"},
-    body = {"articles/apprentice_1"},
-}    
+    rightcolumn = {"articles/infobox_marbleous"},
+    body = {"articles/marbleous_1"},
+}
 
 ----------------------------------------------------------------------
 -- Independent Level Articles
@@ -544,5 +544,5 @@ html.level_andreas11 = {
     title_ru = "Patterns of Impulse",
     rightcolumn = {},
     body = {"articles/level_andreas11"},
-}    
+}
 
