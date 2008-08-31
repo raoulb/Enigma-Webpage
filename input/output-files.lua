@@ -111,7 +111,7 @@ general = {
     
     lotm_history = "History of LotM",
     lotm_history_de = "Geschichte des LdM",
-    --ru-- lotm_history_ru = "History of LotM",
+    lotm_history_ru = "Хронология УМ",
     lotm_history_es = "Historia de LotM",
 
     lotm_current = function(v,s,l0)
@@ -528,7 +528,7 @@ html.marbleous_1 = {
     outfile = "marbleous_1.html",
     title = "Marbleous! &mdash; The Novice, Part 1",
     title_de = "Gemurmel! &mdash; Der Neuling, Teil 1",
-    title_ru = "Уроки мастерства, Часть 1",
+    title_ru = "Шарикология! &mdash; Новичкам на заметку, Часть 1",
     rightcolumn = {"articles/infobox_marbleous"},
     body = {"articles/marbleous_1"},
 }
