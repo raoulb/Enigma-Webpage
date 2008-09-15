@@ -433,6 +433,25 @@ li ul {
     font-size: 90%;
 }
 
+.lotmpicleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+.lotm .lotmpicleft img {
+    border-width: 4px;
+    border-color: #777;
+    padding-right: 0em;
+    margin-top: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.lotmpicleft .imagetitle {
+    font-size: 90%;
+}
+
 .lotm img {
     padding-right: 1em;
     padding-top: 0.5em;

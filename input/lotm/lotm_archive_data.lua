@@ -148,6 +148,15 @@ lotm_archive_data[16] = {
   position_num   = "5069"
 }
 
+lotm_archive_data[17] = {
+  date           = { month = 9, year = 2008 },
+  chronological  = 17,
+  name           = "River of Challenges",
+  author         = "Lukas Sch&uuml;ller",
+  position       = "VI/61",
+  position_num   = "6061"
+}
+
 -- Further levels standing data
 -- (no need to change these)
 
@@ -246,22 +255,23 @@ level_archive_data[10] = {
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.31,  13,  "(1 down)")
-lotm_rating(  "Pneumatic Delivery",  8.19,  16,  "(1 up)")
-lotm_rating(    "The Aztec Temple",  9.00,  11,  "")
-lotm_rating("Labyrinth of Puzzles",  8.82,  17,  "(1 up)")
-lotm_rating(           "Elaborate",  8.64,  11,  "(2 up)")
-lotm_rating(             "Houdini",  9.28,   8,  "")
-lotm_rating(           "Tool Time",  8.17,  23,  "(5 down)")
-lotm_rating(         "Quadropolis",  9.20,  10,  "")
-lotm_rating(      "Big Adventures",  8.42,  24,  "(1 up)")
-lotm_rating(      "Temple of Gold",  9.38,   8,  "(1 up)")
-lotm_rating(      "Puzzle Puzzles",  8.63,   8,  "(2 down)")
-lotm_rating(      "Psycho Pushing",  8.18,  11,  "(1 up)")
-lotm_rating(  "Turnstiles for Two",  9.00,   5,  "")
-lotm_rating(     "Pleasure Garden",  8.43,  14,  "(1 up)")
-lotm_rating(      "Block its way!",  8.00,  17,  "")
-lotm_rating(   "Gods of Enigma II",  8.35,  17,  "<b>(newcomer)</b>")
+lotm_rating(    "Island Labyrinth",  9.29,  14,  "")
+lotm_rating(  "Pneumatic Delivery",  8.18,  17,  "(1 down)")
+lotm_rating(    "The Aztec Temple",  9.08,  13,  "")
+lotm_rating("Labyrinth of Puzzles",  8.78,  18,  "(1 up)")
+lotm_rating(           "Elaborate",  8.62,  13,  "(1 up)")
+lotm_rating(             "Houdini",  9.24,   9,  "")
+lotm_rating(           "Tool Time",  8.21,  24,  "(2 up)")
+lotm_rating(         "Quadropolis",  9.18,  11,  "")
+lotm_rating(      "Big Adventures",  8.40,  25,  "(1 up)")
+lotm_rating(      "Temple of Gold",  9.30,  10,  "")
+lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "(2 down)")
+lotm_rating(      "Psycho Pushing",  8.17,  12,  "(1 down)")
+lotm_rating(  "Turnstiles for Two",  8.83,   6,  "(1 down)")
+lotm_rating(     "Pleasure Garden",  8.38,  16,  "(2 down)")
+lotm_rating(      "Block its way!",  8.00,  18,  "")
+lotm_rating(   "Gods of Enigma II",  8.39,  18,  "(1 up)")
+lotm_rating( "River of Challenges",  8.36,  11,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
