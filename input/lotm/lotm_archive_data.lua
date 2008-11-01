@@ -157,6 +157,15 @@ lotm_archive_data[17] = {
   position_num   = "6061"
 }
 
+lotm_archive_data[18] = {
+  date           = { month = 10, year = 2008 },
+  chronological  = 18,
+  name           = "Industrial Puzzles",
+  author         = "Raoul Bourquin",
+  position       = "VI/98",
+  position_num   = "6098"
+}
+
 -- Further levels standing data
 -- (no need to change these)
 
@@ -256,26 +265,27 @@ level_archive_data[10] = {
 -- format: Level Title, current_rating, current_votes, additional text
 
 lotm_rating(    "Island Labyrinth",  9.29,  14,  "")
-lotm_rating(  "Pneumatic Delivery",  8.18,  17,  "(1 down)")
+lotm_rating(  "Pneumatic Delivery",  8.22,  18,  "(1 up)")
 lotm_rating(    "The Aztec Temple",  9.08,  13,  "")
 lotm_rating("Labyrinth of Puzzles",  8.78,  18,  "(1 up)")
 lotm_rating(           "Elaborate",  8.62,  13,  "(1 up)")
 lotm_rating(             "Houdini",  9.24,   9,  "")
-lotm_rating(           "Tool Time",  8.21,  24,  "(2 up)")
-lotm_rating(         "Quadropolis",  9.18,  11,  "")
+lotm_rating(           "Tool Time",  8.21,  24,  "(1 down)")
+lotm_rating(         "Quadropolis",  9.17,  12,  "")
 lotm_rating(      "Big Adventures",  8.40,  25,  "(1 up)")
 lotm_rating(      "Temple of Gold",  9.30,  10,  "")
-lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "(2 down)")
-lotm_rating(      "Psycho Pushing",  8.17,  12,  "(1 down)")
-lotm_rating(  "Turnstiles for Two",  8.83,   6,  "(1 down)")
-lotm_rating(     "Pleasure Garden",  8.38,  16,  "(2 down)")
-lotm_rating(      "Block its way!",  8.00,  18,  "")
+lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "(1 up)")
+lotm_rating(      "Psycho Pushing",  8.17,  12,  "")
+lotm_rating(  "Turnstiles for Two",  8.29,   7,  "(7 down)")
+lotm_rating(     "Pleasure Garden",  8.38,  16,  "(1 up)")
+lotm_rating(      "Block its way!",  8.00,  19,  "")
 lotm_rating(   "Gods of Enigma II",  8.39,  18,  "(1 up)")
-lotm_rating( "River of Challenges",  8.36,  11,  "<b>(newcomer)</b>")
+lotm_rating( "River of Challenges",  8.36,  11,  "(1 up)")
+lotm_rating(  "Industrial Puzzles",  8.55,  11,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 6, year = 2008 }
+lotm_archive_data_from = { month = 9, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
