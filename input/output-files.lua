@@ -542,6 +542,15 @@ html.marbleous_2 = {
     body = {"articles/marbleous_2"},
 }
 
+html.marbleous_3 = {
+    outfile = "marbleous_3.html",
+    title = "Marbleous! &mdash; The Novice, Part 3",
+    title_de = "Gemurmel! &mdash; Der Neuling, Teil 3",
+    title_ru = "Шарикология! &mdash; Новичкам на заметку, Часть 3",
+    rightcolumn = {"articles/infobox_marbleous"},
+    body = {"articles/marbleous_3"},
+}
+
 ----------------------------------------------------------------------
 -- Independent Level Articles
 ----------------------------------------------------------------------
