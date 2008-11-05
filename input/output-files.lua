@@ -38,7 +38,7 @@ general = {
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
-    manual_ru = "manual/enigma_ru.html", -- existing?
+    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
