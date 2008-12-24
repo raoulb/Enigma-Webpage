@@ -166,6 +166,15 @@ lotm_archive_data[18] = {
   position_num   = "6098"
 }
 
+lotm_archive_data[19] = {
+  date           = { month = 12, year = 2008 },
+  chronological  = 19,
+  name           = "Procrustes",
+  author         = "Andreas Lochmann",
+  position       = "VI/36",
+  position_num   = "6036"
+}
+
 -- Further levels standing data
 -- (no need to change these)
 
@@ -264,28 +273,29 @@ level_archive_data[10] = {
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.29,  14,  "")
-lotm_rating(  "Pneumatic Delivery",  8.22,  18,  "(1 up)")
+lotm_rating(    "Island Labyrinth",  9.29,  14,  "(1 down)")
+lotm_rating(  "Pneumatic Delivery",  8.22,  18,  "")
 lotm_rating(    "The Aztec Temple",  9.08,  13,  "")
-lotm_rating("Labyrinth of Puzzles",  8.78,  18,  "(1 up)")
-lotm_rating(           "Elaborate",  8.62,  13,  "(1 up)")
-lotm_rating(             "Houdini",  9.24,   9,  "")
-lotm_rating(           "Tool Time",  8.21,  24,  "(1 down)")
+lotm_rating("Labyrinth of Puzzles",  8.78,  18,  "")
+lotm_rating(           "Elaborate",  8.62,  13,  "")
+lotm_rating(             "Houdini",  9.36,  11,  "(2 up)")
+lotm_rating(           "Tool Time",  8.21,  24,  "")
 lotm_rating(         "Quadropolis",  9.17,  12,  "")
-lotm_rating(      "Big Adventures",  8.40,  25,  "(1 up)")
-lotm_rating(      "Temple of Gold",  9.30,  10,  "")
-lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "(1 up)")
+lotm_rating(      "Big Adventures",  8.40,  25,  "(1 down)")
+lotm_rating(      "Temple of Gold",  9.30,  10,  "(1 down)")
+lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "")
 lotm_rating(      "Psycho Pushing",  8.17,  12,  "")
-lotm_rating(  "Turnstiles for Two",  8.29,   7,  "(7 down)")
-lotm_rating(     "Pleasure Garden",  8.38,  16,  "(1 up)")
+lotm_rating(  "Turnstiles for Two",  8.29,   7,  "")
+lotm_rating(     "Pleasure Garden",  8.38,  16,  "")
 lotm_rating(      "Block its way!",  8.00,  19,  "")
-lotm_rating(   "Gods of Enigma II",  8.39,  18,  "(1 up)")
-lotm_rating( "River of Challenges",  8.36,  11,  "(1 up)")
-lotm_rating(  "Industrial Puzzles",  8.55,  11,  "<b>(newcomer)</b>")
+lotm_rating(   "Gods of Enigma II",  8.42,  19,  "(1 up)")
+lotm_rating( "River of Challenges",  8.36,  11,  "")
+lotm_rating(  "Industrial Puzzles",  8.55,  11,  "")
+lotm_rating(          "Procrustes",  7.75,  16,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 
-lotm_archive_data_from = { month = 9, year = 2008 }
+lotm_archive_data_from = { month = 10, year = 2008 }
 
 lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
 
