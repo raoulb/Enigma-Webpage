@@ -180,6 +180,8 @@ lotm_archive_data[19] = {
 
 level_archive_data = {}
 
+-- EoYA 2007
+
 level_archive_data[1] = {
   link = "$$eoya_2007$$#best_onescreener",
   occasion = "Best Onescreener 2007",
@@ -252,6 +254,8 @@ level_archive_data[8] = {
   position_num = "5100"
 }
 
+-- during 2008
+
 level_archive_data[9] = {
   link = "$$april_2008$$",
   occasion = "April Fool's Day Joke 2008",
@@ -270,28 +274,84 @@ level_archive_data[10] = {
   position_num = "4044"
 }
 
+-- EoYA 2008
+
+level_archive_data[11] = {
+  link = "$$eoya_2008$$#best_meditation",
+  occasion = "Best Meditation 2008",
+  name = "Mountain Climbing",
+  author = "Joseph Dunne",
+  position = "VII/22",
+  position_num = "7022"
+}
+
+level_archive_data[12] = {
+  link = "$$eoya_2008$$#best_action_level",
+  occasion = "Best Action Level 2008",
+  name = "Diving",
+  author = "Joona Laire",
+  position = "VII/2",
+  position_num = "7002"
+}
+
+level_archive_data[13] = {
+  link = "$$eoya_2008$$#best_onescreener",
+  occasion = "Best Onescreener 2008",
+  name = "Industrial Puzzles",
+  author = "Raoul Bourquin",
+  position = "VI/98",
+  position_num = "6098"
+}
+
+level_archive_data[14] = {
+  link = "$$eoya_2008$$#best_design",
+  occasion = "Best Design 2008",
+  name = "Temple of Gold",
+  author = "Jacob Scott",
+  position = "VII/24",
+  position_num = "7024"
+}
+
+level_archive_data[15] = {
+  link = "$$eoya_2008$$#funniest_level",
+  occasion = "Funniest Level 2008",
+  name = "What's the Problem?",
+  author = "Sven Siggelkow",
+  position = "IV/49",
+  position_num = "4049"
+}
+
+level_archive_data[16] = {
+  link = "$$eoya_2008$$#loty",
+  occasion = "Level of the Year 2008",
+  name = "Houdini",
+  author = "Ronald Lamprecht",
+  position = "VI/74",
+  position_num = "6074"
+}
+
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.29,  14,  "(1 down)")
+lotm_rating(    "Island Labyrinth",  9.27,  15,  "(1 up)")
 lotm_rating(  "Pneumatic Delivery",  8.22,  18,  "")
-lotm_rating(    "The Aztec Temple",  9.08,  13,  "")
-lotm_rating("Labyrinth of Puzzles",  8.78,  18,  "")
-lotm_rating(           "Elaborate",  8.62,  13,  "")
-lotm_rating(             "Houdini",  9.36,  11,  "(2 up)")
+lotm_rating(    "The Aztec Temple",  8.87,  15,  "")
+lotm_rating("Labyrinth of Puzzles",  8.74,  19,  "")
+lotm_rating(           "Elaborate",  8.64,  14,  "")
+lotm_rating(             "Houdini",  9.36,  11,  "")
 lotm_rating(           "Tool Time",  8.21,  24,  "")
 lotm_rating(         "Quadropolis",  9.17,  12,  "")
-lotm_rating(      "Big Adventures",  8.40,  25,  "(1 down)")
-lotm_rating(      "Temple of Gold",  9.30,  10,  "(1 down)")
-lotm_rating(      "Puzzle Puzzles",  8.56,   9,  "")
+lotm_rating(      "Big Adventures",  8.40,  25,  "")
+lotm_rating(      "Temple of Gold",  9.27,  11,  "")
+lotm_rating(      "Puzzle Puzzles",  8.60,  10,  "")
 lotm_rating(      "Psycho Pushing",  8.17,  12,  "")
 lotm_rating(  "Turnstiles for Two",  8.29,   7,  "")
 lotm_rating(     "Pleasure Garden",  8.38,  16,  "")
-lotm_rating(      "Block its way!",  8.00,  19,  "")
-lotm_rating(   "Gods of Enigma II",  8.42,  19,  "(1 up)")
+lotm_rating(      "Block its way!",  7.85,  20,  "")
+lotm_rating(   "Gods of Enigma II",  8.42,  19,  "")
 lotm_rating( "River of Challenges",  8.36,  11,  "")
 lotm_rating(  "Industrial Puzzles",  8.55,  11,  "")
-lotm_rating(          "Procrustes",  7.75,  16,  "<b>(newcomer)</b>")
+lotm_rating(          "Procrustes",  7.71,  17,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 

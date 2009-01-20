@@ -508,6 +508,29 @@ html.eoya_2007_statistics = {
 }
 
 ----------------------------------------------------------------------
+-- End of Year Awards 2008
+----------------------------------------------------------------------
+html.eoya_2008 = {
+    outfile = "eoya_2008.html",
+    title = "End of Year Awards 2008",
+    title_de = "Jahresendauszeichnungen 2008",
+    title_ru = "Награды конца года 2008",
+    --es-- title_es = "End of Year Awards 2008",
+    rightcolumn = {},
+    body = {"articles/eoya_2008"}
+}    
+
+html.eoya_2008_statistics = {
+    outfile = "eoya_2008_statistics.html",
+    title = "End of Year Awards 2008 - Pure Statistics",
+    title_de = "Jahresendauszeichnungen 2008 - Pure Statistiken",
+    title_ru = "Награды конца года 2008 - Полная статистика",
+    --es-- title_es = "End of Year Awards 2008",
+    rightcolumn = {},
+    body = {"articles/eoya_2008_statistics"}
+}
+
+----------------------------------------------------------------------
 -- April 2008 ("The Three Clouds")
 ----------------------------------------------------------------------
 
