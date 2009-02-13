@@ -38,9 +38,10 @@ general = {
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
-    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)
+    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)    
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
+    trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
     disclaimer_de = "http://www.disclaimer.de/disclaimer.htm#1",
     gpl = "http://www.gnu.org/licenses/licenses.html#GPL",
@@ -572,6 +573,15 @@ html.marbleous_3 = {
     title_ru = "Шарикология! &mdash; Новичкам на заметку, Часть 3",
     rightcolumn = {"articles/infobox_marbleous"},
     body = {"articles/marbleous_3"},
+}
+
+html.marbleous_4 = {
+    outfile = "marbleous_4.html",
+    title = "Marbleous! &mdash; The Novice, Part 4",
+    title_de = "Gemurmel! &mdash; Der Neuling, Teil 4",
+    title_ru = "Шарикология! &mdash; Новичкам на заметку, Часть 4",
+    rightcolumn = {"articles/infobox_marbleous"},
+    body = {"articles/marbleous_4"},
 }
 
 ----------------------------------------------------------------------
