@@ -144,8 +144,8 @@ general = {
     right_quot    = "&rdquo;",
     left_quot_de  = "&bdquo;",
     right_quot_de = "&ldquo;",
-    left_quot_ru  = "&quot;",
-    right_quot_ru = "&quot;",
+    left_quot_ru  = "&laquo;",
+    right_quot_ru = "&raquo;",
 
     imagedir    = "images",
     imagedir_de = "images",
