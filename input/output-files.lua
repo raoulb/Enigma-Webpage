@@ -6,7 +6,7 @@ directory = "input/"
 newsdir = "input/news/"
 suffix = ".html"
 
-language_list = {"", "_de", "_ru", "_es"} -- "_fr"
+language_list = {"", "_de", "_ru"} -- "_es", "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
@@ -139,6 +139,14 @@ general = {
     October   = function(v,s,l0)  return  translate_month(l0, {month=10})  end,
     November  = function(v,s,l0)  return  translate_month(l0, {month=11})  end,
     December  = function(v,s,l0)  return  translate_month(l0, {month=12})  end,
+
+    left_quot     = "&ldquo;",
+    right_quot    = "&rdquo;",
+    left_quot_de  = "&bdquo;",
+    right_quot_de = "&ldquo;",
+    left_quot_ru  = "&quot;",
+    right_quot_ru = "&quot;",
+
     imagedir    = "images",
     imagedir_de = "images",
     imagedir_fr = "images",

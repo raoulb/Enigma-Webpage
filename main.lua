@@ -2,6 +2,8 @@
 general = {}
 html = {}
 
+verbose = false
+
 --
 --  Enigma Lua Homepage Gluer - main program
 --  (c) 2007 Enigma Team
@@ -108,7 +110,7 @@ end
 ----------------------------------------------------------------------
 -- Parsing and Macro-Replacing - The Program's Recursive Heartbeat
 ----------------------------------------------------------------------
- 
+
 function parse_text(v, text, lang, context)
     return string.gsub(text, "%$%$(.-)%$%$", function (s)
         local process = v[s] or general[s]
@@ -128,8 +130,12 @@ function parse_text(v, text, lang, context)
             if type(process_with_lang) == "string" then
                 return parse_text(v, process_with_lang, lang, context)
             else
-                scribble("  Missing entry "..s..lang.." for "
-                         ..context..", using fallback.\n")
+                if verbose then
+                    scribble("  Missing entry "..s..lang.." for "
+                             ..context..", using fallback.\n")
+                else
+                    scribble("  Missing entry "..s..lang..", using fallback.\n")
+                end
                 return parse_text(v, process, lang, context)
             end
         end
@@ -141,7 +147,7 @@ function parse_text(v, text, lang, context)
             for j,f in pairs(process) do
                 -- remove slash for name- and id-tags
                 fn = string.gsub(f, "/", "_")
-                if f ~= fn then
+                if (f ~= fn) and verbose then
                     scribble("  Note: changed anchors for "..f.." to "..fn..
                              ". Please correct href's.\n")
                 end
@@ -152,6 +158,23 @@ function parse_text(v, text, lang, context)
         end
         error("Error during evaluation of "..context..", "..s.." (type "..stype..").")
     end)
+end
+
+function replace_quots(v, text, lang, context)
+    local is_left_quot = true
+    local result = string.gsub(text, "&quot;", function (s)
+        if is_left_quot then
+            is_left_quot = not is_left_quot
+            return "$$left_quot$$"
+        else
+            is_left_quot = not is_left_quot
+            return "$$right_quot$$"
+        end
+    end)
+    if not is_left_quot then
+        scribble("  Missing quotation mark in "..context..".\n")
+    end
+    return result
 end
 
 function parse_html(v, infilename0, lang)
@@ -167,19 +190,23 @@ function parse_html(v, infilename0, lang)
         infile = io.open(infilename0, "r")
         if infile == nil then
             error("Error: Neither "..infilename.." nor "..infilename0.." exist.")
-        else        
-            scribble ("No file "..infilename..", using fallback "..infilename0.."...\n")
+        else
+            if verbose then
+                scribble ("No file "..infilename..", using fallback "..infilename0.."...\n")
+            end
             infilename = infilename0
         end
     else
-        scribble ("Reading input from "..infilename.." ...\n")
+        if verbose then
+            scribble ("Reading input from "..infilename.." ...\n")
+        end
     end
 
     -- Read and process infile
 
     local body = infile:read("*a")
     infile:close()
-    return parse_text(v, body, lang, infilename)
+    return parse_text(v, replace_quots(v, body, lang, infilename), lang, infilename)
 end
 
 ----------------------------------------------------------------------

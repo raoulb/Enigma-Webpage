@@ -7,17 +7,24 @@
 -- numbers: an array with the issue-numbers to print
 --          it will be processed from the end to the beginning!
 --
+-- A global variable "verbose" is assumed to be true or false/nil.
+-- It determines the verbosity of the script's messages.
+--
 function write_news_page(dir, outname, lang0, num_array)
     local lang = lang0
     if lang == "" then
         lang = "_en"
     end
-    print("INFO: Lang is "..lang)
+    if verbose then
+        print("INFO: Lang is "..lang)
+    end
     local outfilename = outname
     local outfile = io.open (outfilename, "w")
     outfile:write(parse_news(dir, lang0, num_array).."\n")
     outfile:close()
-    print("INFO: Writing news page(s) finished.")
+    if verbose then
+       print("INFO: Writing news page(s) finished.")
+    end
     return 0
 end
 --------------------------------------------------------------------------------
@@ -43,7 +50,9 @@ function parse_this_news(dir, n, lang)
     local the_content = ""
 
     local newsfilename = "news_issue"..tostring(n)..lang..".html"
-    print("INFO: Parsing "..newsfilename)
+    if verbose then
+        print("INFO: Parsing "..newsfilename)
+    end
     newsfile = io.open (dir..newsfilename, "r")
 
     if newsfile == nil then -- requested newsfile DOES NOT exist!
@@ -87,7 +96,9 @@ function determine_num_news(dir)
         newsfile = io.open (dir..newsfilename, "r")
     until newsfile == nil 
 
-    print("INFO: "..tostring(num_news-1).." english Newsfiles found")
+    if verbose then
+        print("INFO: "..tostring(num_news-1).." english Newsfiles found")
+    end
     -- We have count one to much!
     table.remove(num_array)
 
