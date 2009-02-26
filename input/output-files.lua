@@ -56,24 +56,24 @@ general = {
     body = {},
     bottombar = {"bottombar"},
     parse_news_1 = function(v,s,l0)
-        return parse_text(v, parse_news(newsdir,l0,newsfield), l0, "news1")
+        return parse_text_quots(v, parse_news(newsdir,l0,newsfield), l0, "news1")
       end,
     parse_news_2 = function(v,s,l0)
-        return parse_text(v, parse_news(newsdir,l0), l0, "news2")
+        return parse_text_quots(v, parse_news(newsdir,l0), l0, "news2")
       end,
     parse_level_archive = function(v,s,l0)
-        return parse_text(v, parse_level_archive(l0), l0, "level_archive")
+        return parse_text_quots(v, parse_level_archive(l0), l0, "level_archive")
       end,
     parse_lotm_by_rating = function(v,s,l0)
-        return parse_text(v, parse_lotm("current_rating", true, l0), l0,
+        return parse_text_quots(v, parse_lotm("current_rating", true, l0), l0,
           add_lang_to_filename(v.outfile, l0))
       end,
     parse_lotm_chronological = function(v,s,l0)
-        return parse_text(v, parse_lotm("chronological", false, l0), l0,
+        return parse_text_quots(v, parse_lotm("chronological", false, l0), l0,
           add_lang_to_filename(v.outfile, l0))
       end,
     parse_lotm_by_position = function(v,s,l0)
-        return parse_text(v, parse_lotm("position_num", false, l0), l0,
+        return parse_text_quots(v, parse_lotm("position_num", false, l0), l0,
           add_lang_to_filename(v.outfile, l0))
     end,
     lotm_archive_data_from = function(v,s,l0)
@@ -116,15 +116,15 @@ general = {
     lotm_history_es = "Historia de LotM",
 
     lotm_current = function(v,s,l0)
-        return parse_text(v, "$$"..lotm_macro_name(lotm_current).."$$", l0,
+        return parse_text_quots(v, "$$"..lotm_macro_name(lotm_current).."$$", l0,
           "lotm_current")
       end,
     lotm_current_image = function(v,s,l0)
-        return parse_text(v, "$$imagedir$$/lotm/"
+        return parse_text_quots(v, "$$imagedir$$/lotm/"
           ..lotm_macro_name(lotm_current)..".png", l0, "lotm_current_image")
       end,
     lotm_current_name = function(v,s,l0)
-        return parse_text(v, lotm_current.name, l0, "lotm_current_name")
+        return parse_text_quots(v, lotm_current.name, l0, "lotm_current_name")
       end,
 
     January   = function(v,s,l0)  return  translate_month(l0, {month=1})  end,

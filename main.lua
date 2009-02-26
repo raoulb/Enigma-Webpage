@@ -177,6 +177,10 @@ function replace_quots(v, text, lang, context)
     return result
 end
 
+function parse_text_quots(v, text, lang, context)
+    return parse_text(v, replace_quots(v, text, lang, context), lang, context)
+end
+
 function parse_html(v, infilename0, lang)
     if not infilename0 then
         error("Error during creation of "..v.title..": Expected filename, got nil.")
@@ -206,7 +210,7 @@ function parse_html(v, infilename0, lang)
 
     local body = infile:read("*a")
     infile:close()
-    return parse_text(v, replace_quots(v, body, lang, infilename), lang, infilename)
+    return parse_text_quots(v, body, lang, infilename)
 end
 
 ----------------------------------------------------------------------
