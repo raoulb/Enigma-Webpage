@@ -175,6 +175,15 @@ lotm_archive_data[19] = {
   position_num   = "6036"
 }
 
+lotm_archive_data[20] = {
+  date           = { month = 4, year = 2009 },
+  chronological  = 20,
+  name           = "Plan Ahead",
+  author         = "Jacob Scott",
+  position       = "V/21",
+  position_num   = "5021"
+}
+
 -- Further levels standing data
 -- (no need to change these)
 
@@ -333,25 +342,26 @@ level_archive_data[16] = {
 -- LotM variable data
 -- format: Level Title, current_rating, current_votes, additional text
 
-lotm_rating(    "Island Labyrinth",  9.27,  15,  "(1 up)")
-lotm_rating(  "Pneumatic Delivery",  8.22,  18,  "")
-lotm_rating(    "The Aztec Temple",  8.87,  15,  "")
+lotm_rating(    "Island Labyrinth",  9.31,  16,  "(1 down)")
+lotm_rating(  "Pneumatic Delivery",  8.32,  19,  "(1 up)")
+lotm_rating(    "The Aztec Temple",  8.88,  16,  "")
 lotm_rating("Labyrinth of Puzzles",  8.74,  19,  "")
-lotm_rating(           "Elaborate",  8.64,  14,  "")
-lotm_rating(             "Houdini",  9.36,  11,  "")
-lotm_rating(           "Tool Time",  8.21,  24,  "")
+lotm_rating(           "Elaborate",  8.73,  15,  "")
+lotm_rating(             "Houdini",  9.33,  12,  "(1 down)")
+lotm_rating(           "Tool Time",  8.16,  25,  "")
 lotm_rating(         "Quadropolis",  9.17,  12,  "")
-lotm_rating(      "Big Adventures",  8.40,  25,  "")
-lotm_rating(      "Temple of Gold",  9.27,  11,  "")
-lotm_rating(      "Puzzle Puzzles",  8.60,  10,  "")
-lotm_rating(      "Psycho Pushing",  8.17,  12,  "")
-lotm_rating(  "Turnstiles for Two",  8.29,   7,  "")
-lotm_rating(     "Pleasure Garden",  8.38,  16,  "")
-lotm_rating(      "Block its way!",  7.85,  20,  "")
-lotm_rating(   "Gods of Enigma II",  8.42,  19,  "")
-lotm_rating( "River of Challenges",  8.36,  11,  "")
-lotm_rating(  "Industrial Puzzles",  8.55,  11,  "")
-lotm_rating(          "Procrustes",  7.71,  17,  "<b>(newcomer)</b>")
+lotm_rating(      "Big Adventures",  8.37,  27,  "")
+lotm_rating(      "Temple of Gold",  9.43,  14,  "(1 up)")
+lotm_rating(      "Puzzle Puzzles",  8.64,  11,  "(1 down)")
+lotm_rating(      "Psycho Pushing",  8.15,  13,  "")
+lotm_rating(  "Turnstiles for Two",  8.29,   7,  "(1 down)")
+lotm_rating(     "Pleasure Garden",  8.38,  16,  "(2 up)")
+lotm_rating(      "Block its way!",  7.82,  22,  "")
+lotm_rating(   "Gods of Enigma II",  8.35,  20,  "(2 down)")
+lotm_rating( "River of Challenges",  8.33,  12,  "")
+lotm_rating(  "Industrial Puzzles",  8.67,  12,  "(1 up)")
+lotm_rating(          "Procrustes",  7.74,  19,  "")
+lotm_rating(          "Plan Ahead",  8.00,  20,  "<b>(newcomer)</b>")
 
 -- Don't forget to adjust the archive dates:
 

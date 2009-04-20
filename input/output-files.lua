@@ -605,3 +605,16 @@ html.level_andreas11 = {
     body = {"articles/level_andreas11"},
 }
 
+----------------------------------------------------------------------
+-- LotM 200905 Yang
+----------------------------------------------------------------------
+
+html.lotm_200904_yang = {
+    outfile = "lotm_200904_yang.html",
+    title = "$$lotm_expansion$$: $$April$$ '09",
+    title_de = "$$lotm_expansion$$: $$April$$ '09",
+    title_ru = "$$lotm_expansion$$: $$April$$ '09",
+    rightcolumn = {},
+    body = {"lotm/lotm_200904_yang"},
+}    
+
