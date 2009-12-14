@@ -10,7 +10,7 @@ language_list = {"", "_de", "_ru"} -- "_es", "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
-newsfield = {21, 22, 23, 24, 26}
+newsfield = {21, 22, 23, 24, 26, 27}
 
 -- General $$mystring$$-macros. Strings are taken as-is, tables are
 -- constellations of html input files, functions are executed, with the
