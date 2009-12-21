@@ -34,14 +34,14 @@ general = {
     --fr-- title_fr = "Enigma Homepage",
     title_ru = "Домашняя страница Enigma",
     title_es = "P&aacute;gina principal de Enigma",
+    scripts = "",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
-    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)    
+    manual_ru = "manual/enigma_ru.html",
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
-    trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
     disclaimer_de = "http://www.disclaimer.de/disclaimer.htm#1",
     gpl = "http://www.gnu.org/licenses/licenses.html#GPL",
@@ -222,6 +222,19 @@ html.screenshots = {
     title_ru = "Скриншоты Enigma",
     title_es = "Pantallazos de Enigma",
     body = {"screenshots"}
+}
+
+----------------------------------------------------------------------
+-- videos.html
+----------------------------------------------------------------------
+html.videos = {
+    outfile = "videos.html",
+    title = "Videos of Enigma",
+    title_de = "Videos von Enigma",
+    --ru-- title_ru = "",
+    --es-- title_es = "Videos of Enigma",
+    body = {"videos"},
+    scripts = "<script src=\"youtube_api.js\" type=\"text/javascript\" charset=\"utf-8\"></script>"
 }
 
 ----------------------------------------------------------------------
@@ -469,7 +482,7 @@ html.lotm_by_position = {
 --------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------
--- Homepage Archiv
+-- Homepage Archive
 ----------------------------------------------------------------------
 html.hp_archive = {
     outfile = "hp_archive.html",
