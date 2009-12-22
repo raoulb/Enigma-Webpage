@@ -173,6 +173,23 @@ li ul {
     border-bottom: 1px solid #ddd 
 }
 
+.player {
+    text-align: center;
+    list-style: none;
+    padding: 0px 120px; 
+}
+
+.player .button {
+    text-decoration: none; 
+    font-size: 110%;
+    background: #ededed; 
+    padding: 20px 0px; 
+    border-top: 1px solid #fff; 
+    border-right: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd 
+}
+
+
 .mlist li li a {
     padding: 3px 8px 3px 20px;
 }

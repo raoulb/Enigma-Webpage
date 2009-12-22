@@ -34,6 +34,7 @@ general = {
     --fr-- title_fr = "Enigma Homepage",
     title_ru = "Домашняя страница Enigma",
     title_es = "P&aacute;gina principal de Enigma",
+    scripts = "",
     refman = "manual/enigma-ref.html",
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
@@ -42,6 +43,7 @@ general = {
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
+    magicmoments_1 = "http://download.berlios.de/enigma-game/EnigmaMagicMoments1.flv",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
     disclaimer_de = "http://www.disclaimer.de/disclaimer.htm#1",
     gpl = "http://www.gnu.org/licenses/licenses.html#GPL",
@@ -222,6 +224,31 @@ html.screenshots = {
     title_ru = "Скриншоты Enigma",
     title_es = "Pantallazos de Enigma",
     body = {"screenshots"}
+}
+
+----------------------------------------------------------------------
+-- movieclips.html
+----------------------------------------------------------------------
+html.movieclips = {
+    outfile = "movieclips.html",
+    title = "Movie Clips of Enigma",
+    title_de = "Video-Clips von Enigma",
+    title_ru = "Movie Clips of Enigma",
+    title_es = "Movie Clips of Enigma",
+    body = {"movieclips"}
+}
+
+----------------------------------------------------------------------
+-- viewclips.html
+----------------------------------------------------------------------
+html.viewclips = {
+    outfile = "viewclips.html",
+    title = "Movie Clips of Enigma",
+    title_de = "Video-Clips von Enigma",
+    title_ru = "Movie Clips of Enigma",
+    title_es = "Movie Clips of Enigma",
+    body = {"viewclips"},
+    scripts = {"videoplayer"}
 }
 
 ----------------------------------------------------------------------
