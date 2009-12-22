@@ -25,7 +25,7 @@
   // The "main method" of this sample. Called when someone clicks "Run".
   function loadPlayer() {
     // The video to load
-    var videoID = "7U4X44_kBF4"
+    var videoID = "ic3gZApDIzA"
     // Lets Flash from another domain call JavaScript
     var params = { allowScriptAccess: "always" };
     // The element id of the Flash embed
@@ -33,7 +33,7 @@
     // All of the magic handled by SWFObject (http://code.google.com/p/swfobject/)
     swfobject.embedSWF("http://www.youtube.com/v/" + videoID +
 		       "&enablejsapi=1&playerapiid=player1&rel=0",
-		       "videoDiv", "352", "288", "8", null, null, params, atts);
+		       "videoDiv", "480", "385", "8", null, null, params, atts);
   }
 
   loadPlayer();
