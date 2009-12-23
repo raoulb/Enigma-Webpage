@@ -233,7 +233,7 @@ html.movieclips = {
     outfile = "movieclips.html",
     title = "Movie Clips of Enigma",
     title_de = "Video-Clips von Enigma",
-    title_ru = "Movie Clips of Enigma",
+    title_ru = "Видеофрагменты Enigma",
     title_es = "Movie Clips of Enigma",
     body = {"movieclips"}
 }
@@ -245,7 +245,7 @@ html.viewclips = {
     outfile = "viewclips.html",
     title = "Movie Clips of Enigma",
     title_de = "Video-Clips von Enigma",
-    title_ru = "Movie Clips of Enigma",
+    title_ru = "Видеофрагменты Enigma",
     title_es = "Movie Clips of Enigma",
     body = {"viewclips"},
     scripts = {"videoplayer"}
