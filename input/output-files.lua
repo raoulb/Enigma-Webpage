@@ -19,6 +19,17 @@ newsfield = {21, 22, 23, 24, 26, 27, 28}
 --     v = the current field (like html.index), mostly equals the file
 --     s = "mystring" itself (as a string -> selfreferential!)
 --    l0 = language code (see language_list: "" is English, "_de" German)
+-- If a table of input files is used, filenames are without suffix.
+-- In addition, <a name=...>-anchors are added automatically to ease
+-- linking. However, in certain cases, this should be suppressed, e.g.
+-- when the macro in set inside the html-header. In these cases
+-- "noanchor = true" should be used, e.g.:
+--   mymacro = {"file1", "file2", "file3", noanchor = true}
+-- It refers to all files in the macro. If you have to apply it to
+-- only some of the files, use the recursiveness of macro resolution:
+--   mymacro = "$$mymacro_1$$  $$mymacro_2$$"
+--   mymacro_1 = {"file1", noanchor = true}
+--   mymacro_2 = {"file2", "file3"}
 
 general = {
     infile = directory.."schema"..suffix,
@@ -248,7 +259,7 @@ html.viewclips = {
     title_ru = "Видеофрагменты Enigma",
     title_es = "Movie Clips of Enigma",
     body = {"viewclips"},
-    scripts = {"videoplayer"}
+    scripts = {"videoplayer", noanchor = true}
 }
 
 ----------------------------------------------------------------------

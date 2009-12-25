@@ -144,14 +144,16 @@ function parse_text(v, text, lang, context)
         end
         if stype == "table" then
             local addstring = ""
-            for j,f in pairs(process) do
+            for j,f in ipairs(process) do
                 -- remove slash for name- and id-tags
                 fn = string.gsub(f, "/", "_")
                 if (f ~= fn) and verbose then
                     scribble("  Note: changed anchors for "..f.." to "..fn..
                              ". Please correct href's.\n")
                 end
-                addstring = addstring.."<a name=\""..fn.."\" id=\""..fn.."\"></a>\n"
+                if not process.noanchor then
+                    addstring = addstring.."<a name=\""..fn.."\" id=\""..fn.."\"></a>\n"
+                end
                 addstring = addstring..parse_html(v, directory..f..suffix, lang)
             end
             return addstring
