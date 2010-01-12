@@ -419,6 +419,7 @@ li ul {
 
 .repository td {
     padding-left: 2em;
+    padding-top: 0.5em;
     line-height: 120%;
 }
 
