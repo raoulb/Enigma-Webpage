@@ -165,6 +165,11 @@ general = {
     imagedir_fr = "images",
     imagedir_ru = "images",
     imagedir_es = "images",
+    nav_enigma_logo = function(v,s,l0)
+        --local selection = {"nav_enigma.gif"}  -- this is the default
+        local selection = {"nav_enigma_1.gif", "nav_enigma_2.gif", "nav_enigma_3.gif"}
+        return selection[math.random(#selection)]
+      end,
     lastupdate = "$Date$",
     lastauthor = "$Author$",
     lastrev = "$Rev$"

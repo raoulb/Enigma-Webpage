@@ -219,6 +219,10 @@ end
 -- Main Routine
 ----------------------------------------------------------------------
 
+-- Initialise random number generator
+
+math.randomseed(os.time())
+
 -- Add functions for parsing the news and LotM archive
 
 dofile("input/news/read_news.lua")
