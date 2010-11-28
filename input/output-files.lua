@@ -10,11 +10,11 @@ language_list = {"", "_de", "_ru"} -- "_es", "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
-newsfield = {21, 22, 23, 24, 26, 27, 28}
+newsfield = {21, 23, 24, 26, 27, 28, 29}
 
 -- General $$mystring$$-macros. Strings are taken as-is, tables are
 -- constellations of html input files, functions are executed, with the
--- following syntax: 
+-- following syntax:
 --   function(v,s,l0)  ...  end
 --     v = the current field (like html.index), mostly equals the file
 --     s = "mystring" itself (as a string -> selfreferential!)
@@ -33,6 +33,7 @@ newsfield = {21, 22, 23, 24, 26, 27, 28}
 
 general = {
     infile = directory.."schema"..suffix,
+    cssfile = "enigma.css",
     charset = "ISO-8859-1",
     charset_ru = "KOI8-R",
     lang = "",
@@ -50,7 +51,7 @@ general = {
     manual = "manual/enigma.html",
     manual_de = "manual/enigma_de.html",
     manual_fr = "manual/enigma_fr.html",
-    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)    
+    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
@@ -109,8 +110,8 @@ general = {
     lotm_anchor_month_de    = "<a href=\"$$lotm_chronological$$\">Monat</a>",
     lotm_anchor_title_de    = "Titel",
     lotm_anchor_author_de   = "Autor",
-    lotm_anchor_position_de = "<a href=\"$$lotm_by_position$$\">Position (1.01)</a>",    
-    
+    lotm_anchor_position_de = "<a href=\"$$lotm_by_position$$\">Position (1.01)</a>",
+
     lotm_anchor_rating_ru   = "<a href=\"$$lotm$$\">Рейтинг</a>",
     lotm_anchor_month_ru    = "<a href=\"$$lotm_chronological$$\">Месяц</a>",
     lotm_anchor_title_ru    = "Название",
@@ -122,7 +123,7 @@ general = {
     lotm_anchor_title_es    = "T&iacute;tulo",
     lotm_anchor_author_es   = "Autor",
     lotm_anchor_position_es = "<a href=\"$$lotm_by_position$$\">Posici&oacute;n (1.01)</a>",
-    
+
     lotm_history = "History of LotM",
     lotm_history_de = "Geschichte des LdM",
     lotm_history_ru = "Хронология УМ",
@@ -370,7 +371,7 @@ html.statistics = {
     Rating_Statistics = "Rating Statistics of",
     Rating_Statistics_de = "Bewertungs-Statistiken vom",
     Rating_Statistics_ru = "Статистика оценок за",
-    Rating_Statistics_es = "Estad&iacute;sticas de clasificaci&oacute;n de",    
+    Rating_Statistics_es = "Estad&iacute;sticas de clasificaci&oacute;n de",
     Solved_Level_Statistics = "Solved Level Statistics of",
     Solved_Level_Statistics_de = "Statistik der gel&ouml;sten Levels vom",
     Solved_Level_Statistics_ru = "Статистика решённых уровней за",
@@ -378,7 +379,7 @@ html.statistics = {
     Worldrecord_Statistics = "Worldrecord Statistics of",
     Worldrecord_Statistics_de = "Weltrekord-Statistik vom",
     Worldrecord_Statistics_ru = "Статистика мировых рекордов за",
-    Worldrecord_Statistics_es = "Estad&iacute;sticas de Records mundiales de",        
+    Worldrecord_Statistics_es = "Estad&iacute;sticas de Records mundiales de",
     Other_Statistics = "Other Statistics",
     Other_Statistics_de = "Weitere Statistiken",
     Other_Statistics_ru = "Другие показатели",
@@ -451,6 +452,246 @@ html.impressum = {
     body = {"impressum", "longline"}
 }
 
+----------------------------------------------------------------------
+-- advent_2010.html
+----------------------------------------------------------------------
+html.advent_2010 = {
+    outfile = "advent_2010.html",
+    title = "Advent 2010",
+    title_de = "Advent 2010",
+    title_ru = "",
+    title_es = "",
+    cssfile = "advent.css",
+    body = {"advent_2010"}
+}
+
+-- all other dayXX sites
+
+-- html.advent_2010_day1 = {
+--     outfile = "advent_day1.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day1", "longline"}
+-- }
+
+-- html.advent_2010_day2 = {
+--     outfile = "advent_day2.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day2", "longline"}
+-- }
+
+-- html.advent_2010_day3 = {
+--     outfile = "advent_day3.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day3", "longline"}
+-- }
+
+-- html.advent_2010_day4 = {
+--     outfile = "advent_day4.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day4", "longline"}
+-- }
+
+-- html.advent_2010_day5 = {
+--     outfile = "advent_day5.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day5", "longline"}
+-- }
+
+-- html.advent_2010_day6 = {
+--     outfile = "advent_day6.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day6", "longline"}
+-- }
+
+-- html.advent_2010_day7 = {
+--     outfile = "advent_day7.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day7", "longline"}
+-- }
+
+-- html.advent_2010_day8 = {
+--     outfile = "advent_day8.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day8", "longline"}
+-- }
+
+-- html.advent_2010_day9 = {
+--     outfile = "advent_day9.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day9", "longline"}
+-- }
+
+-- html.advent_2010_day10 = {
+--     outfile = "advent_day10.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day10", "longline"}
+-- }
+
+-- html.advent_2010_day11 = {
+--     outfile = "advent_day11.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day11", "longline"}
+-- }
+
+-- html.advent_2010_day12 = {
+--     outfile = "advent_day12.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day12", "longline"}
+-- }
+
+-- html.advent_2010_day13 = {
+--     outfile = "advent_day13.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day13", "longline"}
+-- }
+
+-- html.advent_2010_day14 = {
+--     outfile = "advent_day14.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day14", "longline"}
+-- }
+
+-- html.advent_2010_day15 = {
+--     outfile = "advent_day15.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day15", "longline"}
+-- }
+
+-- html.advent_2010_day16 = {
+--     outfile = "advent_day16.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day16", "longline"}
+-- }
+
+-- html.advent_2010_day17 = {
+--     outfile = "advent_day17.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day17", "longline"}
+-- }
+
+-- html.advent_2010_day18 = {
+--     outfile = "advent_day18.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day18", "longline"}
+-- }
+
+-- html.advent_2010_day19 = {
+--     outfile = "advent_day19.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day19", "longline"}
+-- }
+
+-- html.advent_2010_day20 = {
+--     outfile = "advent_day20.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day20", "longline"}
+-- }
+
+-- html.advent_2010_day21 = {
+--     outfile = "advent_day21.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day21", "longline"}
+-- }
+
+-- html.advent_2010_day22 = {
+--     outfile = "advent_day22.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day22", "longline"}
+-- }
+
+-- html.advent_2010_day23 = {
+--     outfile = "advent_day23.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day23", "longline"}
+-- }
+
+-- html.advent_2010_day24 = {
+--     outfile = "advent_day24.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day24", "longline"}
+-- }
+
+-- html.advent_2010_day25 = {
+--     outfile = "advent_day25.html",
+--     title = "Advent 2010",
+--     title_de = "Advent 2010",
+--     title_ru = "",
+--     title_es = "",
+--     body = {"advent_2010/advent_day25", "longline"}
+-- }
+
 --------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -471,7 +712,7 @@ html.lotm = {
     lotm_anchor_rating_de = "<b>Bewertung</b>",
     lotm_anchor_rating_ru = "<b>Рейтинг</b>",
     lotm_anchor_rating_es = "<b>Clasificaci&oacute;n</b>",
-}    
+}
 
 html.lotm_chronological = {
     outfile = "lotm_chronological.html",
@@ -547,7 +788,7 @@ html.eoya_2007 = {
     --es-- title_es = "End of Year Awards 2007",
     rightcolumn = {},
     body = {"articles/eoya_2007"}
-}    
+}
 
 html.eoya_2007_statistics = {
     outfile = "eoya_2007_statistics.html",
@@ -570,7 +811,7 @@ html.eoya_2008 = {
     --es-- title_es = "End of Year Awards 2008",
     rightcolumn = {},
     body = {"articles/eoya_2008"}
-}    
+}
 
 html.eoya_2008_statistics = {
     outfile = "eoya_2008_statistics.html",
@@ -593,7 +834,7 @@ html.april_2008 = {
     title_ru = "$$lotm_expansion$$: $$April$$ '08",
     rightcolumn = {},
     body = {"articles/april_2008"},
-}    
+}
 
 ----------------------------------------------------------------------
 -- Marbleous!
@@ -659,5 +900,5 @@ html.lotm_200904_yang = {
     title_ru = "$$lotm_expansion$$: $$April$$ '09",
     rightcolumn = {},
     body = {"lotm/lotm_200904_yang"},
-}    
+}
 
