@@ -90,6 +90,39 @@ function translate_month(lang, date_table)
   end
 end
 
+function translate_month_for_news(lang, date_table)
+  if type(date_table) ~= "table" then
+    error("Trying to translate month, but argument is "..type(date_table).."!")
+  end
+  local month = date_table.month
+  if month == nil then
+    error("Trying to translate month, but month is NIL!")
+  end
+  local translation_table = date_translation_field["months_news"..lang]
+  if translation_table == nil then
+    translation_table = date_translation_field.months
+  end
+  month = translation_table[month]
+  local year = date_table.year
+  if year == nil then
+    return month
+  else
+    -- circumvent mod->fmod change in 5.1!
+    --year = math.fmod(year, 100)
+    if year >= 2000 then
+      year = year - 2000
+    else
+      year = year - 1900
+    end
+    year = string.format("%02d", year)
+    if lang == "_es" then
+      return month.." del '"..year
+    else
+      return month.." '"..year
+    end
+  end
+end
+
 -- scribble writes string s to output if and only if it wasn't
 -- written there before. Hence, double infos are omitted.
 scribbleblock = {}

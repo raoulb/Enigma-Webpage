@@ -157,6 +157,19 @@ general = {
     November  = function(v,s,l0)  return  translate_month(l0, {month=11})  end,
     December  = function(v,s,l0)  return  translate_month(l0, {month=12})  end,
 
+    JanuaryN   = function(v,s,l0)  return  translate_month_for_news(l0, {month=1})  end,
+    FebruaryN  = function(v,s,l0)  return  translate_month_for_news(l0, {month=2})  end,
+    MarchN     = function(v,s,l0)  return  translate_month_for_news(l0, {month=3})  end,
+    AprilN     = function(v,s,l0)  return  translate_month_for_news(l0, {month=4})  end,
+    MayN       = function(v,s,l0)  return  translate_month_for_news(l0, {month=5})  end,
+    JuneN      = function(v,s,l0)  return  translate_month_for_news(l0, {month=6})  end,
+    JulyN      = function(v,s,l0)  return  translate_month_for_news(l0, {month=7})  end,
+    AugustN    = function(v,s,l0)  return  translate_month_for_news(l0, {month=8})  end,
+    SeptemberN = function(v,s,l0)  return  translate_month_for_news(l0, {month=9})  end,
+    OctoberN   = function(v,s,l0)  return  translate_month_for_news(l0, {month=10})  end,
+    NovemberN  = function(v,s,l0)  return  translate_month_for_news(l0, {month=11})  end,
+    DecemberN  = function(v,s,l0)  return  translate_month_for_news(l0, {month=12})  end,
+
     Advent        = "Advent",
     Advent_de     = "Advent",
     Advent_ru     = "Появление",
@@ -194,7 +207,11 @@ date_translation_field = {
   months_ru = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"},
   months_es = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"},
+  months_news = {"JanuaryN", "FebruaryN", "MarchN", "AprilN", "MayN", "JuneN",
+    "JulyN", "AugustN", "SeptemberN", "OctoberN", "NovemberN", "DecemberN"},
+  months_news_ru = {"января", "февраля", "марта", "апреля", "мая", "июня",
+    "июля", "августа", "сентября", "октября", "ноября", "декабря"}
 }
 
 --------------------------------------------------------------------------------
