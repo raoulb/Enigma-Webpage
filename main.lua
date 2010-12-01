@@ -122,8 +122,9 @@ function parse_text(v, text, lang, context)
             if type(html[s]) == "table" and type(html[s].outfile) == "string" then
                 return add_lang_to_filename(html[s].outfile, lang)
             else
-                error("Error during evaluation of "..context
-                      ..": Entry "..s.." not defined.")
+                scribble("ERROR during evaluation of "..context
+                         ..": Entry "..s.." not defined.\n")
+                return ""
             end
         end
         if stype == "string" then

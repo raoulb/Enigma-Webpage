@@ -34,7 +34,10 @@ newsfield = {21, 23, 24, 26, 27, 28, 29}
 general = {
     infile = directory.."schema"..suffix,
     cssfile = "enigma.css",
+    cssfile_de = "enigma.css",
+    cssfile_ru = "enigma.css",
     charset = "ISO-8859-1",
+    charset_de = "ISO-8859-1",
     charset_ru = "KOI8-R",
     lang = "",
     lang_de = "_de",
@@ -140,7 +143,7 @@ general = {
     lotm_current_name = function(v,s,l0)
         return parse_text_quots(v, lotm_current.name, l0, "lotm_current_name")
       end,
-
+    
     January   = function(v,s,l0)  return  translate_month(l0, {month=1})  end,
     February  = function(v,s,l0)  return  translate_month(l0, {month=2})  end,
     March     = function(v,s,l0)  return  translate_month(l0, {month=3})  end,
@@ -154,6 +157,9 @@ general = {
     November  = function(v,s,l0)  return  translate_month(l0, {month=11})  end,
     December  = function(v,s,l0)  return  translate_month(l0, {month=12})  end,
 
+    Advent        = "Advent",
+    Advent_de     = "Advent",
+    Advent_ru     = "Появление",
     left_quot     = "&ldquo;",
     right_quot    = "&rdquo;",
     left_quot_de  = "&bdquo;",
@@ -462,19 +468,20 @@ html.advent_2010 = {
     title_ru = "Появление 2010",
     title_es = "",
     cssfile = "advent.css",
-    body = {"advent_2010"}
+    body = {"advent_2010/advent_2010"},
+    advent_2010_calendar = {"advent_2010/advent_2010_calendar"}
 }
 
 -- all other dayXX sites
 
--- html.advent_2010_day1 = {
---     outfile = "advent_day1.html",
---     title = "Advent 2010",
---     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
---     title_es = "",
---     body = {"advent_2010/advent_day1", "longline"}
--- }
+html.advent_2010_day1 = {
+    outfile = "advent_day1.html",
+    title = "Advent 2010",
+    title_de = "Advent 2010",
+    title_ru = "Появление 2010",
+    title_es = "",
+    body = {"advent_2010/advent_day1", "longline"}
+}
 
 -- html.advent_2010_day2 = {
 --     outfile = "advent_day2.html",
