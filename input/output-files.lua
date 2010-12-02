@@ -170,7 +170,7 @@ general = {
 
     Advent        = "Advent",
     Advent_de     = "Advent",
-    Advent_ru     = "Появление",
+    Advent_ru     = "Рождественский календарь",
     left_quot     = "&ldquo;",
     right_quot    = "&rdquo;",
     left_quot_de  = "&bdquo;",
@@ -480,7 +480,7 @@ html.advent_2010 = {
     outfile = "advent_2010.html",
     title = "Advent 2010",
     title_de = "Advent 2010",
-    title_ru = "Появление 2010",
+    title_ru = "Рождественский календарь 2010",
     title_es = "",
     cssfile = "advent.css",
     body = {"advent_2010/advent_2010"},
@@ -493,7 +493,7 @@ html.advent_2010_day1 = {
     outfile = "advent_day1.html",
     title = "Advent 2010",
     title_de = "Advent 2010",
-    title_ru = "Появление 2010",
+    title_ru = "Рождественский календарь 2010",
     title_es = "",
     body = {"advent_2010/advent_day1", "longline"}
 }
@@ -502,7 +502,7 @@ html.advent_2010_day2 = {
     outfile = "advent_day2.html",
     title = "Advent 2010",
     title_de = "Advent 2010",
-    title_ru = "Появление 2010",
+    title_ru = "Рождественский календарь 2010",
     title_es = "",
     body = {"advent_2010/advent_day2", "longline"}
 }
@@ -511,7 +511,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day3.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day3", "longline"}
 -- }
@@ -520,7 +520,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day4.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day4", "longline"}
 -- }
@@ -529,7 +529,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day5.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day5", "longline"}
 -- }
@@ -538,7 +538,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day6.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day6", "longline"}
 -- }
@@ -547,7 +547,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day7.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day7", "longline"}
 -- }
@@ -556,7 +556,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day8.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day8", "longline"}
 -- }
@@ -565,7 +565,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day9.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day9", "longline"}
 -- }
@@ -574,7 +574,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day10.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day10", "longline"}
 -- }
@@ -583,7 +583,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day11.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day11", "longline"}
 -- }
@@ -592,7 +592,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day12.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day12", "longline"}
 -- }
@@ -601,7 +601,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day13.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day13", "longline"}
 -- }
@@ -610,7 +610,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day14.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day14", "longline"}
 -- }
@@ -619,7 +619,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day15.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day15", "longline"}
 -- }
@@ -628,7 +628,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day16.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day16", "longline"}
 -- }
@@ -637,7 +637,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day17.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day17", "longline"}
 -- }
@@ -646,7 +646,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day18.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day18", "longline"}
 -- }
@@ -655,7 +655,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day19.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day19", "longline"}
 -- }
@@ -664,7 +664,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day20.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day20", "longline"}
 -- }
@@ -673,7 +673,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day21.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day21", "longline"}
 -- }
@@ -682,7 +682,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day22.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day22", "longline"}
 -- }
@@ -691,7 +691,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day23.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day23", "longline"}
 -- }
@@ -700,7 +700,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day24.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day24", "longline"}
 -- }
@@ -709,7 +709,7 @@ html.advent_2010_day2 = {
 --     outfile = "advent_day25.html",
 --     title = "Advent 2010",
 --     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
+--     title_ru = "Рождественский календарь 2010",
 --     title_es = "",
 --     body = {"advent_2010/advent_day25", "longline"}
 -- }
