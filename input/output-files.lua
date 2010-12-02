@@ -34,8 +34,6 @@ newsfield = {21, 23, 24, 26, 27, 28, 29}
 general = {
     infile = directory.."schema"..suffix,
     cssfile = "enigma.css",
-    cssfile_de = "enigma.css",
-    cssfile_ru = "enigma.css",
     charset = "ISO-8859-1",
     charset_de = "ISO-8859-1",
     charset_ru = "KOI8-R",
@@ -208,8 +206,8 @@ date_translation_field = {
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"},
   months_es = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"},
-  months_news = {"JanuaryN", "FebruaryN", "MarchN", "AprilN", "MayN", "JuneN",
-    "JulyN", "AugustN", "SeptemberN", "OctoberN", "NovemberN", "DecemberN"},
+  months_news = {"January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"},
   months_news_ru = {"января", "февраля", "марта", "апреля", "мая", "июня",
     "июля", "августа", "сентября", "октября", "ноября", "декабря"}
 }
@@ -500,14 +498,14 @@ html.advent_2010_day1 = {
     body = {"advent_2010/advent_day1", "longline"}
 }
 
--- html.advent_2010_day2 = {
---     outfile = "advent_day2.html",
---     title = "Advent 2010",
---     title_de = "Advent 2010",
---     title_ru = "Появление 2010",
---     title_es = "",
---     body = {"advent_2010/advent_day2", "longline"}
--- }
+html.advent_2010_day2 = {
+    outfile = "advent_day2.html",
+    title = "Advent 2010",
+    title_de = "Advent 2010",
+    title_ru = "Появление 2010",
+    title_es = "",
+    body = {"advent_2010/advent_day2", "longline"}
+}
 
 -- html.advent_2010_day3 = {
 --     outfile = "advent_day3.html",
