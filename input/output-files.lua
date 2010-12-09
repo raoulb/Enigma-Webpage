@@ -570,14 +570,14 @@ html.advent_2010_day9 = {
     body = {"advent_2010/advent_day9", "longline"}
 }
 
--- html.advent_2010_day10 = {
---     outfile = "advent_day10.html",
---     title = "Advent 2010",
---     title_de = "Advent 2010",
---     title_ru = "Рождественский календарь 2010",
---     title_es = "",
---     body = {"advent_2010/advent_day10", "longline"}
--- }
+html.advent_2010_day10 = {
+    outfile = "advent_day10.html",
+    title = "Advent 2010",
+    title_de = "Advent 2010",
+    title_ru = "Рождественский календарь 2010",
+    title_es = "",
+    body = {"advent_2010/advent_day10", "longline"}
+}
 
 -- html.advent_2010_day11 = {
 --     outfile = "advent_day11.html",
