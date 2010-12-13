@@ -10,7 +10,7 @@ language_list = {"", "_de", "_ru"} -- "_es", "_fr"
 
 -- The newsfield declares the news (by number) to be shown on the main page.
 
-newsfield = {21, 23, 24, 26, 27, 28, 29}
+newsfield = {21, 23, 24, 27, 28, 29}
 
 -- General $$mystring$$-macros. Strings are taken as-is, tables are
 -- constellations of html input files, functions are executed, with the
@@ -597,14 +597,14 @@ html.advent_2010_day12 = {
     body = {"advent_2010/advent_day12", "longline"}
 }
 
--- html.advent_2010_day13 = {
---     outfile = "advent_day13.html",
---     title = "Advent 2010",
---     title_de = "Advent 2010",
---     title_ru = "Рождественский календарь 2010",
---     title_es = "",
---     body = {"advent_2010/advent_day13", "longline"}
--- }
+html.advent_2010_day13 = {
+    outfile = "advent_day13.html",
+    title = "Advent 2010",
+    title_de = "Advent 2010",
+    title_ru = "Рождественский календарь 2010",
+    title_es = "",
+    body = {"advent_2010/advent_day13", "longline"}
+}
 
 -- html.advent_2010_day14 = {
 --     outfile = "advent_day14.html",
