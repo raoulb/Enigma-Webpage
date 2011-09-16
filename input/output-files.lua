@@ -141,7 +141,7 @@ general = {
     lotm_current_name = function(v,s,l0)
         return parse_text_quots(v, lotm_current.name, l0, "lotm_current_name")
       end,
-    
+
     January   = function(v,s,l0)  return  translate_month(l0, {month=1})  end,
     February  = function(v,s,l0)  return  translate_month(l0, {month=2})  end,
     March     = function(v,s,l0)  return  translate_month(l0, {month=3})  end,
@@ -705,15 +705,6 @@ html.advent_2010_day24 = {
     body = {"advent_2010/advent_day24", "longline"}
 }
 
--- html.advent_2010_day25 = {
---     outfile = "advent_day25.html",
---     title = "Advent 2010",
---     title_de = "Advent 2010",
---     title_ru = "Рождественский календарь 2010",
---     title_es = "",
---     body = {"advent_2010/advent_day25", "longline"}
--- }
-
 --------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -924,3 +915,13 @@ html.lotm_200904_yang = {
     body = {"lotm/lotm_200904_yang"},
 }
 
+----------------------------------------------------------------------
+-- 10 years page
+----------------------------------------------------------------------
+html.ten_years = {
+    outfile = "ten_years.html",
+    title = "10 Years of Enigma",
+    title_de = "10 Jahre Enigma",
+    cssfile = "enigma.css",
+    body = {"ten_years"},
+}
