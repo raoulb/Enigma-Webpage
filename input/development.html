@@ -150,10 +150,10 @@ you're always welcome.</p>
   <a name="app">Application Development</a></h3>
 
   <p>If you want to download the leading edge version of Enigma you need to
-  check it out from our <a href="https://developer.berlios.de/svn/?group_id=3972">
-  subversion source code repository at Berlios</a>. For anonymous access, simply
+  check it out from our <a href="http://sourceforge.net/p/enigma-game/source/2236/tree/">
+  subversion source code repository at sourceforge</a>. For anonymous access, simply
   run</p>
-  <pre>svn checkout svn://svn.berlios.de/enigma-game/trunk</pre>
+  <pre>svn checkout svn://svn.code.sf.net/p/enigma-game/source/trunk</pre>
   <p>to download the current revision of the next major Enigma release. Please note
   that this will be a snapshot of development and the revision might be incomplete
   and still unstable.</p>
@@ -176,7 +176,7 @@ you're always welcome.</p>
   </table>
 
   <p>You can get an up to date preview of the existing branches with
-  <a href="http://svn.berlios.de/wsvn/enigma-game">Berlios WebSVN</a>.</p>
+  <a href="http://sourceforge.net/p/enigma-game/source/2236/tree/">sourceforge WebSVN</a>.</p>
 
   <p>For the development we recommend a Unix platform as the compilation.
   Installation is as simple as typing</p>
@@ -194,57 +194,57 @@ you're always welcome.</p>
   <a name="l10n">Localization of the Application</a></h3>
 
   <p>Nearly all aspects of Enigma are internationalized. You can help in the
-    localization of Enigma to your native language by supplying translation 
+    localization of Enigma to your native language by supplying translation
     updates. All you need is a simple unicode supporting text editor and a tool
     that processes your translations for direct testing purposes.</p>
-    
+
   <p>First check that you are working on the most recent Enigma version. Please
     check the <a href="$$development$$#maillist">Development Mailing List</a>
     for the current stable milestone, alpha or beta release and announce
     your translation effort to avoid conflicting duplicate work.</p>
-    
-  <p>Next you need the source file containing the translations for your native 
+
+  <p>Next you need the source file containing the translations for your native
     language. These files are located in the project's subdirectory 'po' and are
     named by the international language code with the extension '.po'. E.g. the
     Spanish translation source file is named 'es.po'. You can check out the
     most recent version via svn from the trunk as described in section
     <a href="$$development$$#development">Application Development</a>, or you
-    simply ask for a copy on the 
+    simply ask for a copy on the
     <a href="$$development$$#maillist">Development Mailing List</a>. In case
     you start the translation of a new, not yet supported language you should
     ask for an initial source file on the mailing list anyway.</p>
-    
+
   <p>The 'po' file can be viewed and completed by any pure text editor. Do not
     try to edit it with word processors like 'Word' which try to format the
     text. The text editor should be able to support UTF-8, which allows you
     to insert all characters of your language. E.g. one of many such editors is
     <a href="http://www.jedit.org">jEdit</a>, a Java based editor.</p>
-    
+
   <p>Within the 'po' file every translatable text is given as a block of several
     lines. First one or several lines starting with a hash sign '#' will give
     you some information. The subsequent line starting with "msgid " contains
     the English original text, and the translation follows in the line
-    starting with &quot;msgstr &quot;. Both, the original text and the 
+    starting with &quot;msgstr &quot;. Both, the original text and the
     translation, are enclosed in double quotations marks '&quot;' being not part
     of the text itself. Both texts can be split to several lines, the text part
     on each line being enclosed by double quotations marks. In case you need to
-    insert a double quotation mark within the text you need to enter the two 
-    characters '\&quot;'. In case you need to force a line break you need to 
-    enter the two characters '\n' into the translation. The initial hash 
-    comments give you helpful information. Texts originating from levels 
-    identify the title and author. Level texts are less important than menu 
-    button texts of the application. For some texts the authors provide 
+    insert a double quotation mark within the text you need to enter the two
+    characters '\&quot;'. In case you need to force a line break you need to
+    enter the two characters '\n' into the translation. The initial hash
+    comments give you helpful information. Texts originating from levels
+    identify the title and author. Level texts are less important than menu
+    button texts of the application. For some texts the authors provide
     translation comments that give important hints for the translation. In case
-    a comment of type &quot;use&quot; is given, the level author himself did 
+    a comment of type &quot;use&quot; is given, the level author himself did
     provide a translation for your language. Best pratice is to copy this string
-    to the msgstr line. You will find additional information in the reference 
-    manual in subsection 
+    to the msgstr line. You will find additional information in the reference
+    manual in subsection
     <a href="manual/enigma-ref.html#SEC34">Internationalization (i18n)</a>.
   </p>
-    
+
   <p>Now that you have added translations you should test your work. Especially
     menu strings need to fit into the given space on buttons. The required tool
-    set is the <a href="http://www.gnu.org/software/gettext/gettext.html">GNU 
+    set is the <a href="http://www.gnu.org/software/gettext/gettext.html">GNU
     gettext</a> software. Windows users can download from
     <a href="http://gnuwin32.sourceforge.net/packages/gettext.htm">GnuWin32
     gettext</a> the binaries and the dependency packages. You need just the
@@ -255,13 +255,13 @@ you're always welcome.</p>
     directory containing your 'po' file and issue, replacing the prefix
     'pl' standing for Polish by the prefix of your language:
   </p>
-    
+
   <pre>msgfmt -c --statistics -o enigma.mo pl.po</pre>
 
-  <p>The resulting file 'enigma.mo' can be directly used by Enigma. Windows 
+  <p>The resulting file 'enigma.mo' can be directly used by Enigma. Windows
     users just need to locate the folder of the application executable and
-    replace the original copy at the subfolder 'data\locale\pl\LC_MESSAGES', 
+    replace the original copy at the subfolder 'data\locale\pl\LC_MESSAGES',
     where 'pl' is again the prefix for Polish, which needs to be replaced by the
-    code of your language. Do not forget to publish your 'po' file after 
+    code of your language. Do not forget to publish your 'po' file after
     finishing your translation work.
   </p>
