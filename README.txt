@@ -4,13 +4,14 @@ Updating the Enigma homepage
 1) Repositories
 ---------------
 
-Die "Entwicklung" der Enigma Homepage findet im svn auf BerliOS (http://developer.berlios.de/)
+Die "Entwicklung" der Enigma Homepage findet im svn Repository des Enigma Projekts
+auf SourceForge http://sourceforge.net/projects/enigma-game/?source=directory
 statt, das svn repository ist unter:
 
-    http://svn.berlios.de/wsvn/enigma-game/homepage/
+    http://svn.code.sf.net/p/enigma-game/source/homepage
 
-Die Homepage selber ist auf Savannah (http://savannah.gnu.org/) gehostet und liegt dort in einem
-cvs repository:
+Die Homepage selber ist auf Savannah (http://savannah.gnu.org/) gehostet und liegt
+dort in einem cvs repository:
 
     http://web.cvs.savannah.gnu.org/viewvc/?root=enigma
 
@@ -22,7 +23,7 @@ Updates an der Enigma Homepage sind zweistufig, zuerst werden die
 Veränderungen an den html/css/... Dateien ins svn comittet. Das
 svn ist die Referenz bezüglich der Homepage. Nachher werden die
 Updates ins cvs comittet und dieser Commit löst automatisch ein
-Homepage update auf dem Savannah Webserver aus.
+Homepage Update auf dem Savannah Webserver aus.
 
 
 3) Setup und initial checkout
@@ -63,7 +64,7 @@ aber keine Probleme ("!", "~" etc). Die mit "?" gekennzeichneten Dateien
 sind teils im cvs versioniert. Ein "cvs up" zeigt uns ein ähnliches Bild.
 
 
-4) Ein simples update
+4) Ein simples Update
 ---------------------
 
     a: Verändere die gewünschten Dateien
