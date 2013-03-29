@@ -74,7 +74,13 @@ sind teils im cvs versioniert. Ein "cvs up" zeigt uns ein ähnliches Bild.
 
     b: committe ins svn
 
-        svn commit
+     i: Neue Dateien tracken falls nötig:
+
+       svn add ...
+
+     ii: und ab ins svn Repository: 
+
+       svn commit
 
     c: "kompiliere" die vollen Hompage html Dateien:
 
@@ -82,7 +88,14 @@ sind teils im cvs versioniert. Ein "cvs up" zeigt uns ein ähnliches Bild.
        lua5.1 main.lua
 
     d: comitte ins cvs
-        cvs -e nano commit
+
+     i: Neue Dateien tracken falls nötig:
+
+       cvs add ...
+
+     ii: und ab ins cvs Repository: 
+
+       cvs -e nano commit
 
 Allenfalls ist Punkt c vor b sinnvoll um die Änderungen lokal
 im Browser zu testen ...
