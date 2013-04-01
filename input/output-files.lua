@@ -56,6 +56,7 @@ general = {
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
+    trailer_2 = "http://download.berlios.de/enigma-game/EnigmaTrailer2.flv",
     magicmoments_1 = "http://download.berlios.de/enigma-game/EnigmaMagicMoments1.flv",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
     disclaimer_de = "http://www.disclaimer.de/disclaimer.htm#1",
