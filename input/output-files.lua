@@ -48,11 +48,11 @@ general = {
     title_ru = "Домашняя страница Enigma",
     title_es = "P&aacute;gina principal de Enigma",
     scripts = "",
-    refman = "manual/enigma-ref.html",
-    manual = "manual/enigma.html",
-    manual_de = "manual/enigma_de.html",
-    manual_fr = "manual/enigma_fr.html",
-    manual_ru = "manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)
+    refman = "manual_1.20/refman/enigma-ref.html",
+    manual = "manual_1.20/manual/enigma.html",
+    manual_de = "manual_1.20/manual/enigma_de.html",
+    manual_fr = "manual_1.20/manual/enigma_fr.html",
+    manual_ru = "manual_1.20/manual/enigma_ru.html", -- existing? - yes, existing (03.11.08)
     wiki = "http://enigma.mal2.ch/index.php?title=Main_Page",
     wiki_de = "http://enigma.mal2.ch/index.php?title=Hauptseite",
     trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
