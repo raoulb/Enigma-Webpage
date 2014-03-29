@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ratings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ratings.xsd">
+  <update date="2009-12-04T07:36:05.734Z" delay="5" urlFull="http://www.nongnu.org/enigma/ratings/ratings.xml" urlIncremental="http://www.nongnu.org/enigma/ratings/ratings.xml"/>
+  <levels>
+  </levels>
+</ratings>
