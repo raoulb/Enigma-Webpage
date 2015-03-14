@@ -20,7 +20,7 @@ git clone . $BUILD
 )
 
 # Copy over
-rsync -av --exclude='.git' --exclude='input' $BUILD/* $TARGET
+rsync -av --exclude='.git' --exclude='input' --exclude='gfx-templates' $BUILD/* $TARGET
 
 # Commit into cvs
 (
