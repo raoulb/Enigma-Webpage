@@ -29,6 +29,7 @@ rsync -av --exclude='.git' --exclude='input' --exclude='gfx-templates' --exclude
 # Commit into cvs
 (
     cd $TARGETDIR
-    #cvs add ./*
-    #cvs commit -m "Update"
+    find . -type d \! -name CVS -exec cvs add '{}' \;
+    find . \( -type d -name CVS -prune \) -o \( -type f -exec cvs add '{}' \; \)
+    cvs commit -m "Update"
 )
