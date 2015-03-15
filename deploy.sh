@@ -1,31 +1,34 @@
 #! /usr/bin/env bash
 
-BUILD=./build/
-TARGET=/home/raoul/ENIGMA/homepage_update/enigma/
+BUILDDIR="./build/"
+TARGETDIR="/home/raoul/ENIGMA/homepage_update/enigma/"
 
 set -e -o pipefail
 
+
 # Remove old build
-rm -rf $BUILD
-mkdir $BUILD
+rm -rf $BUILDDIR
+mkdir $BUILDDIR
+
 
 # Clone and build
-git clone . $BUILD
+git clone . $BUILDDIR
 (
-    cd $BUILD;
+    cd $BUILDDIR;
     commit=$(git rev-parse HEAD);
     # TODO: put git id into footer
     chmod u+x main.lua;
     lua5.1 main.lua;
 )
 
+
 # Copy over
-rsync -av --exclude='.git' --exclude='input' --exclude='gfx-templates' $BUILD/* $TARGET
+rsync -av --exclude='.git' --exclude='input' --exclude='gfx-templates' --exclude='build' $BUILDDIR/* $TARGETDIR
+
 
 # Commit into cvs
 (
-    cd $TARGET
-    pwd
+    cd $TARGETDIR
     #cvs add ./*
     #cvs commit -m "Update"
 )
