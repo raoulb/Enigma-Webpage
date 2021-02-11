@@ -1,0 +1,1707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Copyright C 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Daniel Heck and other contributors
+
+La copie et la distribution de ce fichier, avec ou sans modification,
+sont autorise's sans royalty a` condition que la notice de copyright
+et la pre'sente notice soient pre'serve'es.
+ -->
+<!-- Created on March 29, 2013 by texi2html 1.82
+texi2html was written by: 
+            Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people.
+Send bugs and suggestions to <texi2html-bug@nongnu.org>
+-->
+<head>
+<title>Enigma Manual</title>
+
+<meta name="description" content="Enigma Manual">
+<meta name="keywords" content="Enigma Manual">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.82">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.roman {font-family:serif; font-weight:normal;}
+span.sansserif {font-family:sans-serif; font-weight:normal;}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="Haut"></a>
+<a name="Enigma"></a>
+<h1 class="settitle">Enigma</h1>
+
+<p>Ce manuel d&eacute;crit comment installer Enigma et y jouer.  Il correspond
+&agrave; Enigma version 1.20.
+</p>
+<p>Copyright &copy; 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Daniel Heck (<a href="mailto:dheck@gmx.de">dheck@gmx.de</a>) and other contributors
+</p>
+<p>La copie et la distribution de ce fichier, avec ou sans modification,
+sont autoris&eacute;s sans royalty &agrave; condition que la notice de copyright
+et la pr&eacute;sente notice soient pr&eacute;serv&eacute;es.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Introduction">1. Introduction</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                Comment commencer
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Le-jeu">2. Le jeu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                    Comment jouer &agrave; Enigma
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Quelques-objets-du-jeu">3. Quelques objets du jeu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">           Description de quelques objets du jeu
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Expertise">4. Expertise</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">             Options &eacute;labor&eacute;s et administration
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Triche">5. Triche</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                    Astuces pour certains niveaux difficiles
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Cr_00e9dits">6. Cr&eacute;dits</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                     Cr&eacute;dits et &rsquo;Saints-Clouds
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+</pre></th></tr></table>
+
+<hr size="1">
+<a name="Introduction"></a>
+<a name="Introduction-1"></a>
+<h1 class="chapter">1. Introduction</h1>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#A-propos">1.1 A propos d&rsquo;Enigma</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                       Certains faits sur Enigma
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Installation">1.2 Installation</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                Se procurer et installer Enigma
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Distribuer-Enigma">1.3 Distribuer Enigma</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         Donnez des copies &agrave; vos amis !
+</td></tr>
+</table>
+
+
+<hr size="6">
+<a name="A-propos"></a>
+<a name="A-propos-d_0027Enigma"></a>
+<h2 class="section">1.1 A propos d&rsquo;Enigma</h2>
+
+<p>Enigma n&rsquo;est pas vraiment un jeu d&rsquo;esprit.  Enigma est en r&eacute;alit&eacute; une
+immense collection de jeux d&rsquo;esprit, et chacun de ses 550 uniques niveaux
+d&eacute;fie l&rsquo;intelligence, la dext&eacute;rit&eacute; et la volont&eacute; des joueurs de
+mani&egrave;re in&eacute;dite.  Enigma est facile &agrave; apprendre, ludique et parfois
+difficile.  On peut y jouer &agrave; tout &acirc;ge.  Il contient des centaines de
+niveaux. Et comme si ce n&rsquo;&eacute;tait pas assez, il est gratuit. Si vous aimez les
+jeux d&rsquo;esprit et que vous avez le geste s&ucirc;r, Enigma vous occupera pendant des
+heures.
+</p>
+<p>L&rsquo;object du jeu est de trouver et d&eacute;voiler des paires de pierres
+&lsquo;<samp>Oxydes</samp>&rsquo; de m&ecirc;me couleur. Simple? Oui. Facile? Certes non!  Des pi&egrave;ges
+cach&eacute;s, d&rsquo;immenses labyrinthes, des rayons laser, et surtout des &eacute;nigmes &agrave;
+s&rsquo;arracher les cheveux bloqueront le chemin qui vous m&egrave;ne aux Oxydes.
+Les objets du jeu (il y en a des centaines), agissent de mani&egrave;re inattendue, et
+comme la plupart ob&eacute;issent aux lois de la physique (du moins la physique un peu
+sp&eacute;ciale d&rsquo;Enigma), les contr&ocirc;ler avec la souris n&rsquo;est pas toujours ais&eacute;
+<small class="enddots">...</small>
+</p>
+<p>A l&rsquo;origine, le projet Enigma a &eacute;t&eacute; fond&eacute; pour perp&eacute;tuer l&rsquo;esprit des jeux de la
+s&eacute;rie des &rsquo;Oxyd , lorsque leur &eacute;diteur a d&eacute;cid&eacute; en 2002 de quitter le monde du
+jeu. Les amateurs d&rsquo;Oxyd trouveront &agrave; Enigma un air familier. Mais au cours des
+ans, Enigma a phagocyt&eacute; des id&eacute;es d&rsquo;innombrables autres jeux, en leur donnant
+son propre style.
+</p>
+<p>Enigma existe pour Windows, Mac OS X, et la plupart des Linux et autres Unix
+modernes. Il a &eacute;t&eacute; traduit en plusieurs langues. M&ecirc;me ce manuel est
+disponible en plusieurs langues (<em>et cette phrase est autor&eacute;f&eacute;rentielle; enfin la
+phrase pr&eacute;c&eacute;dente; quoique la pr&eacute;sente phrase aussi</em>).
+</p>
+<p>Sur <a href="http://www.nongnu.org/enigma">homepage</a>, vous trouverez des copies
+d&rsquo;&eacute;cran, des t&eacute;l&eacute;chargements, des news, et la version la plus r&eacute;cente de ce
+manuel: <a href="http://www.nongnu.org/enigma/manual">manual</a>.
+On peut joindre les d&eacute;veloppeurs par email &agrave; <a href="mailto:enigma-devel@nongnu.org">enigma-devel@nongnu.org</a>.
+</p>
+<p>Enigma est un logiciel libre: vous &ecirc;tes encourag&eacute;s &agrave; le copier et en faire
+cadeau autour de vous (<a href="#Distribuer-Enigma">Distribuer Enigma</a>).  Enigma est d&eacute;velopp&eacute;
+par un petit groupe de volontaires, qui y consacrent leurs loisirs.
+Si vous aimez ce jeu n&rsquo;h&eacute;sitez pas &agrave; envoyer un email. C&rsquo;est probablement la
+seule r&eacute;compense qu&rsquo;auront ses cr&eacute;ateurs.
+</p>
+
+<hr size="6">
+<a name="Installation"></a>
+<a name="Installation-1"></a>
+<h2 class="section">1.2 Installation</h2>
+
+<p>La derni&egrave;re version d&rsquo;Enigma peut &ecirc;tre t&eacute;l&eacute;charg&eacute;e &agrave;
+<a href="http://www.nongnu.org/enigma/download.html">Download Page</a>. On y trouve des packages pour les syst&egrave;mes d&rsquo;exploitation suivants:
+</p>
+<dl compact="compact">
+<dt> <strong>Windows</strong></dt>
+<dd><p>Il suffit d&rsquo;ex&eacute;cuter apr&egrave;s t&eacute;l&eacute;chargement, le fichier &lsquo;<tt>.exe</tt>&rsquo; .
+</p>
+</dd>
+<dt> <strong>Unix</strong></dt>
+<dd><p>Des binaires existent pour des Linux comme SUSE,
+Redhat, ou Debian. Pour les autres, il faudra compiler le source.
+</p>
+</dd>
+<dt> <strong>Mac OS X</strong></dt>
+<dd><p>Pas d&rsquo;installation n&eacute;cessaire pour la version OS X , il faut juste ex&eacute;cuter le
+fichier &lsquo;<tt>.dmg</tt>&rsquo; ou &lsquo;<tt>.tar.gz</tt>&rsquo; .
+</p>
+</dd>
+</dl>
+
+<p>La page &rsquo;download contient en g&eacute;n&eacute;ral des informations plus d&eacute;taill&eacute;es ou plus
+r&eacute;centes . Si Enigma ne fonctionnait pas sur votre ordinateur, ne vous g&ecirc;nez
+pas pour demander &agrave; la liste postale d&rsquo;Enigma
+(<a href="mailto:enigma-devel@nongnu.org">enigma-devel@nongnu.org</a>).
+</p>
+<hr size="6">
+<a name="Distribuer-Enigma"></a>
+<a name="Distribuer-Enigma-1"></a>
+<h2 class="section">1.3 Distribuer Enigma</h2>
+
+<p>Enigma est un logiciel libre plac&eacute; sous la licence
+GNU General Public License (GPL).  Cette licence accompagne toutes les versions
+d&rsquo;Enigma (ou bien dans &lsquo;<tt>COPYING</tt>&rsquo; ou alors dans
+&lsquo;<tt>COPYING.txt</tt>&rsquo;).  Si tout ce que vous voulez est <em>jouer &agrave;</em> Enigma, vous
+n&rsquo;aurez pas besoin de lire ce texte l&eacute;gal r&eacute;dig&eacute; en anglais. En substance, il
+dit ceci: Jouez &agrave; Enigma tant que vous voulez, et n&rsquo;oubliez pas de le
+distribuer autour de vous !
+</p>
+<p>Si vous d&eacute;sirez modifer Enigma ou contribuer &agrave; son d&eacute;veloppement futur,
+ <em>lisez</em> la license, au moins une fois dans votre vie.
+La GPL assure que Enigma restera un logiciel libre dans le futur.
+En particulier, si vous modifiez Enigma ou distribuez une version modifi&eacute;e,
+vous ne devez emp&ecirc;cher quiconque d&rsquo;utiliser, modifier, et distribuer
+Enigma et ses deriv&eacute;s.
+</p>
+<p>Les deux paragraphes pr&eacute;c&eacute;dents ne remplacent pas la vraie license,
+mais la r&eacute;sument.  Si vous avez des doutes, consultez la
+GPL ou demandez.
+</p>
+<hr size="6">
+<a name="Le-jeu"></a>
+<a name="Le-jeu-1"></a>
+<h1 class="chapter">2. Le jeu</h1>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Pour-commencer">2.1 Pour commencer</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">             Naviguer dans les menus et commencer un jeu
+</td></tr>
+<tr><td align="left" valign="top"><a href="#R_00e8gles-du-jeu">2.2 R&egrave;gles du jeu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">           Comment jouer &agrave; Enigma
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Contr_00f4les">2.3 Contr&ocirc;les</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                   Commandes clavier et souris
+</td></tr>
+</table>
+
+
+<hr size="6">
+<a name="Pour-commencer"></a>
+<a name="Pour-commencer-1"></a>
+<h2 class="section">2.1 Pour commencer</h2>
+
+<p>Apr&egrave;s avoir lanc&eacute; Enigma, vous voyez le menu principal, avec lequel vous pouvez
+commencer un nouveau jeu, r&eacute;gler quelques options, ou quitter le jeu. Les
+sections suivantes couvrent rapidement le menu des niveaux et le menu des
+options; tout le reste devrait &ecirc;tre auto-explicatoire. Pour beaucoup de menus,
+il y a une aide en ligne, qu&rsquo;on trouve en pressant la touche &lt;F1&gt; .
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Le-menu-des-niveaux">2.1.1 Le menu des niveaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">              Choisir le prochain niveau
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Le-menu-des-paquets-de-niveaux">2.1.2 Le menu des paquets de niveaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         Choisir un paquet de niveaux
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Options-de-jeu">2.1.3 Options de jeu</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                Adaptez Enigma &agrave; vos go&ucirc;ts
+</td></tr>
+<tr><td align="left" valign="top"><a href="#L_0027inspecteur-des-niveaux">2.1.4 L&rsquo;inspecteur des niveaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         Informations d&eacute;taill&eacute;es sur un niveau
+</td></tr>
+</table>
+
+
+<hr size="6">
+<a name="Le-menu-des-niveaux"></a>
+<a name="Le-menu-des-niveaux-1"></a>
+<h3 class="subsection">2.1.1 Le menu des niveaux</h3>
+
+<p>En cliquant sur &ldquo;Commencer partie&rdquo; dans le menu principal, on d&eacute;couvre le
+menu des niveaux, qui ressemble &agrave; ceci:
+</p>
+<img src="images/levelmenu.png" alt="images/levelmenu">
+
+<p>Cet &eacute;cran est divis&eacute; en trois parties: Celle du haut contient des informations
+&agrave; propos du niveau et du paquet de niveaux courants, celle du milieu montre une
+vue a&eacute;rienne des niveaux actuellement disponibles, et celle du bas est une
+rang&eacute;e de boutons (comme mon visage).
+</p>
+<p>On peut se d&eacute;placer dans la liste des niveaux en utilisant les boutons en forme
+de fl&egrave;ches sur la droite, ou bien en utilisant les fl&egrave;ches du clavier. Pour
+commencer un nouveau jeu, il suffit de cliquer sur son image, ou de faire
+ &lt;Entr&eacute;e&gt;.
+</p>
+<p>Enigma a deux r&eacute;glages de difficult&eacute; : &ldquo;facile&rdquo; et &ldquo;normal.&rdquo;  Pour
+alterner entre les deux, il faut utiliser le bouton avec des m&eacute;dailles en bas:
+ Lorsque la m&eacute;daille est en argent et accompagn&eacute;e d&rsquo;une plume, le r&eacute;glage est
+ sur &ldquo;facile&rdquo;, et  quand elle est en or, le mode de jeu est plus difficile.
+</p>
+<p>Les niveaux ne poss&egrave;dent pas tous un mode &ldquo;facile&rdquo;; ceux qui en ont un sont
+rep&eacute;r&eacute;s par une plume ou une m&eacute;daille d&rsquo;argent selon qu&rsquo;ils ont d&eacute;j&agrave; &eacute;t&eacute;
+r&eacute;solus ou non.
+</p>
+<p>La touche &lt;F5&gt; ou le clic sur le bouton
+&lt;&gt;&gt;|&gt; qui est en bas, permettent d&rsquo;aller au niveau suivant. Le sens du mot
+&ldquo;suivant&rdquo; dans la phrase pr&eacute;c&eacute;dente d&eacute;pend du mode s&eacute;lectionn&eacute; avec le bouton
+le plus &agrave; gauche de la rang&eacute;e du bas:
+</p>
+<ul>
+<li>
+Une sph&egrave;re noire signifie &ldquo;vraiment le prochain&rdquo;. On va au niveau qui suit,
+que celui-ci soit r&eacute;solu ou non.
+
+</li><li>
+Les m&eacute;dailles signifient &ldquo;Prochain niveau non r&eacute;solu&rdquo;; c&rsquo;est en effet &agrave;
+celui-l&agrave; que l&rsquo;on se rend en cliquant sur le bouton &lt;&gt;&gt;|&gt; .
+
+</li><li>
+La sph&egrave;re noire en vitesse supraluminique est pour le mode &ldquo;par&rdquo; (acronyme
+pour &ldquo;professional average rating&rdquo;). La performance professionnelle moyenne
+devrait &ecirc;tre &agrave; port&eacute;e d&rsquo;un joueur dou&eacute;, et les niveaux pour lesquels v&ocirc;tre
+propre score est en-dessous du PAR sont marqu&eacute;s par cette boule noire &agrave; grande
+vitesse. Dans ce mode le clic sur &lt;&gt;&gt;|&gt;  vous fait aller au prochain niveau
+pour lequel votre score est inf&eacute;rieur ou &eacute;gal au PAR de ce niveau.
+
+</li><li>
+La plan&egrave;te bleue repr&eacute;sente la chasse au record du monde. Si votre propre score
+est le meilleur de la plan&egrave;te, le niveau est marqu&eacute; par ce symbole. Et si vous
+s&eacute;lectionnez ce mode, le niveau courant sera jou&eacute; et rejou&eacute; jusqu&rsquo;&agrave; ce que vous
+ayez battu ledit record du monde.
+
+</li></ul>
+
+<p>Il se peut qu&rsquo;un niveau soit aussi marqu&eacute; par un triangle rouge surmont&eacute; d&rsquo;un
+point d&rsquo;exclamation (en haut &agrave; gauche). Cela arrive lorsque le niveau a &eacute;t&eacute;
+modifi&eacute; apr&egrave;s que vous l&rsquo;avez r&eacute;solu. Vous le verrez probablement apr&egrave;s une
+mise &agrave; niveau d&rsquo;Enigma.
+</p>
+<p>On peut naviguer dans le menu des niveaux avec les touches suivantes:
+</p>
+<dl compact="compact">
+<dt> <kbd>&lt;Echap&gt;</kbd></dt>
+<dd><p>Retourne au menu pr&eacute;c&eacute;dent
+</p>
+</dd>
+<dt> <kbd>&lt;F1&gt;</kbd></dt>
+<dd><p>Affiche l&rsquo;aide en ligne
+</p>
+</dd>
+<dt> <kbd>&lt;F5&gt;</kbd></dt>
+<dd><p>Saute au prochain niveau, comme le fait le bouton &lt;&gt;&gt;|&gt;
+</p>
+</dd>
+<dt> <kbd>fl&egrave;ches</kbd></dt>
+<dd><p>Change le niveau s&eacute;lectionn&eacute;
+</p>
+</dd>
+<dt> <kbd>&lt;Entr&eacute;e&gt;</kbd></dt>
+<dd><p>Joue le niveau s&eacute;lectionn&eacute;
+</p>
+</dd>
+<dt> <kbd>&lt;Espace&gt;</kbd></dt>
+<dd><p>Va au prochain paquet de niveaux
+</p>
+</dd>
+<dt> <kbd>&lt;Backspace&gt;</kbd></dt>
+<dd><p>Va au paquet de niveaux pr&eacute;c&eacute;dent
+</p>
+</dd>
+</dl>
+
+<hr size="6">
+<a name="Le-menu-des-paquets-de-niveaux"></a>
+<a name="Le-menu-des-paquets-de-niveaux-1"></a>
+<h3 class="subsection">2.1.2 Le menu des paquets de niveaux</h3>
+
+<p>Enigma contient tellement de niveaux qu&rsquo;ils ont &eacute;t&eacute; organis&eacute;s en &ldquo;paquets de
+niveaux&rdquo;; et comme chaque version d&rsquo;Enigma a vu na&icirc;tre de nouveaux niveaux,
+on a organis&eacute; les paquets de niveaux en &ldquo;groupes&rdquo;. Cette organisation est
+plus simple &agrave; l&rsquo;usage qu&rsquo;&agrave; la description.
+</p>
+<p>Pour s&eacute;lectionner un paquet de niveaux, il faut cliquer sur  &ldquo;Pack de niveaux&rdquo;
+qui est dans le menu principal et dans le menu des niveaux.
+</p>
+<p>Ce menu montre les groupes dans la colonne de gauche et les paquets de niveaux
+du groupe courant dans la colonne de droite. Les groupes actuellement fournis
+avec Enigma sont les suivants:
+</p>
+<ul>
+<li> <b>Enigma</b> - niveaux qui n&rsquo;ont &eacute;t&eacute; &eacute;crits que pour Enigma
+</li><li> <b>D&eacute;j&agrave;-vu</b> - que vous pourriez avoir d&eacute;j&agrave; vu avant
+</li><li> <b>Sokoban</b>
+</li><li> <b>Facets</b> - tris sp&eacute;ciaux &agrave; partir des niveaux pr&eacute;c&eacute;dents
+</li><li> <b>User</b> - niveaux et paquets personnels comme par exemple l&rsquo;historique
+et les paquets faits par l&rsquo;utilisateur.
+</li><li> <b>Development</b> - patrons et niveaux pas finis par l&rsquo;&eacute;quipe d&rsquo;Enigma
+</li><li> <b>All Packs</b> - La totale
+</li></ul>
+
+<p>Un clic sur le bouton gauche s&eacute;lectionne un paquet de niveaux.
+</p>
+<p>Pour des descriptions plus d&eacute;taill&eacute;es sur les paquets de niveaux voyez
+<a href="#Paquets-utilisateur">Paquets utilisateur</a>.
+</p>
+<hr size="6">
+<a name="Options-de-jeu"></a>
+<a name="Options-de-jeu-1"></a>
+<h3 class="subsection">2.1.3 Options de jeu</h3>
+
+<p>Le menus des options vous permet d&rsquo;adapter Enigma &agrave; vos pr&eacute;f&eacute;rences.
+</p>
+<dl compact="compact">
+<dt> <strong>Langue</strong></dt>
+<dd><p>Choisir la langue pour les menus et si possible pour les documents qui sont
+dans le niveau.
+</p>
+</dd>
+<dt> <strong>Plein Ecran</strong></dt>
+<dd><p>Alterne entre les modes plein &eacute;cran et fen&ecirc;tre.
+<kbd>Alt-&lt;Entr&eacute;e&gt;</kbd> a le m&ecirc;me effet, m&ecirc;me en dehors du menu des options.
+<em>Note:</em> Sur certains syst&egrave;mes il faut retourner au menu principal pour
+pouvoir retourner au mode plein &eacute;cran.
+</p>
+</dd>
+<dt> <strong>Mode vid&eacute;o</strong></dt>
+<dd><p>Ce bouton permet de changer le mode vid&eacute;o utilis&eacute; par Enigma; il ne prend effet
+que lorsque l&rsquo;on retourne au menu principal.
+</p>
+</dd>
+<dt> <strong>Correction gamma</strong></dt>
+<dd><p>Si n&eacute;cessaire, permet de r&eacute;gler la luminosit&eacute; de l&rsquo;&eacute;cran.
+</p>
+</dd>
+<dt> <strong>Vitesse souris</strong></dt>
+<dd><p>D&eacute;termine &agrave; quelle vitesse la boule acc&eacute;l&egrave;re quand on bouge la souris.
+Les fl&egrave;ches gauche et droite permettent de changer la vitesse de la souris
+durant le jeu.
+</p>
+</dd>
+<dt> <strong>Volume sonore</strong></dt>
+<dd><p>R&egrave;gle le volume des effets sonores durant le jeu.
+</p>
+</dd>
+<dt> <strong>Jeu de sons</strong></dt>
+<dd><p>Ce bouton vous permet de choisir le jeu d&rsquo;effets sonores qu&rsquo;Enigma va utiliser
+pendant le jeu.  Si vous utilisez Enigma avec les fichiers de donn&eacute;e d&rsquo;Oxyd,
+cette option vous permet d&rsquo;utiliser les sons d&rsquo;Oxyd dans tout le jeu.
+</p>
+</dd>
+<dt> <strong>Volume musique</strong></dt>
+<dd><p>Le volume de la musique de fond qui passe dans les menus.
+</p>
+
+</dd>
+<dt> <strong>St&eacute;r&eacute;o</strong></dt>
+<dd><p>Alterne entre la st&eacute;r&eacute;o &ldquo;normale&rdquo; , la st&eacute;r&eacute;o&ldquo;invers&eacute;e&rdquo; , et la mono (non,
+pas la monitrice, la monophonie).
+</p>
+</dd>
+<dt> <strong>Mise &agrave; jour records</strong></dt>
+<dd><p>Si mis sur &lsquo;<samp>Auto</samp>&rsquo; Enigma essayera r&eacute;guli&egrave;rement de charger des scores ce
+qui mettra &agrave; jour les donn&eacute;es de score, records du monde, PAR etc.
+See section <a href="#Homologuer-les-scores">Homologuer les scores</a>.
+</p>
+</dd>
+<dt> <strong>Nom utilisateur</strong></dt>
+<dd><p>Entrez votre nom ou alias qui sera attach&eacute; &agrave; enigma.score si vous le mettez &agrave;
+jour. See section <a href="#Homologuer-les-scores">Homologuer les scores</a>.
+</p>
+</dd>
+<dt> <strong>Chemin utilisateur</strong></dt>
+<dd><p>L&agrave; o&ugrave; Enigma enregistre toutes vos donn&eacute;es utilisateur. Voir le manuel de
+r&eacute;f&eacute;rence pour plus de d&eacute;tail.
+</p>
+</dd>
+<dt> <strong>Chemin images</strong></dt>
+<dd><p>L&agrave; o&ugrave; Enigma enregistre toutes vos images. Voir le manuel de
+r&eacute;f&eacute;rence pour plus de d&eacute;tail.
+</p>
+</dd>
+</dl>
+
+<hr size="6">
+<a name="L_0027inspecteur-des-niveaux"></a>
+<a name="L_0027inspecteur-des-niveaux-1"></a>
+<h3 class="subsection">2.1.4 L&rsquo;inspecteur des niveaux</h3>
+
+<p>Pour lire des informations sur le niveau courant vous pouvez utiliser
+l&rsquo;inspecteur des niveaux. Pour cela il faut cliquer-droit ou faire control-clic
+sur l&rsquo;image du niveau dans le menu des niveaux.
+</p>
+<p>Vous pouvez comparer vos scores au record du monde, au par, au score de l&rsquo;auteur.
+Il y a m&ecirc;me des statistiques sur combien de joueurs ont r&eacute;solu ce niveau.
+</p>
+<p>Vous pouvez aussi entrer une petite annotation sur le niveau, et le noter.
+</p>
+<p>Sur certains syst&egrave;mes, cette annotation ne peut &ecirc;tre entr&eacute;e qu&rsquo;avec des codes
+ASCII.
+</p>
+<p>La note traduit votre impression personnelle sur le niveau. &lsquo;<samp>-</samp>&rsquo; veut dire
+pas d&rsquo;opinion. 0 - tr&egrave;s mauvais, 5 - moyen, 10 - le meilleur des meilleurs. La
+note sera exp&eacute;di&eacute;e avec vos scores (<a href="#Homologuer-les-scores">Homologuer les scores</a>).
+</p>
+<p>Enfin l&rsquo;inspecteur des niveaux permet de voir les captures d&rsquo;&eacute;cran prises durant
+le jeu (<a href="#Contr_00f4les">Contr&ocirc;les</a>).
+</p>
+<hr size="6">
+<a name="R_00e8gles-du-jeu"></a>
+<a name="Regles-du-jeu"></a>
+<h2 class="section">2.2 R&egrave;gles du jeu</h2>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Paysages-normaux">2.2.1 Paysages normaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Paysages-_00e0-deux-joueurs">2.2.2 Paysages &agrave; deux joueurs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Paysages-de-m_00e9ditation">2.2.3 Paysages de m&eacute;ditation</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+
+<hr size="6">
+<a name="Paysages-normaux"></a>
+<a name="Paysages-normaux-1"></a>
+<h3 class="subsection">2.2.1 Paysages normaux</h3>
+
+<p>L&rsquo;id&eacute;e de base d&rsquo;Enigma est simple: Dans la plupart des niveaux vous contr&ocirc;lez
+une boule de billard noire (<em>ou plut&ocirc;t  une sph&egrave;re, vu sa fragilit&eacute; et le
+bruit qu&rsquo;elle fait en se brisant</em>) qui doit trouver et &ldquo;ouvrir&rdquo; des paires de
+pierres appel&eacute;es <em>Oxydes</em>.  Les oxydes ferm&eacute;es ressemblent &agrave; ceci
+(il y a quatre variantes pour l&rsquo;aspect, mais le comportement est le m&ecirc;me):
+</p>
+<img src="images/st-oxyds.png" alt="images/st-oxyds">
+
+<p>Quand vous touchez une oxyde avec la boule noire, elle s&rsquo;ouvre et r&eacute;v&egrave;le un motif
+color&eacute;.  Chaque niveau comprend deux oxydes de chaque couleur.  Vous devez toucher
+successivement deux oxydes de la m&ecirc;me couleur pour les ouvrir d&eacute;finitivement &ndash; si
+elles ne sont pas de la m&ecirc;me couleur, la premi&egrave;re se referme . Vous avez r&eacute;ussi
+un niveau lorsque vous avez ouvert toutes les paires d&rsquo;oxydes qu&rsquo;il contient .
+L&rsquo;image suivante montre une paire d&rsquo;oxydes vertes d&eacute;j&agrave; ouvertes. Le point
+d&rsquo;interrogation &agrave; l&rsquo;int&eacute;rieur de l&rsquo;oxyde bleue montre que l&rsquo;autre oxyde bleue
+est toujours cach&eacute;e quelque part.
+</p>
+<img src="images/intro-oxyd.png" alt="images/intro-oxyd">
+
+<p><em>Au fait: Si ce n&rsquo;est d&eacute;j&agrave; fait, le moment est appropri&eacute; pour d&eacute;marrer
+Enigma et essayer quelques niveaux!</em>
+</p>
+<p>Il suffit de passer par-dessus un objet pour le ramasser. L&rsquo;inventaire en bas de
+l&rsquo;&eacute;cran montre la liste des outils dont vous disposez. Au d&eacute;but d&rsquo;un nouveau jeu
+vous n&rsquo;avez que deux vies suppl&eacute;mentaires. L&rsquo;image suivante montre un inventaire
+contenant une pelle, un morceau de papier, deux b&acirc;tons de dynamite, vos deux vies
+suppl&eacute;mentaires, et un parapluie:
+</p>
+<img src="images/intro-inventory.png" alt="images/intro-inventory">
+
+<p>L&rsquo;objet le plus &agrave; gauche de l&rsquo;inventaire peut &ecirc;tre actionn&eacute; en cliquant avec le
+bouton gauche: Il sera d&eacute;pos&eacute; sur le sol ou accomplira une certaine action. Par
+exemple, la dynamite prend feu quand on la d&eacute;pose, et les ressorts vont propulser
+la boule noire. Un clic avec le bouton droit ou le bouton central de la souris
+r&eacute;arrange les objets de l&rsquo;inventaire.
+</p>
+<p>Si, pour une quelconque raison, vous ne d&eacute;sirez pas prendre un objet, passez
+dessus tout en laissant appuy&eacute; le bouton gauche de la souris. Cela peut servir en certaines
+occasions.
+</p>
+<p>Beaucoup de pierres peuvent &ecirc;tre boug&eacute;es en les poussant suffisamment fort. La
+plus utile des pierres mobiles est certainement celle qui est en bois, et qui
+peut servir &agrave; construire des ponts au-dessus de l&rsquo;eau et de l&rsquo;ab&icirc;me. Cette image
+montre comment on peut construire un pont en empilant des blocs de bois dans
+l&rsquo;eau:
+</p>
+<img src="images/intro-plank.png" alt="images/intro-plank">
+
+<p>Certains objets peuvent se transformer, en les &eacute;clairant avec un laser ou en
+les &eacute;crasant avec des pierres mobiles; et certaines pierres ont un comportement
+diff&eacute;rent si on les actionne avec un des outils de l&rsquo;inventaire: L&rsquo;exemple le
+plus connu est la baguette magique.
+</p>
+<p>Surtout ne vous laissez pas d&eacute;courager par l&rsquo;apparente complexit&eacute; du jeu &ndash; le
+comportement de la plupart des objets devient &eacute;vident au moment ad&eacute;quat. Certains
+des objets les plus &eacute;tranges sont d&eacute;crits au  <a href="#Quelques-objets-du-jeu">Quelques objets du jeu</a>.
+</p>
+<hr size="6">
+<a name="Paysages-_00e0-deux-joueurs"></a>
+<a name="Paysages-a-deux-joueurs"></a>
+<h3 class="subsection">2.2.2 Paysages &agrave; deux joueurs</h3>
+
+<p>H&eacute;las non: Ce n&rsquo;est pas un jeu en r&eacute;seau; il n&rsquo;y a d&rsquo;ailleurs pas de niveaux
+avec vraiment deux joueurs, mais des niveaux &agrave; un joueur peuvent comporter
+deux boules pilotables par ledit joueur: La d&eacute;j&agrave; connue boule noire, et une
+autre qui est blanche; un tel niveau se reconna&icirc;t &agrave; la pr&eacute;sence d&rsquo;un objet
+en forme de &rsquo;yin-yang&rsquo; dans l&rsquo;inventaire; cet objet permet de choisir laquelle
+des deux boules on souhaite piloter:
+</p>
+<img src="images/intro-twoplayer.png" alt="images/intro-twoplayer">
+
+<hr size="6">
+<a name="Paysages-de-m_00e9ditation"></a>
+<a name="Paysages-de-meditation"></a>
+<h3 class="subsection">2.2.3 Paysages de m&eacute;ditation</h3>
+
+<p>Dans les niveaux dits de m&eacute;ditation v&ocirc;tre r&ocirc;le est tr&egrave;s diff&eacute;rent: Au lieu de
+chercher des oxydes qui se correspondent, vous devez placer des petites boules
+blanches dans des creux du sol. Le niveau est termin&eacute; d&egrave;s que chaque petite boule
+blanche <em>s&rsquo;est immobilis&eacute;e</em> dans son petit nid douillet.
+</p>
+<img src="images/intro-meditation.png" alt="images/intro-meditation">
+
+<p>Ceci dit, toutes les boules blanches sont actionn&eacute;es par la souris et un
+mouvement brusque de celle-ci peut faire sortir certaines d&rsquo;entre elles de leur
+trou. Pour r&eacute;ussir un niveau de m&eacute;ditation, il faut un geste assur&eacute; et beaucoup
+de patience (d&rsquo;o&ugrave; le nom de m&eacute;ditation donn&eacute; &agrave; ces niveaux !).
+</p>
+<hr size="6">
+<a name="Contr_00f4les"></a>
+<a name="Controles"></a>
+<h2 class="section">2.3 Contr&ocirc;les</h2>
+
+<p>Voici une liste des contr&ocirc;les actifs en phase de jeu (pas besoin de les
+apprendre par coeur, cette liste est disponible par un appui sur la touche
+&lt;F1&gt; .):
+</p>
+<dl compact="compact">
+<dt> <kbd>clic gauche</kbd></dt>
+<dd><p>Utilisation du premier outil de l&rsquo;inventaire
+</p>
+</dd>
+<dt> <kbd>clic droit/ bouton du milieu</kbd></dt>
+<dd><p>Rotation de l&rsquo;inventaire des outils
+</p>
+</dd>
+<dt> <kbd>&lt;Echap&gt;</kbd></dt>
+<dd><p>Retour au menu principal
+</p>
+</dd>
+<dt> <kbd>&lt;Shift-Echap&gt;</kbd></dt>
+<dd><p>Quitter le jeux d&rsquo;embl&eacute;e
+</p>
+</dd>
+<dt> <kbd>&lt;F1&gt;</kbd></dt>
+<dd><p>Affichage de l&rsquo;aide
+</p>
+</dd>
+<dt> <kbd>&lt;F3&gt;</kbd></dt>
+<dd><p>Suicide de la boule noire
+</p>
+</dd>
+<dt> <kbd>&lt;Shift-F3&gt;</kbd></dt>
+<dd><p>Recommence le niveau
+</p>
+</dd>
+<dt> <kbd>&lt;F4&gt;</kbd></dt>
+<dd><p>Paysage suivant
+</p>
+</dd>
+<dt> <kbd>&lt;F5&gt;</kbd></dt>
+<dd><p>Prochain paysage non r&eacute;solu
+</p>
+</dd>
+<dt> <kbd>&lt;F10&gt;</kbd></dt>
+<dd><p>Prend une photo du paysage
+</p>
+</dd>
+<dt> <kbd>&lt;Fl&egrave;che gauche&gt;</kbd></dt>
+<dd><p>Diminuer la vitesse de la souris
+</p>
+</dd>
+<dt> <kbd>&lt;Fl&egrave;che droite&gt;</kbd></dt>
+<dd><p>Augmenter la vitesse de la souris
+</p>
+</dd>
+<dt> <kbd>Alt-&lt;Entr&eacute;e&gt;</kbd></dt>
+<dd><p>Affichage plein &eacute;cran ou fen&ecirc;tr&eacute;
+</p>
+
+</dd>
+<dt> <kbd>Alt-X</kbd></dt>
+<dd><p>Retour &agrave; l&rsquo;&eacute;cran des niveaux
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="Quelques-objets-du-jeu"></a>
+<a name="Quelques-objets-du-jeu-1"></a>
+<h1 class="chapter">3. Quelques objets du jeu</h1>
+
+<p>Il y a des dizaines d&rsquo;objets diff&eacute;rents dans le jeu Enigma. Ici seuls quelques-uns
+sont d&eacute;crits. Si vous d&eacute;butez en Enigma, c&rsquo;est une bonne id&eacute;e de commencer par
+les niveaux du package &ldquo;tutorial&rdquo;: Au d&eacute;marrage du jeu, cliquer sur
+&ldquo;Pack de niveaux&rdquo;, puis sur le bouton &ldquo;Enigma&rdquo; en haut &agrave; gauche, puis
+&ldquo;Tutoriel&rdquo; &agrave; droite. En les jouant dans l&rsquo;ordre, &ldquo;Oxyd Stones 1&rdquo; etc. le
+tutoriel vous montrera les objets et id&eacute;es les plus importants du jeu, et certains
+des niveaux les plus faciles d&rsquo;Enigma.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Outils">3.1 Outils</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Pierres">3.2 Pierres</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+
+
+<hr size="6">
+<a name="Outils"></a>
+<a name="Outils-1"></a>
+<h2 class="section">3.1 Outils</h2>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Explosifs">3.1.1 Explosifs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                  Dynamite et bombes
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Parapluies">3.1.2 Parapluies</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Drapeaux">3.1.3 Drapeaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                      Placer le point de r&eacute;surrection
+</td></tr>
+</table>
+
+<hr size="6">
+<a name="Explosifs"></a>
+<a name="Explosifs-1"></a>
+<h3 class="subsection">3.1.1 Explosifs</h3>
+<p>Il y a trois sortes d&rsquo;explosifs, que voici du moins dangereux au plus redoutable:
+</p>
+<img src="images/it-explosives.png" alt="images/it-explosives">
+
+<p>Le b&acirc;ton de dynamite ne d&eacute;truit que les objets les plus fragiles; son utilit&eacute;
+est essentiellement de mettre le feu aux bombes, mais elle peut aussi servir &agrave;
+faire fondre des morceaux de glace . La bombe noire (la plus courante)
+est suffisamment puissante pour cr&eacute;er un crat&egrave;re et d&eacute;tuire les pierres
+avoisinantes. La bombe blanche est thermonucl&eacute;aire: Elle a la puissance de 5
+bombes noires, et peut donc d&eacute;truire la boule noire m&ecirc;me si elle n&rsquo;est pas
+tr&egrave;s pr&egrave;s: Il y int&eacute;r&ecirc;t &agrave; s&rsquo;&eacute;loigner tr&egrave;s vite si elle est
+allum&eacute;e !
+</p>
+<hr size="6">
+<a name="Parapluies"></a>
+<a name="Parapluies-1"></a>
+<h3 class="subsection">3.1.2 Parapluies</h3>
+
+<img src="images/it-umbrella.png" alt="images/it-umbrella">
+
+<p>Une fois actionn&eacute;, le parapluie conf&egrave;re &agrave; la boule noire, l&rsquo;immunit&eacute;,
+mais pendant 10 secondes seulement. Son effet est annonc&eacute; par un halo blanc
+autour de la boule noire, constant pendant 7 secondes, puis clignotant pendant
+les 3 derni&egrave;res secondes: Ce clignotement signifie donc qu&rsquo;on est en fin
+d&rsquo;immunit&eacute;.
+</p>
+<hr size="6">
+<a name="Drapeaux"></a>
+<a name="Drapeaux-1"></a>
+<h3 class="subsection">3.1.3 Drapeaux</h3>
+
+<img src="images/it-flags.png" alt="images/it-flags">
+
+<p>Les drapeaux permettent de g&eacute;rer le karma des boules: Normalement si une boule
+qui a encore des vies en r&eacute;serve meurt, elle ressuscite au point de d&eacute;part
+du niveau; si on a pr&eacute;alablement d&eacute;pos&eacute; un drapeau quelque part, ce n&rsquo;est
+plus le cas: La boule r&eacute;appara&icirc;t &agrave; l&rsquo;endroit du drapeau. La couleur du
+drapeau est conforme &agrave; celle de la boule sur laquelle il agit.
+</p>
+
+
+<hr size="6">
+<a name="Pierres"></a>
+<a name="Pierres-1"></a>
+<h2 class="section">3.2 Pierres</h2>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Pierres-mortelles">3.2.1 Pierres mortelles</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Pierres-d_0027_00e9change">3.2.2 Pierres d&rsquo;&eacute;change</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Miroirs">3.2.3 Miroirs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Pierres-_00e0-sens-unique">3.2.4 Pierres &agrave; sens unique</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Pierres-Shogun">3.2.5 Pierres Shogun</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Eboulis">3.2.6 Eboulis</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Pi_00e8ces-de-puzzle">3.2.7 Pi&egrave;ces de puzzle</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Bo_00eetes-postales">3.2.8 Bo&icirc;tes postales</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+<hr size="6">
+<a name="Pierres-mortelles"></a>
+<a name="Pierres-mortelles-1"></a>
+<h3 class="subsection">3.2.1 Pierres mortelles</h3>
+
+<img src="images/st-lethal.png" alt="images/st-lethal">
+
+<p>Il y a deux sortes de <em>t&ecirc;tes de mort</em>: Celle qui est repr&eacute;sent&eacute;e ci-dessus,
+et une variante que seules les boules noires porteuses de lunettes peuvent voir.
+Au moindre contact, elles tuent les boules.
+</p>
+<p>Le <em>chevalier noir</em> est &eacute;galement mortel pour les boules d&eacute;sarm&eacute;es.
+Il y a des tueurs mobiles: Les &rsquo;tops&rsquo; (toupies) et les &rsquo;rotors&rsquo; (croix
+tournantes); ils sont attir&eacute;s par leur victime, laquelle a de pr&eacute;f&eacute;rence
+une forme sph&eacute;rique et une couleur noire <small class="enddots">...</small>
+</p>
+<hr size="6">
+<a name="Pierres-d_0027_00e9change"></a>
+<a name="Pierres-d_0027echange"></a>
+<h3 class="subsection">3.2.2 Pierres d&rsquo;&eacute;change</h3>
+
+<img src="images/st-swap.png" alt="images/st-swap">
+
+<p>En espace ext&eacute;rieur, une pierre d&rsquo;&eacute;change est immobile. Mais si on la pousse
+vers une pierre adjacente, elle &eacute;change sa position avec celle de sa voisine,
+elle est donc utile pour &rsquo;faire bouger&rsquo; des pierres immobiles. Mais elle-m&ecirc;me
+ne peut &ecirc;tre boug&eacute;e que gr&acirc;ce &agrave; un &eacute;change avec des pierres &rsquo;normales&rsquo;.
+</p>
+
+
+<hr size="6">
+<a name="Miroirs"></a>
+<a name="Miroirs-1"></a>
+<h3 class="subsection">3.2.3 Miroirs</h3>
+
+<img src="images/st-mirrors.png" alt="images/st-mirrors">
+
+<p>Les miroirs (&agrave; droite sur la photo) r&eacute;fl&eacute;chissent les rayons laser, soit
+en arri&egrave;re s&rsquo;ils sont perpendiculaires &agrave; ceux-ci, soit &agrave; angle droit s&rsquo;ils
+font un angle de 45 degr&eacute;s par rapport &agrave; ceux-ci. Les prismes (&agrave; gauche) sont
+plus complexes: Chaque face agit comme un miroir, mais si le rayon tombe sur
+l&rsquo;angle droit du prisme, il se divise en deux. Les prismes et miroirs peuvent
+&ecirc;tre soit semi-transparents (aux extr&eacute;mit&eacute;s de la photo; dans ce cas, le
+rayon est divis&eacute; en deux, une partie qui est r&eacute;fl&eacute;chie et une partie qui
+est transmise) soit opaques (au milieu de la photo). Ils peuvent &ecirc;tre soit
+mobiles (en les poussant fort avec la boule noire) soit immobiles. Mais dans les
+deux cas on peut les orienter en les touchant avec la boule. La manipulation des
+prismes et miroirs est dangereuse pour les boules noires si elle est men&eacute;e pr&egrave;s
+d&rsquo;un laser allum&eacute; <small class="enddots">...</small>
+</p>
+<hr size="6">
+<a name="Pierres-_00e0-sens-unique"></a>
+<a name="Pierres-a-sens-unique"></a>
+<h3 class="subsection">3.2.4 Pierres &agrave; sens unique</h3>
+
+<img src="images/st-oneway.png" alt="images/st-oneway">
+
+<p>On ne peut les traverser que dans un seul sens. Des labyrinthes entiers peuvent
+&ecirc;tre construits avec des pierres &agrave; sens unique, mais le plus souvent ils servent
+&agrave; vous obliger &agrave; finir une partie du niveau avant d&rsquo;attaquer la suivante.
+</p>
+<p>Une pierre &agrave; sens unique vous bloque vraiment? Peut-&ecirc;tre une baguette magique
+vous servira-t-elle <small class="enddots">...</small>
+</p>
+<hr size="6">
+<a name="Pierres-Shogun"></a>
+<a name="Pierres-Shogun-1"></a>
+<h3 class="subsection">3.2.5 Pierres Shogun</h3>
+
+<img src="images/st-shogun.png" alt="images/st-shogun">
+
+<p>Certains niveaux ont des cercles bleus par terre; ceux-ci actionnent quelque chose
+(ouverture de porte, allumage de lasers etc.) s&rsquo;ils sont recouverts par des pierres
+<em>shogun</em>. Il y a trois sortes de pierres shogun: La plus petite (&agrave; gauche sur le
+portrait de famille) actionne les petits cercles bleus. Pour les cercles de taille
+moyenne, il faut r&eacute;aliser l&rsquo;empilement que l&rsquo;on voit au milieu de la photo, en
+pla&ccedil;ant <em>d&rsquo;abord</em> un shogun de taille moyenne, puis un petit shogun par-dessus.
+De fa&ccedil;on g&eacute;n&eacute;rale, on ne peut empiler un shogun que sur shogun plus grand que
+lui, ou sur un sol nu. Pour les plus grands cercles bleus, il faut r&eacute;aliser
+l&rsquo;empilement de droite en amenant d&rsquo;abord un grand shogun, puis en le recouvrant
+par un shogun moyen, et enfin en recouvrant le tout par un petit.
+</p>
+<hr size="6">
+<a name="Eboulis"></a>
+<a name="Eboulis-1"></a>
+<h3 class="subsection">3.2.6 Eboulis</h3>
+
+<img src="images/st-bolder.png" alt="images/st-bolder">
+
+<p>Les &eacute;boulis ne bougent que dans une direction, indiqu&eacute;e par la fl&egrave;che qui est
+peinte dessus. Ils ne s&rsquo;arr&ecirc;tent que lorsqu&rsquo;ils heurtent une autre pierre. Ils
+peuvent barrer v&ocirc;tre chemin et vous devrez trouver un moyen de vous en
+d&eacute;barrasser. Mais vous, n&rsquo;embarrassez pas leur chemin, ou ils vous d&eacute;truiraient.
+</p>
+<p>Mais ils peuvent aussi &ecirc;tre utiles: Ils ouvrent des oxydes quand ils les heurtent.
+Et vous pouvez les rediriger de plusieurs mani&egrave;res <small class="enddots">...</small>
+</p>
+<hr size="6">
+<a name="Pi_00e8ces-de-puzzle"></a>
+<a name="Pieces-de-puzzle"></a>
+<h3 class="subsection">3.2.7 Pi&egrave;ces de puzzle</h3>
+
+<img src="images/st-puzzles.png" alt="images/st-puzzles">
+
+<p>Les pi&egrave;ces de puzzle peuvent &ecirc;tre assembl&eacute;es pour faire un puzzle complet. Elles
+ont des sortes de prises sur leurs c&ocirc;t&eacute;s pour les assembler. Une fois l&rsquo;assemblage
+termin&eacute;, on peut le pousser d&rsquo;un bloc comme des pierres uniques, ce qui permet
+par exemple de construire des ponts en pr&eacute;fabriqu&eacute; au-dessus de l&rsquo;eau ou de
+l&rsquo;ab&icirc;me.
+</p>
+<p>Lorsqu&rsquo;on les touche avec une baguette magique, leur comportement est diff&eacute;rent:
+Si le bloc est complet, il explose imm&eacute;diatement. Sinon la rang&eacute;e ou la colonne
+de pi&egrave;ces de puzzle dont fait partie celle qui a &eacute;t&eacute; touch&eacute;e, est d&eacute;cal&eacute;e
+circulairement soit dans le sens horizontal soit dans le sens vertical.
+</p>
+<p>Il y a une variante rare des pi&egrave;ces de puzzle, que l&rsquo;on trouve surtout dans les
+niveaux de Oxyd 1, et que l&rsquo;on reconna&icirc;t &agrave; leur couleur orange (au lieu de bleue).
+Ces pierres sont immobiles, et leur comportement est celui que la baguette magique
+conf&egrave;re aux pi&egrave;ces de puzzle bleues: Explosion si le puzzle est complet, et d&eacute;calage
+circulaire d&rsquo;une rang&eacute;e ou d&rsquo;une colonne sinon.
+</p>
+<hr size="6">
+<a name="Bo_00eetes-postales"></a>
+<a name="Boites-postales"></a>
+<h3 class="subsection">3.2.8 Bo&icirc;tes postales</h3>
+
+<img src="images/st-mail.png" alt="images/st-mail">
+
+<p>La bo&icirc;te aux lettres est une pierre en g&eacute;n&eacute;ral prolong&eacute;e par un tuyau
+form&eacute; de puzzles; &agrave; chaque contact avec une bo&icirc;te aux lettres, la boule
+noire exp&eacute;die au bout de ce tuyau, l&rsquo;outil le plus &agrave; gauche de son inventaire.
+Mais une fois qu&rsquo;un objet autre qu&rsquo;un puzzle a &eacute;t&eacute; exp&eacute;di&eacute;, la poste est
+bloqu&eacute;e. En g&eacute;n&eacute;ral on doit construire le tuyau en exp&eacute;diant ses morceaux
+par la poste.
+</p>
+
+
+
+
+
+
+<hr size="6">
+<a name="Expertise"></a>
+<a name="Expertise-1"></a>
+<h1 class="chapter">4. Expertise</h1>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Paquets-utilisateur">4.1 Paquets utilisateur</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">            Historique, r&eacute;sultats recherche et Auto
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Sauvegardes">4.2 Sauvegardes</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                      Que sauvegarder pour la s&eacute;curit&eacute;
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Homologuer-les-scores">4.3 Homologuer les scores</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">          Que le monde sache comme vous r&eacute;ussissez
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Mise-_00e0-jour">4.4 Mise &agrave; jour</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">             Mettre &agrave; jour les scores et les niveaux
+</td></tr>
+</table>
+
+<hr size="6">
+<a name="Paquets-utilisateur"></a>
+<a name="Paquets-utilisateur-1"></a>
+<h2 class="section">4.1 Paquets utilisateur</h2>
+
+<p><a href="#Le-menu-des-paquets-de-niveaux">Le menu des paquets de niveaux</a> en dit plus sur le sujet. Le groupe
+&lsquo;<samp>User</samp>&rsquo; contient trois paquets de niveaux, initialement vides:
+&lsquo;<samp>Auto Folder</samp>&rsquo;, &lsquo;<samp>History</samp>&rsquo; and &lsquo;<samp>Search Result</samp>&rsquo;.
+</p>
+<p>En cliquant sur le bouton &lsquo;<samp>Search</samp>&rsquo; dans le menu des paquets de niveaux,
+vous pouvez effectuer une recherche dans l&rsquo;ensemble des niveaux. Pour cela, placez
+la souris au-dessus de la zone de texte, puis entrez la cha&icirc;ne de caract&egrave;res &agrave;
+chercher. Vous pouvez effectuer une recherche par auteur, par titre ou par nom de
+fichier. La cha&icirc;ne peut &ecirc;tre entr&eacute;e en minuscules sans changer le r&eacute;sultat. Par
+exemple, vous pouvez entrer &ldquo;jump&rdquo;. Le r&eacute;sultat de la recherche est fourni sous
+la forme d&rsquo;un paquet de niveaux appel&eacute; &ldquo;Search Results&rdquo;.
+</p>
+<p>Le paquet de niveaux &lsquo;<samp>History</samp>&rsquo; est automatiquement mis &agrave; jour chaque fois
+que vous jouez un niveau. Cela peut &ecirc;tre utile si vous cherchez un niveau auquel
+vous jouates la semaine derni&egrave;re sans savoir quels mots-cl&eacute;s entrer pour le
+rechercher.
+</p>
+<p>&lsquo;<samp>Auto Folder</samp>&rsquo; est un paquet de niveaux dont vous pouvez vous servir pour
+ajouter de nouveaux niveaux, par exemple que vous avez t&eacute;l&eacute;charg&eacute;s, ou cr&eacute;&eacute;s
+vous-m&ecirc;me. Ces niveaux devraient &ecirc;tre plac&eacute;s dans &lsquo;<samp>levels/auto</samp>&rsquo; ou dans
+&lsquo;<samp>User Path</samp>&rsquo; comme indiqu&eacute; dans <a href="#Options-de-jeu">Options de jeu</a>. Les niveaux qui sont
+dans ce dossier sont automatiquement charg&eacute;s au d&eacute;marrage d&rsquo;Enigma.
+</p>
+<p>Bien d&rsquo;autres aspects utiles d&rsquo;Enigma d&eacute;passent le cadre de ce manuel. Consultez
+le manuel de r&eacute;f&eacute;rence pour plus de d&eacute;tails.
+</p>
+<hr size="6">
+<a name="Sauvegardes"></a>
+<a name="Sauvegardes-1"></a>
+<h2 class="section">4.2 Sauvegardes</h2>
+
+<p>Si vous craignez qu&rsquo;une d&eacute;faillance de v&ocirc;tre disque dur vous fasse perdre tous
+vos scores, ou si vous voulez transf&eacute;rer ceux-ci vers un autre ordinateur, voici
+quelques informations sur l&rsquo;&eacute;tat d&rsquo;Enigma. Premi&egrave;rement, jetez un oeil sur
+&lsquo;<samp>User Path</samp>&rsquo; dans le menu <a href="#Options-de-jeu">Options de jeu</a> .  Vous pouvez vous contenter
+de sauvegarder tout le dossier &ndash; les fichiers importants &eacute;tant &lsquo;<samp>enigma.score</samp>&rsquo;
+et &lsquo;<samp>state.xml</samp>&rsquo;.
+</p>
+<hr size="6">
+<a name="Homologuer-les-scores"></a>
+<a name="Homologuer-les-scores-1"></a>
+<h2 class="section">4.3 Homologuer les scores</h2>
+
+<p>Si vous voulez homologuer vos scores, vous devez envoyer le fichier &lsquo;<samp>enigma.score</samp>&rsquo;
+situ&eacute; dans le dossier &lsquo;<samp>User Path</samp>&rsquo;. La page d&rsquo;accueil vous donnera les d&eacute;tails
+sur la mani&egrave;re de proc&eacute;der.
+</p>
+<p>Pour la mise &agrave; jour automatique des records du monde, il suffit d&rsquo;activer
+l&rsquo;option &lsquo;<samp>Ratings Update</samp>&rsquo;.
+</p>
+<hr size="6">
+<a name="Mise-_00e0-jour"></a>
+<a name="Mise-a-jour"></a>
+<h2 class="section">4.4 Mise &agrave; jour</h2>
+
+<p>Si vous n&rsquo;avez pas personnalis&eacute; v&ocirc;tre ancienne version d&rsquo;Enigma, il vous suffit
+de la d&eacute;sinstaller avant d&rsquo;installer la nouvelle version. Ainsi vos scores seront
+automatiquement mis &agrave; jour.
+</p>
+<p>Mais si vous avez ajout&eacute; des niveaux &agrave; v&ocirc;tre ancienne version d&rsquo;Enigma, vous
+devrez les sauvegarder avant la d&eacute;sinstallation. Ensuite vous pouvez tranquillement
+d&eacute;sinstaller avant d&rsquo;installer la nouvelle version.
+</p>
+<p>L&rsquo;ancien fichier &lsquo;<samp>~/.enigmarc2</samp>&rsquo; pour les syst&egrave;mes qui ont un environnement
+&lsquo;<samp>HOME</samp>&rsquo; ou &lsquo;<samp>.../Application Data/enigmarc.lua2</samp>&rsquo; pour les
+Windows sans HOME (<em>des fen&ecirc;tres sans maison? Comment cela se peut-il?</em>)
+est automatiquement converti au nouveau format de fichier. Vous pouvez supprimer
+l&rsquo;ancien fichier d&egrave;s que vous avez r&eacute;ussi ne serait-ce qu&rsquo;un seul niveau de Enigma 1.00.
+</p>
+<p>Pour utiliser des niveaux que vous avez r&eacute;cup&eacute;r&eacute;s de l&rsquo;ancienne version d&rsquo;Enigma,
+consultez le manuel de r&eacute;f&eacute;rence.
+</p>
+<hr size="6">
+<a name="Triche"></a>
+<a name="Triche-1"></a>
+<h1 class="chapter">5. Triche</h1>
+
+<p>Ce chapitre contient des indices pour certains des niveaux les plus difficiles.
+On vous conseille vraiment de ne <em>pas</em> lire les indices tant que vous n&rsquo;&ecirc;tes pas
+compl&egrave;tement bloqu&eacute;s.  Certains niveaux sont vraiment difficiles (m&ecirc;me les
+champions d&rsquo;Enigma ne peuvent les r&eacute;soudre en moins de quelques heures).
+Certains niveaux sont plus faciles en mode &rsquo;facile&rsquo; (<a href="#Le-menu-des-niveaux">Le menu des niveaux</a>).
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Tutoriel">5.1 Promenade dans &lsquo;Advanced tutorial&rsquo;</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="#Indices">5.2 Indices pour plusieurs niveaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+</table>
+
+<hr size="6">
+<a name="Tutoriel"></a>
+<a name="Promenade-dans-_0060Advanced-tutorial_0027"></a>
+<h2 class="section">5.1 Promenade dans &lsquo;Advanced tutorial&rsquo;</h2>
+
+<p>Cette section a &eacute;t&eacute; &eacute;crite par Jakob Scott, le cr&eacute;ateur des niveaux &rsquo;tutorial&rsquo;.
+Les niveaux du chapitre &rsquo;tutorial&rsquo; sont cens&eacute;s &ecirc;tre faciles, &agrave; l&rsquo;exception du
+dernier d&rsquo;entre eux (&rsquo;advanced tutorial&rsquo;), auquel les paragraphes suivants sont
+consacr&eacute;s. Premier conseil: Lire tous les documents de chaque chambre d&egrave;s qu&rsquo;on
+y entre. Le but de ce jeu est donc de trouver, et toucher, toutes les oxydes du niveau,
+lequel est divis&eacute; en une vingtaine de chambres, regroup&eacute;es en trois zones: La zone 1
+est compos&eacute;e de chambres o&ugrave; on montre les &eacute;l&eacute;ments de base et certains sols de
+Enigma. La zone 2 est plus agressive, avec l&rsquo;&eacute;laboration de strat&eacute;gies parfois
+destin&eacute;es &agrave; &eacute;chapper &agrave; des ennemis. La zone 3 montre des interactions plus
+complexes entre objets Enigma. Dans ce niveau, les oxydes sont regroup&eacute;es dans
+la chambre &agrave; laquelle on acc&egrave;de &agrave; la fin de la zone 3.
+</p>
+<hr size="6">
+<a name="Zone-1"></a>
+<h3 class="subsection">5.1.1 Zone 1</h3>
+
+<p>Au d&eacute;part, on est dans une chambre ferm&eacute;e par une porte en haut, contenant un peu
+d&rsquo;eau en bas &agrave; gauche, et un trou dans le mur droit.
+</p>
+<p>Chambre 1: Traverser ce trou pour aller dans la chambre 2.
+</p>
+<p>Chambre 2: Il suffit d&rsquo;&eacute;viter les t&ecirc;tes de mort pour traverser cette chambre.
+</p>
+<p>Chambre 3: Fabriquer un pont au-dessus de l&rsquo;eau avec les morceaux de bois; frapper
+les pierres noires &agrave; droite; &eacute;carter les pierres mordor&eacute;es du chemin (par
+exemple en les poussant vers la gauche), puis faire un pont vers la droite avec
+deux morceaux de bois.
+</p>
+<p>Chambre 4: Aller vers la toupie; quand elle entre en chasse,
+la mener vers la gauche jusqu&rsquo;&agrave; avoir les pierres centrales entre elle (&agrave; gauche)
+et la boule noire; entrer dans la chambre suivante.
+</p>
+<p>Chambre 5: Le seul danger sont  les t&ecirc;tes de mort du bas: Cette chambre montre
+certains sols: Dans l&rsquo;ordre, le  m&eacute;tal a des propri&eacute;t&eacute;s analogues au sol verdoyant
+vu juqu&rsquo;ici, le sol rouge frotte plus, la glace frotte moins et l&rsquo;espace sid&eacute;ral ne
+frotte pas du tout, au point qu&rsquo;il est impossible de changer de direction quand on
+le traverse.
+</p>
+<p>Chambre 6: La pente ne pose aucun probl&egrave;me; aller vers la gauche en utilisant le
+sol invers&eacute; (quand on essaye d&rsquo;aller vers la gauche, on va vers la droite etc.);
+au besoin, retourner le mulot peut aider.
+</p>
+<p>Chambre 7: Commencer par gagner une vie  suppl&eacute;mentaire en posant la pierre mobile sur
+la trappe du bas; la pousser d&rsquo;abord  un carreau vers le haut puis six carreaux vers la
+gauche; ensuite la pousser 5 carreaux  plus bas et 2 carreaux vers la droite; ramasser
+une autre vie suppl&eacute;mentaire puis actionner l&rsquo;autre trappe en y posant la pierre mobile,
+ce qui ouvre la porte &agrave; gauche vers la chambre suivante.
+</p>
+<p>Chambre 8: Prendre la dynamite et l&rsquo;allumer devant les pierres jaunes, ce qui lib&egrave;re le
+passage; la b&ecirc;che n&rsquo;est pas n&eacute;cessaire mais on peut exp&eacute;rimenter avec.
+</p>
+<p>Chambre 9: Pousser la pierre mobile la plus basse vers la gauche; les &eacute;boulis allant
+vers la droite bloquent le chemin; en d&eacute;pla&ccedil;ant la pierre mobile la plus &agrave; droite,
+on laisse l&rsquo;&eacute;boulis se produire; ramasser la baguette magique en faisant attention
+&agrave; ne pas encore actionner un &eacute;boulis avec, puis pousser la pierre qui est au-dessus
+de l&rsquo;eau. Ensuite placer la baguette magique en t&ecirc;te de l&rsquo;inventaire pour qu&rsquo;elle soit
+active, et s&rsquo;en servir sur les trois &eacute;boulis du haut, en faisant attention &agrave;
+ne pas se faire ensevelir; pousser la pierre de gauche pour entrer dans la chambre
+suivante.
+</p>
+<p>Chambre 10: Actionner l&rsquo;interrupteur; pousser les deux pierres mordor&eacute;es dans l&rsquo;eau;
+aller vers la gauche; pousser vers la gauche le bloc de bois du milieu, puis celui qui
+&eacute;tait juste au-dessus de lui, dans l&rsquo;eau; pousser les autres morceaux de bois dans l&rsquo;eau
+en une ligne pour fabriquer un pont; d&eacute;foncer la fen&ecirc;tre &agrave; grande vitesse (attention
+aux d&eacute;bris de verre); r&eacute;cup&eacute;rer une vie suppl&eacute;mentaire et traverser le pont de
+bois jusqu&rsquo;&agrave; la premi&egrave;re chambre; passer par la porte d&eacute;sormais ouverte.
+</p>
+<hr size="6">
+<a name="Zone-2"></a>
+<h3 class="subsection">5.1.2 Zone 2</h3>
+
+<p>Dans la zone 2 on rencontre des rotors, qui ne sont pas tr&egrave;s amicaux avec la boule noire;
+il s&rsquo;agit de les amener &agrave; faire ce qu&rsquo;on veut leur faire faire tout en s&rsquo;en pr&eacute;servant.
+Jeter un coup d&rsquo;oeil (sans bouger pour l&rsquo;instant la pierre mobile); il s&rsquo;agit de traverser
+les trois portes en haut.
+</p>
+<p>Porte 1: Frapper la boule blanche sur la gauche pour lib&eacute;rer celle-ci (attention &agrave; ne
+pas traverser le sens unique noir); ramasser la cuill&egrave;re puis pousser la boule blanche
+au travers du sens unique blanc, suffisamment fort pour qu&rsquo;elle ne reste pas bloqu&eacute;e en
+chemin; maintenant traverser le sens unique noir et pousser la boule blanche au travers
+du corridor; la pousser au travers du sens unique blanc, suffisamment fort pour qu&rsquo;elle ne
+reste pas dans le sens interdit. Une fois que la boule blanche a travers&eacute;, utiliser la
+cuill&egrave;re: On est de retour au d&eacute;but du niveau, et plus enferm&eacute;; traverser la porte:
+La premi&egrave;re des portes du haut est d&eacute;sormais ouverte.
+</p>
+<p>Porte 2: Pousser la pierre mobile qui se trouve &agrave; droite de la chambre vers la droite,
+et courir; un document comportant des informations int&eacute;ressantes devrait &ecirc;tre apparu
+dans la porte qui s&eacute;pare les zones 1 et 2; amener le rotor (par la m&ecirc;me technique que
+pour la toupie) au-dessus du mur qui est &agrave; droite de la porte; retraverser la porte,
+puis le pont vers la chambre du bas; actionner l&rsquo;interrupteur pour refermer la porte,
+puis retourner dans la chambre du d&eacute;part. Longer le mur du haut de droite &agrave; gauche
+pour amener le rotor &agrave; gauche, puis longer le mur de gauche vers le bas pour faire
+descendre le rotor le long du mur gauche, jusqu&rsquo;&agrave; ce qu&rsquo;on ne l&rsquo;entende plus bouger.
+Il devrait avoir actionn&eacute; une trappe; actionner l&rsquo;interrupteur pour rouvrir la porte et
+retourner dans la zone 2: La porte du milieu devrait &ecirc;tre ouverte.
+</p>
+<p>Porte 3: Pousser la pierre mobile qui a servi d&rsquo;antre au rotor sur la trappe qui se trouve
+dans la chambre de d&eacute;part du rotor; retourner dans la chambre de gauche: La troisi&egrave;me
+porte est ouverte. Traverser les trois portes.
+</p>
+<hr size="6">
+<a name="Zone-3"></a>
+<h3 class="subsection">5.1.3 Zone 3</h3>
+
+<p>Chambre 1: Il faut que le rayon du laser atteigne la pierre noire: Pousser le miroir qui
+est en bas &agrave; gauche, d&rsquo;un carreau vers le bas et le toucher doucement jusqu&rsquo;&agrave; ce qu&rsquo;il
+soit orient&eacute; comme ceci: &rsquo;\&rsquo;; pousser le miroir qui est en haut &agrave; gauche de 8 carreaux
+vers la gauche et un carreau vers le bas, puis l&rsquo;orienter comme ceci: &rsquo;/&rsquo;; pousser le
+miroir qui est en haut &agrave; droite de 2 carreaux vers le haut et 3 carreaux vers la droite,
+puis l&rsquo;orienter ainsi: &rsquo;/&rsquo;. Actionner l&rsquo;interrupteur pour allumer le laser, tout en
+&eacute;vitant son rayon; quand le pont sur la droite est construit, le traverser vers la
+droite.
+</p>
+<p>Chambre 2: Ramasser quelques pi&egrave;ces; retourner dans la chambre pr&eacute;c&eacute;dente; en
+&eacute;teignant, puis rallumant, le laser, irradier avec son rayon, une des pi&egrave;ces de
+monnaie: Elle se se transforme en parapluie; ramasser ce parapluie apr&egrave;s avoir &eacute;teint
+le laser, puis recommencer avec une autre pi&egrave;ce pour obtenir un autre parapluie. Poser
+une pi&egrave;ce &agrave; c&ocirc;t&eacute; d&rsquo;un des miroirs puis pousser ce miroir pour &eacute;craser la pi&egrave;ce;
+reprendre la pi&egrave;ce et l&rsquo;irradier avec le rayon du laser pour la transformer en un
+marteau. Irradier le marteau avec le laser (en l&rsquo;&eacute;teignant puis le rallumant) pour
+obtenir une &eacute;p&eacute;e; ramasser l&rsquo;&eacute;p&eacute;e. (Au besoin, en &eacute;crasant d&rsquo;autres pi&egrave;ces 2
+fois avec les miroirs, puis en &eacute;clairant les pi&egrave;ces d&rsquo;or obtenues avec le laser, on
+peut obtenir des vies suppl&eacute;mentaires). Remettre les miroirs dans leur position initiale,
+puis rallumer le laser, pour pouvoir retourner dans la chambre avec les chevaliers; y aller.
+Mettre l&rsquo;&eacute;p&eacute;e en t&ecirc;te d&rsquo;inventaire puis toucher 4 fois chaque chevalier. On peut
+passer.
+</p>
+<p>Chambre 3: Actionner un parapluie pour traverser l&rsquo;ab&icirc;me des chambres en bas puis &agrave;
+droite; si le halo clignote, actionner l&rsquo;autre parapluie.
+</p>
+<p>Chambre 4: Toucher les oxydes dans l&rsquo;ordre pour les activer, tout en &eacute;vitant les
+pierres p&eacute;teuses, dont l&rsquo;odeur pestilentielle referme toutes les oxydes.
+</p>
+
+<hr size="6">
+<a name="Indices"></a>
+<a name="Indices-pour-plusieurs-niveaux"></a>
+<h2 class="section">5.2 Indices pour plusieurs niveaux</h2>
+
+<dl compact="compact">
+<dt> <strong>I/6: Welcome to the Machine</strong></dt>
+<dd><p>Le message pr&egrave;s du coin en haut &agrave; droite contient un indice important.
+</p>
+</dd>
+<dt> <strong>I/8: Easy?</strong></dt>
+<dd><p>Commencer par placer le premier shogun dans le coin en haut &agrave; gauche, puis le
+deuxi&egrave;me shogun <em>au-dessus</em> du cercle bleu de droite
+</p>
+</dd>
+<dt> <strong>I/31: Where Am I?</strong></dt>
+<dd><p>Si le petit Poucet n&rsquo;avait pas de pain, il ramasserait des morceaux de bois.
+</p>
+</dd>
+<dt> <strong>I/32: The Grim Reaper</strong></dt>
+<dd><p>C&rsquo;est une histoire sans queue ni t&ecirc;te: Quelle est la t&ecirc;te d&rsquo;une souris apr&egrave;s un t&ecirc;te-&agrave;-queue?
+</p>
+</dd>
+<dt> <strong>I/43: Sokoban Revival</strong></dt>
+<dd><p>C&rsquo;&eacute;tait le tout premier niveau du Sokoban originel: Il ne peut donc &ecirc;tre si dur !
+</p>
+</dd>
+<dt> <strong>I/65: Lasers 101</strong></dt>
+<dd><p>Pousser deux miroirs vers le haut et un vers le bas.
+</p>
+</dd>
+<dt> <strong>I/72: Way to Go</strong></dt>
+<dd><p>L&rsquo;un des cercles bleus se comporte diff&eacute;remment.
+</p>
+</dd>
+<dt> <strong>I/80: Meditation</strong></dt>
+<dd><p>Alignez les boules blanches horizontalement.
+</p>
+</dd>
+<dt> <strong>II/15: Knock Knock</strong></dt>
+<dd><p>Ce niveau est &agrave; se taper la t&ecirc;te dans le mur.
+</p>
+</dd>
+<dt> <strong>II/27: Twelve doors</strong></dt>
+<dd><p>M&ecirc;me apr&egrave;s avoir ouvert les douze portes, vous ne pouvez toujours pas passer? Vous
+avez du rater quelque chose !
+</p>
+</dd>
+<dt> <strong>II/40: Space Meditation</strong></dt>
+<dd><p>D&eacute;j&agrave; entendu parler du probl&egrave;me des trois corps?
+</p>
+</dd>
+<dt> <strong>II/44: Pharaos&rsquo; Tombs</strong></dt>
+<dd><p>Une astuce pour ce niveau se trouve dans &ldquo;Easy shifting&rsquo;.
+</p>
+</dd>
+<dt> <strong>II/56: Easy Shifting <small class="enddots">...</small></strong></dt>
+<dd><p>Une astuce pour ce niveau se trouve dans &ldquo;Running Rings&rdquo;.
+</p>
+</dd>
+<dt> <strong>II/57: Floppy Swapping</strong></dt>
+<dd><p>1) Commencer par chercher la disquette et la baguette magique (ils sont n&eacute;cessaires); 2)
+Toujours les garder avec soi; 3) Certaines pierres se ressemblent comme les deux P&ocirc;les
+mais sont comme Pierre et Paul.
+</p>
+</dd>
+<dt> <strong>II/59: The Disappearing Block</strong></dt>
+<dd><p>Encombrez le laser.
+</p>
+</dd>
+<dt> <strong>II/65: Laser Magic</strong></dt>
+<dd><p>Exp&eacute;rimentez des m&eacute;tamorphoses !
+</p>
+</dd>
+<dt> <strong>II/69: Question of Speed</strong></dt>
+<dd><p>Qui <em>s&egrave;me</em> le vent r&eacute;colte la temp&ecirc;te.
+</p>
+</dd>
+<dt> <strong>II/77: Push Your Way</strong></dt>
+<dd><p>Commencez par trouver la baguette magique.
+</p>
+</dd>
+<dt> <strong>II/97: Tool Time</strong></dt>
+<dd><p>Ne mettez pas les outils dangereux &agrave; la port&eacute;e des enfants.
+</p>
+</dd>
+<dt> <strong>II/99: Domain of Mysteries</strong></dt>
+<dd><p>Grimpez pr&eacute;cautionneusement l&rsquo;&eacute;chelle.
+</p>
+</dd>
+<dt> <strong>II/100: Patterns</strong></dt>
+<dd><p>Y a-t-il de l&rsquo;&eacute;cho?
+</p>
+</dd>
+<dt> <strong>III/14: Use the PIN</strong></dt>
+<dd><p>Utilisez le code PIN, ou votre encyclop&eacute;die si vous n&rsquo;arrivez pas &agrave; retenir le num&eacute;ro.
+</p>
+</dd>
+<dt> <strong>III/16: Control Panel</strong></dt>
+<dd><p>Le document de la chambre de gauche vous montre comment arranger les pierres sur les
+premi&egrave;res rang&eacute;es de trappes; &agrave; partir de l&agrave;, utilisez le code de couleurs de la chambre
+de gauche.
+</p>
+</dd>
+<dt> <strong>III/22: Portable Laser</strong></dt>
+<dd><p>Ne laissez pas le laser vous <em>griller</em>!
+</p>
+</dd>
+<dt> <strong>III/27: Tricks and Traps</strong></dt>
+<dd><p>Pas moyen de quitter le premier &eacute;cran? Commencez par le petit cercle bleu. Pas moyen
+de trouver la derni&egrave;re oxyde? Activez 3 grands cercles bleus du premier &eacute;cran et un petit
+cercle bleu du troisi&egrave;me &eacute;cran.
+</p>
+</dd>
+<dt> <strong>III/28: Wells</strong></dt>
+<dd><p>Peur de mourir?
+</p>
+</dd>
+<dt> <strong>III/29: Push? Pull!</strong></dt>
+<dd><p>Un &eacute;change vers le haut&ndash; Un &eacute;change vers le bas&ndash; Un puzzle vers la droite&ndash; et on continue!
+</p>
+</dd>
+<dt> <strong>III/40: Snow White</strong></dt>
+<dd><p>Trois petits eskimos &ndash; Perdus sur la banquise&ndash;
+Ne trouvaient plus leurs igloos &ndash; Enneig&eacute;s par la bise.
+</p>
+</dd>
+<dt> <strong>III/43: The Ditch</strong></dt>
+<dd><p>Pour r&eacute;soudre ce niveau, il vous faut briser une vie.
+</p>
+</dd>
+<dt> <strong>III/95: Jump and Run</strong></dt>
+<dd><p>Un ressort est cach&eacute; sous un miroir.
+</p>
+</dd>
+<dt> <strong>IV/6: TNT Shortage?</strong></dt>
+<dd><p>Le marteau est plus utile que la dynamite.
+</p>
+</dd>
+<dt> <strong>IV/17: Flood Gates</strong></dt>
+<dd><p>Inonder pr&eacute;cautionneusement certaines zones peut s&rsquo;av&eacute;rer utile; ne pas quitter la
+premi&egrave;re chambre avant d&rsquo;avoir actionn&eacute; l&rsquo;un des interrupteurs du bas.
+</p>
+</dd>
+<dt> <strong>IV/25: Light Switches</strong></dt>
+<dd><p>Encombrez les lasers si vous n&rsquo;&ecirc;tes pas assez rapides.
+</p>
+</dd>
+<dt> <strong>IV/27: Robbery</strong></dt>
+<dd><p>Entrez dans la banque en passant par un sol fragile.
+</p>
+</dd>
+<dt> <strong>IV/34: Running Rings</strong></dt>
+<dd><p>Une astuce pour ce niveau se trouve dans &ldquo;Pharao&rsquo;s Tomb&rdquo;.
+</p>
+</dd>
+<dt> <strong>IV/39: How Many Spirals?</strong></dt>
+<dd><p>Il y a des gens qui sautent par la fen&ecirc;tre lors d&rsquo;un incendie; faites le contraire.
+</p>
+</dd>
+<dt> <strong>IV/47: Just Moving Blocks?</strong></dt>
+<dd><p>Trop de morceaux de bois? Comment en enlever un?
+</p>
+</dd>
+<dt> <strong>IV/48: Artillery</strong></dt>
+<dd><p>Le boulet de canon peut aussi servir &agrave; ouvrir des oxydes.
+</p>
+</dd>
+<dt> <strong>IV/54: Fire Safety</strong></dt>
+<dd><p>Le trigger vous g&ecirc;ne-t-il? D&eacute;truisez-le!
+</p>
+</dd>
+<dt> <strong>IV/64: The Flagstone Reaper</strong></dt>
+<dd><p>Il calcule.
+</p>
+</dd>
+<dt> <strong>IV/65: Little Bit of Everything</strong></dt>
+<dd><p>Utilisez F3.
+</p>
+</dd>
+<dt> <strong>V/15: Solvable?</strong></dt>
+<dd><p>Est-ce-que WNSE vous &eacute;voque quelque chose?
+</p>
+</dd>
+<dt> <strong>V/16: Draggers</strong></dt>
+<dd><p>OK, ce niveau est diabolique. Il y a une graine pr&egrave;s du d&eacute;part.
+</p>
+</dd>
+<dt> <strong>V/22: Space Pirates</strong></dt>
+<dd><p>Celui-l&agrave; est difficile.  Allumez une bombe pr&egrave;s du stock de bois.
+</p>
+</dd>
+<dt> <strong>V/32: Walk the Plank</strong></dt>
+<dd><p>M&ecirc;me un pirate ne ma&icirc;trise pas ce niveau?  Il y a un autre chemin, plus facile celui-l&agrave;.
+</p>
+</dd>
+<dt> <strong>V/34: Island of Safety</strong></dt>
+<dd><p>Commencez par analyser les centaines.
+</p>
+</dd>
+<dt> <strong>V/45: Psycho Pushing</strong></dt>
+<dd><p>Frappez et sauvez-vous.
+</p>
+</dd>
+<dt> <strong>V/58: Now What?</strong></dt>
+<dd><p>Quand vous avez vu la croix, que devrait montrer le r&eacute;seau ensuite?
+</p>
+</dd>
+<dt> <strong>V/78: Don&rsquo;t Be Greedy</strong></dt>
+<dd><p>Une aide figure quelque part ailleurs dans ce manuel.
+</p>
+</dd>
+<dt> <strong>V/89: Ice-bomb</strong></dt>
+<dd><p>Une aide figure quelque part sous l&rsquo;oxyde.
+</p>
+</dd>
+<dt> <strong>V/91: Firefox</strong></dt>
+<dd><p>Le sol br&ucirc;le plus vite.
+</p>
+</dd>
+<dt> <strong>VI/8: Orbitting</strong></dt>
+<dd><p>Ne laissez rien toucher les bords.
+</p>
+</dd>
+<dt> <strong>VI/23: Prepare Your Defense</strong></dt>
+<dd><p>Le laser ne transforme pas que les outils.
+</p>
+</dd>
+<dt> <strong>esprit 43</strong></dt>
+<dd><p>Faites un sacrifice au volcan.
+</p>
+</dd>
+<dt> <strong>esprit 52</strong></dt>
+<dd><p>Jouez-le le bon jour.
+</p>
+</dd>
+<dt> <strong>esprit 100</strong></dt>
+<dd><p>D&eacute;truisez le coin.
+</p>
+</dd>
+<dt> <strong>Oxyd Magnum 99 (level 22): Letter bomb</strong></dt>
+<dd><p>Faites un attentat sur les bo&icirc;tes au lettres.
+</p>
+</dd>
+<dt> <strong>PerOxyd 49 (level 22): Hidden Treasure</strong></dt>
+<dd><p>Assurez-vous un acc&egrave;s &agrave; la chambre avec l&rsquo;interrupteur; ensuite cherchez le second
+&eacute;cran avec le &ldquo;tr&eacute;sor cach&eacute;&rdquo;.
+</p>
+</dd>
+</dl>
+
+<hr size="6">
+<a name="Cr_00e9dits"></a>
+<a name="Credits"></a>
+<h1 class="chapter">6. Cr&eacute;dits</h1>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#D_00e9veloppeurs-principaux">6.1 D&eacute;veloppeurs principaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Remerciements-sp_00e9ciaux">6.2 Remerciements sp&eacute;ciaux</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Contributeurs">6.3 Contributeurs</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Logiciels-utilis_00e9s">6.4 Logiciels utilis&eacute;s</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+
+<hr size="6">
+<a name="D_00e9veloppeurs-principaux"></a>
+<a name="Developpeurs-principaux"></a>
+<h2 class="section">6.1 D&eacute;veloppeurs principaux</h2>
+
+<dl compact="compact">
+<dt> <strong>Raoul Bourquin</strong></dt>
+<dd><p>Administration et conception de niveaux, plus d&rsquo;autres choses inestimables
+</p>
+</dd>
+<dt> <strong>Siegfried Fennig</strong></dt>
+<dd><p>Conception de niveaux, graphismes
+</p>
+</dd>
+<dt> <strong>Martin Hawlisch</strong></dt>
+<dd><p>Conception de niveaux, graphismes, programmation
+</p>
+</dd>
+<dt> <strong>Daniel Heck</strong></dt>
+<dd><p>Principal d&eacute;veloppeur, graphismes, documentation
+</p>
+</dd>
+<dt> <strong>Ronald Lamprecht</strong></dt>
+<dd><p>XML, interface graphique, portabilit&eacute;, programmation du noyau, documentation
+</p>
+</dd>
+<dt> <strong>Andreas Lochmann</strong></dt>
+<dd><p>Programmation, administration des niveaux, conception de niveaux, documentation
+</p>
+</dd>
+<dt> <strong>Petr Machata</strong></dt>
+<dd><p>Conception de niveaux, programmation
+</p>
+</dd>
+<dt> <strong>Nat Pryce</strong></dt>
+<dd><p>Conception de niveaux
+</p>
+</dd>
+<dt> <strong>Jacob Scott</strong></dt>
+<dd><p>Conception de niveaux
+</p>
+</dd>
+<dt> <strong>Sven Siggelkow</strong></dt>
+<dd><p>Conception de niveaux et expertise en Oxyd
+</p>
+</dd>
+<dt> <strong>Ralf Westram</strong></dt>
+<dd><p>Programmation, conception de niveaux
+</p></dd>
+</dl>
+
+
+<hr size="6">
+<a name="Remerciements-sp_00e9ciaux"></a>
+<a name="Remerciements-speciaux"></a>
+<h2 class="section">6.2 Remerciements sp&eacute;ciaux</h2>
+
+<dl compact="compact">
+<dt> <strong>Johannes Fortmann</strong></dt>
+<dd><p>Portage Mac OS X , un peu de programmation, graphismes
+</p>
+</dd>
+<dt> <strong>illmind</strong></dt>
+<dd><p>Forum mag-heut.net administration, Conception de niveaux
+</p>
+
+</dd>
+<dt> <strong>Jennifer Robertson</strong></dt>
+<dd><p>Graphics second generation
+</p>
+</dd>
+<dt> <strong>Jeremy Sawicki</strong></dt>
+<dd><p>Ing&eacute;ni&eacute;rie inverse sur le format de fichier d&rsquo;Oxyd, Oxydlib
+</p>
+</dd>
+<dt> <strong>Meinolf Schneider</strong></dt>
+<dd><p>Id&eacute;e initiale du jeu &ndash;<em>Merci</em>!
+</p>
+</dd>
+<dt> <strong>Erich Schubert</strong></dt>
+<dd><p>paquets Debian/Ubuntu
+</p>
+</dd>
+<dt> <strong>Andrew &ldquo;Necros&rdquo; Sega</strong></dt>
+<dd><p>Musique du menu (<em>Pentagonal Dreams</em>)
+</p>
+</dd>
+<dt> <strong>David W. Skinner</strong></dt>
+<dd><p>Beaucoup de niveau Sokoban, de
+<a href="http://users.bentonrea.com/~sasquatch/sokoban">http://users.bentonrea.com/~sasquatch/sokoban</a>
+</p>
+</dd>
+<dt> <strong>Clifford J. Tasner</strong></dt>
+<dd><p>Music second generation, Proof reading
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="Contributeurs"></a>
+<a name="Contributeurs-1"></a>
+<h2 class="section">6.3 Contributeurs</h2>
+
+<p>Pour diverses contributions, merci &agrave;:
+</p>
+<ul>
+<li> Roberto Bardin (conception de niveaux)
+</li><li> Thomas Bernhardt (conception de niveaux)
+</li><li> Helge Blohmer (conception de niveaux)
+</li><li> Nathan Bronecke (conception de niveaux)
+</li><li> Harry Bruder (LotM articles)
+</li><li> Alain Busser (conception de niveaux, traduction fran&ccedil;aise, la pr&eacute;sente version du manuel)
+</li><li> Guy Busser (conception de niveaux)
+</li><li> Richi B&uuml;tzer (conception de niveaux)
+</li><li> capkoh (conception de niveaux)
+</li><li> Manfredi Carta (conception de niveaux)
+</li><li> Christoph &amp; Anita (conception de niveaux)
+</li><li> daydreamer (conception de niveaux)
+</li><li> Serge Dremuk (traduction russe)
+</li><li> Joseph Dunne (conception de niveaux)
+</li><li> Xerxes M. Dynatos (conception de niveaux)
+</li><li> Edward (conception de niveaux)
+</li><li> Manuel Eisentraut (conception de niveaux)
+</li><li> Stephanie Fabian (d&eacute;tection inestimable de bogues)
+</li><li> Johann Freymuth (conception de niveaux)
+</li><li> Roberto Garc&iacute;a (traduction espagnole)
+</li><li> Andy Geldmacher (conception de niveaux)
+</li><li> Edwin Groothuis (portage FreeBSD)
+</li><li> Daniel Hadas (conception de niveaux)
+</li><li> Jonatan Hadas (conception de niveaux)
+</li><li> Hairball (conception de niveaux)
+</li><li> Immanuel Herrmann (conception de niveaux)
+</li><li> Brian Huffman (conception de niveaux)
+</li><li> Johannes H&uuml;sing (conception de niveaux)
+</li><li> M&aacute;t&eacute; Lehel Juh&aacute;sz (traduction hongroise)
+</li><li> Samuele Kaplun (traduction italienne)
+</li><li> Manuel K&ouml;nig (conception de niveaux, d&eacute;tection de bogues)
+</li><li> Jens-Christian Korth (conception de niveaux)
+</li><li> Johannes Laire (conception de niveaux)
+</li><li> Joona Laire (conception de niveaux)
+</li><li> Markus Laire (conception de niveaux)
+</li><li> Dominik Lehmann (conception de niveaux)
+</li><li> Dominik Leipold (conception de niveaux)
+</li><li> Edward Leuf (Feedback, d&eacute;tection de bogues)
+</li><li> Ingo van Lil (Feedback, d&eacute;tection de bogues)
+</li><li> Frank van der Loo (traduction n&eacute;erlandaise)
+</li><li> Lurcane (conception de niveaux)
+</li><li> Sidney Markowitz (portage Mac OS X)
+</li><li> Barry &amp; Lori Mead (conception de niveaux)
+</li><li> Linda Mihalic (English proof reading)
+</li><li> moonpearl (conception de niveaux)
+</li><li> Stephen Morley (Safalra) (conception de niveaux)
+</li><li> Krishnamurti Lelis Lima Vieira Nunes (traduction portugaise)
+</li><li> Daniel Nylander (traduction su&eacute;doise)
+</li><li> Andreas Persenius (conception de niveaux)
+</li><li> Mark Pulley (conception de niveaux)
+</li><li> Rudolf (conception de niveaux)
+</li><li> Peter Santo (conception de niveaux)
+</li><li> Tobias Schmidbauer (Windows installer and icon)
+</li><li> Lukas Sch&uuml;ller (conception de niveaux)
+</li><li> Achim Settelmeier (sp&eacute;cification RPM)
+</li><li> ShadowPhrogg32642342 (D&aacute;niel Borb&eacute;ly) (conception de niveaux)
+</li><li> Alex Smith (conception de niveaux)
+</li><li> Alan Smithee (conception de niveaux)
+</li><li> Jon Sneyers (conception de niveaux)
+</li><li> Spaceman (conception de niveaux)
+</li><li> Ulf Stegemann (conception de niveaux)
+</li><li> J&uuml;rgen Sticht (conception de niveaux)
+</li><li> Mikke Surakka (traduction finlandaise)
+</li><li> Andrzej Szombierski (conception de niveaux)
+</li><li> Tacvek (mise &agrave; niveau Lua 5.1)
+</li><li> James Taylor (conception de niveaux)
+</li><li> Michael Terry (fichier .desktop)
+</li><li> Ray Wick (conception de niveaux)
+</li><li> Joe Wreschnig (page Manual)
+</li><li> Zephyr (conception de niveaux)
+</li><li> Yuriy Zhyromskiy (Russian Manual)
+</li><li> /dev/null (conception de niveaux)
+</li></ul>
+
+<hr size="6">
+<a name="Logiciels-utilis_00e9s"></a>
+<a name="Logiciels-utilises"></a>
+<h2 class="section">6.4 Logiciels utilis&eacute;s</h2>
+
+<dl compact="compact">
+<dt> <strong>SDL</strong></dt>
+<dd><p><a href="http://www.libsdl.org/">http://www.libsdl.org/</a>
+</p>
+</dd>
+<dt> <strong>SDL_image</strong></dt>
+<dd><p><a href="http://www.libsdl.org/SDL_image">http://www.libsdl.org/SDL_image</a>
+</p>
+</dd>
+<dt> <strong>SDL_mixer</strong></dt>
+<dd><p><a href="http://www.libsdl.org/SDL_mixer">http://www.libsdl.org/SDL_mixer</a>
+</p>
+</dd>
+<dt> <strong>Lua</strong></dt>
+<dd><p><a href="http://www.lua.org">http://www.lua.org</a>
+</p>
+</dd>
+<dt> <strong>Oxydlib</strong></dt>
+<dd><p><a href="http://www.sawicki.us/oxyd">http://www.sawicki.us/oxyd</a>
+</p>
+</dd>
+<dt> <strong>toLua++</strong></dt>
+<dd><p><a href="http://www.codenix.com/~tolua">http://www.codenix.com/~tolua</a>
+</p>
+</dd>
+<dt> <strong>zipios</strong></dt>
+<dd><p><a href="http://zipios.sourceforge.net">http://zipios.sourceforge.net</a>
+</p>
+</dd>
+<dt> <strong>Xerces C++</strong></dt>
+<dd><p><a href="http://xml.apache.org/xerces-c">http://xml.apache.org/xerces-c</a>
+</p>
+</dd>
+</dl>
+
+<hr size="6">
+<a name="SEC_Contents"></a>
+<h1>Table of Contents</h1>
+<div class="contents">
+
+<ul class="toc">
+  <li><a name="toc-Introduction-1" href="#Introduction">1. Introduction</a>
+  <ul class="toc">
+    <li><a name="toc-A-propos-d_0027Enigma" href="#A-propos">1.1 A propos d&rsquo;Enigma</a></li>
+    <li><a name="toc-Installation-1" href="#Installation">1.2 Installation</a></li>
+    <li><a name="toc-Distribuer-Enigma-1" href="#Distribuer-Enigma">1.3 Distribuer Enigma</a></li>
+  </ul></li>
+  <li><a name="toc-Le-jeu-1" href="#Le-jeu">2. Le jeu</a>
+  <ul class="toc">
+    <li><a name="toc-Pour-commencer-1" href="#Pour-commencer">2.1 Pour commencer</a>
+    <ul class="toc">
+      <li><a name="toc-Le-menu-des-niveaux-1" href="#Le-menu-des-niveaux">2.1.1 Le menu des niveaux</a></li>
+      <li><a name="toc-Le-menu-des-paquets-de-niveaux-1" href="#Le-menu-des-paquets-de-niveaux">2.1.2 Le menu des paquets de niveaux</a></li>
+      <li><a name="toc-Options-de-jeu-1" href="#Options-de-jeu">2.1.3 Options de jeu</a></li>
+      <li><a name="toc-L_0027inspecteur-des-niveaux-1" href="#L_0027inspecteur-des-niveaux">2.1.4 L&rsquo;inspecteur des niveaux</a></li>
+    </ul></li>
+    <li><a name="toc-Regles-du-jeu" href="#R_00e8gles-du-jeu">2.2 R&egrave;gles du jeu</a>
+    <ul class="toc">
+      <li><a name="toc-Paysages-normaux-1" href="#Paysages-normaux">2.2.1 Paysages normaux</a></li>
+      <li><a name="toc-Paysages-a-deux-joueurs" href="#Paysages-_00e0-deux-joueurs">2.2.2 Paysages &agrave; deux joueurs</a></li>
+      <li><a name="toc-Paysages-de-meditation" href="#Paysages-de-m_00e9ditation">2.2.3 Paysages de m&eacute;ditation</a></li>
+    </ul></li>
+    <li><a name="toc-Controles" href="#Contr_00f4les">2.3 Contr&ocirc;les</a></li>
+  </ul></li>
+  <li><a name="toc-Quelques-objets-du-jeu-1" href="#Quelques-objets-du-jeu">3. Quelques objets du jeu</a>
+  <ul class="toc">
+    <li><a name="toc-Outils-1" href="#Outils">3.1 Outils</a>
+    <ul class="toc">
+      <li><a name="toc-Explosifs-1" href="#Explosifs">3.1.1 Explosifs</a></li>
+      <li><a name="toc-Parapluies-1" href="#Parapluies">3.1.2 Parapluies</a></li>
+      <li><a name="toc-Drapeaux-1" href="#Drapeaux">3.1.3 Drapeaux</a></li>
+    </ul></li>
+    <li><a name="toc-Pierres-1" href="#Pierres">3.2 Pierres</a>
+    <ul class="toc">
+      <li><a name="toc-Pierres-mortelles-1" href="#Pierres-mortelles">3.2.1 Pierres mortelles</a></li>
+      <li><a name="toc-Pierres-d_0027echange" href="#Pierres-d_0027_00e9change">3.2.2 Pierres d&rsquo;&eacute;change</a></li>
+      <li><a name="toc-Miroirs-1" href="#Miroirs">3.2.3 Miroirs</a></li>
+      <li><a name="toc-Pierres-a-sens-unique" href="#Pierres-_00e0-sens-unique">3.2.4 Pierres &agrave; sens unique</a></li>
+      <li><a name="toc-Pierres-Shogun-1" href="#Pierres-Shogun">3.2.5 Pierres Shogun</a></li>
+      <li><a name="toc-Eboulis-1" href="#Eboulis">3.2.6 Eboulis</a></li>
+      <li><a name="toc-Pieces-de-puzzle" href="#Pi_00e8ces-de-puzzle">3.2.7 Pi&egrave;ces de puzzle</a></li>
+      <li><a name="toc-Boites-postales" href="#Bo_00eetes-postales">3.2.8 Bo&icirc;tes postales</a></li>
+    </ul>
+</li>
+  </ul></li>
+  <li><a name="toc-Expertise-1" href="#Expertise">4. Expertise</a>
+  <ul class="toc">
+    <li><a name="toc-Paquets-utilisateur-1" href="#Paquets-utilisateur">4.1 Paquets utilisateur</a></li>
+    <li><a name="toc-Sauvegardes-1" href="#Sauvegardes">4.2 Sauvegardes</a></li>
+    <li><a name="toc-Homologuer-les-scores-1" href="#Homologuer-les-scores">4.3 Homologuer les scores</a></li>
+    <li><a name="toc-Mise-a-jour" href="#Mise-_00e0-jour">4.4 Mise &agrave; jour</a></li>
+  </ul></li>
+  <li><a name="toc-Triche-1" href="#Triche">5. Triche</a>
+  <ul class="toc">
+    <li><a name="toc-Promenade-dans-_0060Advanced-tutorial_0027" href="#Tutoriel">5.1 Promenade dans &lsquo;Advanced tutorial&rsquo;</a>
+    <ul class="toc">
+      <li><a name="toc-Zone-1" href="#Zone-1">5.1.1 Zone 1</a></li>
+      <li><a name="toc-Zone-2" href="#Zone-2">5.1.2 Zone 2</a></li>
+      <li><a name="toc-Zone-3" href="#Zone-3">5.1.3 Zone 3</a></li>
+    </ul></li>
+    <li><a name="toc-Indices-pour-plusieurs-niveaux" href="#Indices">5.2 Indices pour plusieurs niveaux</a></li>
+  </ul></li>
+  <li><a name="toc-Credits" href="#Cr_00e9dits">6. Cr&eacute;dits</a>
+  <ul class="toc">
+    <li><a name="toc-Developpeurs-principaux" href="#D_00e9veloppeurs-principaux">6.1 D&eacute;veloppeurs principaux</a></li>
+    <li><a name="toc-Remerciements-speciaux" href="#Remerciements-sp_00e9ciaux">6.2 Remerciements sp&eacute;ciaux</a></li>
+    <li><a name="toc-Contributeurs-1" href="#Contributeurs">6.3 Contributeurs</a></li>
+    <li><a name="toc-Logiciels-utilises" href="#Logiciels-utilis_00e9s">6.4 Logiciels utilis&eacute;s</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+<hr size="1">
+<p>
+ <font size="-1">
+  This document was generated by <em>raoul</em> on <em>March 29, 2013</em> using <a href="http://www.nongnu.org/texi2html/"><em>texi2html 1.82</em></a>.
+ </font>
+ <br>
+
+</p>
+</body>
+</html>
