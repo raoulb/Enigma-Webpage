@@ -1,0 +1,4 @@
+*~
+
+# We can not build out-of-tree
+*.html
