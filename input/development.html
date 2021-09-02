@@ -146,21 +146,21 @@ you're always welcome.</p>
 
   <p>If you want to download the leading edge version of Enigma you need to
   check it out from our <a href="https://github.com/Enigma-Game/Enigma">
-  git source code repository at github</a>. For anonymous access, simply
+  git source code repository at GitHub</a>. For anonymous access, simply
   run</p>
-  <pre>git clone https://github.com/Enigma-Game/Enigma.git</pre>
-  <p>to download the current revision of the next major Enigma release. Please note
-  that this will be a snapshot of development and the revision might be incomplete
+  <pre>
+  git clone https://github.com/Enigma-Game/Enigma.git</pre>
+  <p>to download the current <i>master</i> branch of the next major Enigma release.
+  Please note that this will be a snapshot of development and the revision might be incomplete
   and still unstable.</p>
 
-  <p>For the development we recommend a Unix platform as the compilation.
-  Installation is as simple as typing</p>
-
-  <pre>./autogen.sh && ./configure && make && make install</pre>
-
-  <p>For information how to compile the application for Windows read the file</p>
-
-  <pre>doc/README.mingw32</pre>
+  <p>For the development we recommend a Unix platform as the compilation and
+  installation is as simple as typing</p>
+  <pre>
+  ./autogen.sh && ./configure && make && make install</pre>
+  <p>For information how to compile the application for Windows read the file <i>doc/README.mingw32</i>.
+    For Mac OS, the file <i>doc/README.macosx</i>.
+    Note however, that some instructions inside these files might be outdated by now.</p>
 
   <p>Please contact us via the <a href="$$development$$#maillist">mailing list</a>
   if you need write access to the repository.</p>
@@ -231,7 +231,8 @@ you're always welcome.</p>
     'pl' standing for Polish by the prefix of your language:
   </p>
 
-  <pre>msgfmt -c --statistics -o enigma.mo pl.po</pre>
+  <pre>
+  msgfmt -c --statistics -o enigma.mo pl.po</pre>
 
   <p>The resulting file 'enigma.mo' can be directly used by Enigma. Windows
     users just need to locate the folder of the application executable and
