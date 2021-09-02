@@ -12,12 +12,99 @@ by the following critera:
   <li><a href="$$download$$#oldversions">Old Versions</a></li>
 </ul>
 
-<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="stable">Stable Release (Version 1.21)</a></h3>
 
-<p>The md5- and sha256-numbers below are checksums, with which you can
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
+  <a name="stable">Stable Release (Version 1.30)</a></h3>
+
+<p>The sha1- and sha256-numbers below are checksums, with which you can
   inspect the authenticity and exactness of your downloads. They have no
   relevance for installing or playing Enigma.</p>
+
+<ul>
+  <li><ul style="list-style-type:none"><li><b>Windows (tested on 7 and 10)</b>
+        <a href="https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30-windows7and10.exe">
+          Full Installer (1.30)</a> appr. 91 MB</li>
+      <li>sha1 - c8540e71cdb0c8d869d0b416536bb5e11d18a9aa</li>
+      <li>sha256 - 45c8af9e80e58abc4a894b5c2e8f4662cd04f95d20db371a52056debf69e85f0</li>
+  </ul></li>
+
+  <li><ul style="list-style-type:none"><li><b>Windows (tested on 10)</b>
+        <a href="https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30-windows10.zip">
+          .zip file (1.30)</a> appr. 103 MB</li>
+      <li>sha1 - 4692b889544465264eed8afe3d0c11527d4944ae</li>
+      <li>sha256 - caab7ec85f126acfc84434366544722b1adb809d4cf109fbed8a092cf5fd99d4</li>
+  </ul></li>
+
+  <li><ul style="list-style-type:none"><li><b>Windows (tested on 7)</b>
+        <a href="https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30-windows7.zip">
+          .zip file (1.30)</a> appr. 103 MB</li>
+      <li>sha1 - b29d9b63abe85433f31be866bbc8e175197131bc</li>
+      <li>sha256 - 453ef2fa626f481d0a5263a5633becbb0c06765fa840e8eb8581aad1b1e24676</li>
+  </ul></li>
+
+  <li><ul style="list-style-type:none"><li><b>Mac OS (tested on Mojave and Big Sur)</b>
+        <a href="https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30.dmg">
+          Full Installer (1.30)</a> appr. 84 MB</li>
+      <li>sha1 - ea9809881326137f1b61080a270798cb657aea29</li>
+      <li>sha256 - a15a17b9399da9bc5cfdb085765de448a18a372340676e8d3d3913765e147e19</li>
+  </ul></li>
+
+  <li><ul style="list-style-type:none"><li><b>Source Code (git tag 1.30)</b>
+        <a href="https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30-src.tar.gz">
+          .tar.gz (1.30)</a> appr. 41 MB</li>
+      <li>sha1 - fdb2e37701f7a06bcb0f163466a0220a8c964d0f</li>
+      <li>sha256 - ae64b91fbc2b10970071d0d78ed5b4ede9ee3868de2e6e9569546fc58437f8af</li>
+  </ul></li>
+</ul>
+
+<p>All packages are available at
+  <a href="https://github.com/Enigma-Game/Enigma/releases/tag/1.30">GitHub</a>.<br>
+  Please report problems with any of these packages to the
+  <a href="mailto:enigma-devel@nongnu.org">Enigma mailing list</a>.
+</p>
+
+<h4>Installation on Linux:</h4>
+
+The source is available as ".tar.gz", compile it with
+<pre>
+  ./configure
+  make
+</pre>
+and install with
+<pre>
+  [sudo] make install
+</pre>
+Binaries might be added later on, but right now we have no packages fitting
+any distribution. If you can provide us with some, we will happily add them
+to GitHub.
+
+<h4>Installation on Windows:</h4>
+
+Choose "Enigma-1.30-windows7and10.exe" if you want to install Enigma the
+regular way. You might need to first uninstall old versions.
+Alternatively, you can choose one of the two zip files. It will unpack to a
+directory, from which you can run Enigma directly, no further installation
+neccessary.
+
+<h4>Installation on Mac:</h4>
+
+Choose "Enigma-1.30.dmg", it is tested for Mojave and Big Sur, and should run
+also on Catalina. Homebrew is not required for the dmg.
+We could not test whether it works on M1 (Arm) based Macs; please inform us
+about your results.
+As an alternative, anyone with Homebrew can now install from the command
+line using
+<pre>
+  brew install enigma
+</pre>
+and can install as an app bundle in /Applications using
+<pre>
+  brew install --cask --no-quarantine enigma
+</pre>
+
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
+  <a name="stable">Old stable Release (Version 1.21)</a></h3>
 
 <ul>
   <li><ul style="list-style-type:none"><li><b>Windows (tested on XP and 7)</b>
@@ -43,7 +130,7 @@ by the following critera:
 
   <li><ul style="list-style-type:none"><li><b>Source Code, revision 2513</b>
         <a href="https://sourceforge.net/projects/enigma-game/files/Release%201.21/enigma-1.21.tar.gz/download">
-          tar.gz (1.21)</a> appr. 57 MB</li>
+          .tar.gz (1.21)</a> appr. 57 MB</li>
       <li>md5 - d2f4a099a704fdf7f12d024d2b7e6d1b</li>
       <li>sha256 - d872cf067d8eb560d3bb1cb17245814bc56ac3953ae1f12e2229c8eb6f82ce01</li>
   </ul></li>
@@ -54,34 +141,76 @@ by the following critera:
       <li>md5 - ec5f26da53d05abab43ae48742917c24</li>
       <li>sha256 - 61d78650b7d585f45fdb85cd0d4c2bc0b86b3d46dfed29d60286df042408e182</li>
   </ul></li>
-
 </ul>
-
-<p>All packages are available at sourceforge. In case of download problems try a
-  direct download from <a href="https://sourceforge.net/projects/enigma-game/files/">
-    sourceforge</a> and give all servers that are offered a chance.<p>
-
-<p>Please report problems with any of these packages to the <a
-                                                               href="mailto:enigma-devel@nongnu.org">Enigma mailing list</a>.</p>
-
-</p>We will provide links to packages for some other operating systems here as they
-are made available by third parties.</p>
-
-<!--<ul>
-    <li><a href="http://packages.debian.org/jessie/enigma">Debian (jessie)</a></li>
-    <li><a href="http://packages.debian.org/sid/enigma">Debian (sid)</a></li>
-    <li><a href="http://packages.ubuntu.com/saucy/enigma">Ubuntu (saucy)</a></li>
-    <li><a href="http://packages.ubuntu.com/trusty/enigma">Ubuntu (trusty)</a></li>
-    <li><a href="https://packages.gentoo.org/package/games-puzzle/enigma">Gentoo Linux</a></li>
-    <li><a href="https://admin.fedoraproject.org/pkgdb/acls/name/enigma">Fedora</a></li>
-    <li><a href="https://software.opensuse.org/package/enigma">openSUSE</a></li>
-    <li><a href="https://aur.archlinux.org/packages/enigma_sdl/">Arch Linux</a></li>
-    <li><a href="https://www.freshports.org/games/enigma/">FreeBSD</a></li>
-</ul>-->
 
 
 <h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="oldstable">Old stable Release (Version 1.20)</a></h3>
+  <a name="compilation">Compiling from Source Code under Unix</a></h3>
+
+<p>In case your Unix distribution does not provide Enigma packages you may
+  want to download the source package and compile Enigma for your own. This
+  is usually a simple straight forward task.</p>
+
+<p>Enigma depends on a few libraries and tools. Most Unix systems come with
+  these libraries pre-installed these days.  But for compilation you may need
+  additional '-devel' packages besides the runtime packages of the
+  libraries.  Please verify that the libraries SDL, SDL_ttf, SDL_image, SDL_mixer
+  and Xerces are installed on your system.</p>
+
+<p>For a complete list of libraries and programs that must be installed to
+  compile Enigma, please refer to the file 'doc/REQUIREMENTS' that is
+  included in the Enigma source package.</p>
+
+<p>Once you have everything installed, building Enigma is as easy as typing</p>
+
+<pre>
+  ./configure && make && make install
+</pre>
+
+<p>in the enigma directory.</p>
+
+<p>If your distribution does not provide the necessary packages, you can
+  download them from the following web sites:</p>
+
+<ul>
+  <li><a href="https://www.libsdl.org">SDL</a>&nbsp;&nbsp;(&ge; 2.0)</li>
+  <li><a href="https://www.libsdl.org/projects/SDL_ttf">SDL_ttf</a>&nbsp;&nbsp;(&ge; 2.0)</li>
+  <li><a href="https://www.libsdl.org/projects/SDL_mixer">SDL_mixer</a>&nbsp;&nbsp;(&ge; 2.0)</li>
+  <li><a href="https://www.libsdl.org/projects/SDL_image">SDL_image</a>&nbsp;&nbsp;(&ge; 2.0)</li>
+  <li><a href="https://xml.apache.org/xerces-c">Xerces</a>&nbsp;&nbsp;(&ge; 2.4)</li>
+</ul>
+
+<p>If you want to compile the current git development version, you will
+  additionally need <a href="https://curl.haxx.se/">curl and libcurl4</a>.</p>
+
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
+  <a name="announce">Announce Mailing List</a></h3>
+
+<p>If your are keen on being up to date on Enigma, we offer an announcement service
+  for new releases via email. Just register yourself on the
+  <a href="https://lists.nongnu.org/mailman/listinfo/enigma-announce">announce mailing list</a>.
+  The mail volume is limited to one mailing per beta or final relase
+  version of Enigma, which did not yet exceed half a dozen mails per year.</p>
+
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
+  <a name="devel">Development version</a></h3>
+
+<p>Interested in the leading edge development version of Enigma?
+  Enigma's development version can be downloaded from its source code
+  repository at GitHub:</p>
+<pre>
+  https://github.com/Enigma-Game/Enigma.git
+</pre>
+<p>Please refer to the <a href="$$development$$">development page</a> for detailed instructions.
+</p>
+
+
+<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
+  <a name="oldversions">Old versions</a></h3>
+
+<p>For the 1.20-version of Enigma, please choose below.</p>
 
 <ul>
   <li><ul style="list-style-type:none"><li><b>Windows 32 bit (tested on XP and 7)</b>
@@ -107,101 +236,11 @@ are made available by third parties.</p>
 
   <li><ul style="list-style-type:none"><li><b>Source Code 32/64-bit compatible, revision 2334</b>
         <a href="https://sourceforge.net/projects/enigma-game/files/Release%201.20/enigma-1.20.tar.gz/download">
-          tar.gz (1.20)</a> appr. 36 MB</li>
+          .tar.gz (1.20)</a> appr. 36 MB</li>
       <li>md5 - 5871158e07e675d1472f3cfc2a6557ff</li>
       <li>sha256 - f2ae2377a37a1fba85ef884f3762b50e191107e1d4520d4e2e0c21901d19758b</li>
   </ul></li>
-
 </ul>
-
-</p>Packages for some other operating systems are made available by
-third parties:</p>
-
-<ul>
-  <li><a href="http://packages.debian.org/jessie/enigma">Debian (jessie)</a></li>
-  <li><a href="http://packages.debian.org/sid/enigma">Debian (sid)</a></li>
-  <li><a href="http://packages.ubuntu.com/saucy/enigma">Ubuntu (saucy)</a></li>
-  <li><a href="http://packages.ubuntu.com/trusty/enigma">Ubuntu (trusty)</a></li>
-  <li><a href="https://packages.gentoo.org/package/games-puzzle/enigma">Gentoo Linux</a></li>
-  <li><a href="https://admin.fedoraproject.org/pkgdb/acls/name/enigma">Fedora</a></li>
-  <li><a href="https://software.opensuse.org/package/enigma">openSUSE</a></li>
-  <li><a href="https://aur.archlinux.org/packages/enigma_sdl/">Arch Linux</a></li>
-  <li><a href="https://www.freshports.org/games/enigma/">FreeBSD</a></li>
-</ul>
-
-<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="compilation">Compiling from Source Code under Unix</a></h3>
-
-<p>In case your Unix distribution does not provide Enigma packages you may
-  want to download the source package and compile Enigma for your own. This
-  is usually a simple straight forward task.</p>
-
-<p>Enigma depends on a few libraries and tools. Most Unix systems come with
-  these libraries pre-installed these days.  But for compilation you may need
-  additional '-devel' packages besides the runtime packages of the
-  libraries.  Please verify that the libraries SDL, SDL_ttf, SDL_image, SDL_mixer
-  and Xerces are installed on your system.</p>
-
-<p>For a complete list of libraries and programs that must be installed to
-  compile Enigma, please refer to the file 'doc/REQUIREMENTS' that is
-  included in the Enigma source package.</p>
-
-<p>Once you have everything installed, building Enigma is as easy as typing</p>
-
-<pre>./configure && make && make install</pre>
-
-<p>in the enigma directory.</p>
-
-<p>If your distribution does not provide the necessary packages, you can
-  download them from the following web sites:</p>
-
-<ul>
-  <li><a href="https://www.libsdl.org">SDL</a>&nbsp;&nbsp;(&ge; 1.2)</li>
-  <li><a href="https://www.libsdl.org/projects/SDL_ttf">SDL_ttf</a>&nbsp;&nbsp;(&ge; 2.0.6)</li>
-  <li><a href="https://www.libsdl.org/projects/SDL_mixer">SDL_mixer</a>&nbsp;&nbsp;(&ge; 1.2.4)</li>
-  <li><a href="https://www.libsdl.org/projects/SDL_image">SDL_image</a>&nbsp;&nbsp;(&ge; 1.2.0)</li>
-  <li><a href="https://xml.apache.org/xerces-c">Xerces</a>&nbsp;&nbsp;(&ge; 2.4)</li>
-</ul>
-
-<p>If you want to compile the current SVN developmental version, you will
-  additionally need <a href="https://curl.haxx.se/">curl and libcurl4</a>.</p>
-
-<p>If you're using Debian, you should have the following packages
-  installed for compiling the SVN developmental version:</p>
-
-<ul>
-  <li>libxerces27-dev</li>
-  <li>curl</li>
-  <li>libcurl3-openssl-dev or libcurl4-openssl-dev</li>
-  <li>libsdl1.2-dev</li>
-  <li>libsdl-image1.2-dev</li>
-  <li>libsdl-mixer1.2-dev</li>
-  <li>libsdl-sound1.2-dev</li>
-  <li>libsdl-ttf2.0-dev</li>
-  <li>libxerces27-dev</li>
-</ul>
-
-<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="announce">Announce Mailing List</a></h3>
-
-<p>If your are keen on being up to date on Enigma, we offer an announcement service
-  for new releases via email. Just register yourself on the
-  <a href="https://lists.nongnu.org/mailman/listinfo/enigma-announce">announce
-    mailing list</a>. The mail volume is limited to one mailing per beta or final relase
-  version of Enigma, which did not yet exceed half a dozen mails per year.</p>
-
-<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="devel">Development version</a></h3>
-
-<p>Interested in the leading edge development version of Enigma?
-  Enigma's development version can be downloaded from its source code
-  repository.</p>
-<pre>https://github.com/Enigma-Game/Enigma.git</pre>
-<p>Please refer to the <a href="$$development$$">development
-    page</a> for detailed instructions.</p>
-
-<h3><a class="arrowup" href="$$download$$"><img src="$$imagedir$$/nav_up.gif" alt="Up" border="0" title="back to top"></a>
-  <a name="oldversions">Old versions</a></h3>
 
 <p>For the 1.01-version of Enigma, please choose below.</p>
 
@@ -243,7 +282,7 @@ third parties:</p>
 
   <li><ul style="list-style-type:none"><li><b>Source Code 32/64-bit compatible, revision 1914 </b>
         <a href="https://sourceforge.net/projects/enigma-game/files/Release%201.01/enigma-1.01-r1914.tar.gz">
-          tar.gz (1.01)</a> appr. 10 MB</li>
+          .tar.gz (1.01)</a> appr. 10 MB</li>
       <li>md5 - f60ccc10326b49b558e4e280075b0e70</li>
       <li>sha256 - 991ca677def3ecda3d52b3cc6ea2b0e8393c47f61168a30ffa9efc9069ffedad</li>
   </ul></li>
@@ -254,16 +293,17 @@ third parties:</p>
       <li>md5 - 770f81e8d8ef92d8374c8932c3e1a26e</li>
       <li>sha256 - a8ab7a03ce6547e86c44aa9962e171417cb63f8bc2b3527af9da42637e6115b6</li>
   </ul></li>
-
 </ul>
 
 <p>Due to changes in source code repository and download servers, older versions
   of Enigma can be found on different servers. Have a look at</p>
 <ul>
+  <li><a href="https://github.com/Enigma-Game/Enigma/tags">
+      GitHub</a> for most recent releases</li>
   <li><a href="https://sourceforge.net/projects/enigma-game/files/">
-      sourceforge</a>&nbsp;&nbsp;for recent releases.</li>
+      SourceForge</a> for previous releases</li>
   <li><a href="https://savannah.nongnu.org/download/enigma/">
-      https://savannah.nongnu.org/download/enigma/</a>&nbsp;&nbsp;for previous releases</li>
+      Savannah</a> for old releases</li>
   <li><a href="http://www.mag-heut.net/blackball/index.php?act=ST&amp;f=2&amp;t=118">
-      mag-heut.net</a>&nbsp;&nbsp;for old Windows versions.</li>
+      mag-heut.net</a> for old Windows versions</li>
 </ul>
