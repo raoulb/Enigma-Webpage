@@ -348,10 +348,10 @@ html.statistics = {
     title_de = "Spieler-Statistiken",
     title_ru = "Статистика пользователей",
     title_es = "Estadisticas de Usuario",
-    alone_shared = "alone + shared",   
+    alone_shared = "alone + shared",
     alone_shared_de = "allein + geteilt",
-    alone_shared_ru = "alone + shared",   
-    alone_shared_es = "alone + shared",   
+    alone_shared_ru = "alone + shared",
+    alone_shared_es = "alone + shared",
     average = "average",
     average_de = "Durchschnitt",
     average_ru = "В среднем",
@@ -450,7 +450,7 @@ html.statistics = {
     names_in_use_es = "Nombre en uso",
     leftcolumn = {"menu", "validation", "userlist"},
     rightcolumn = {},
-    body = {"stat-head", "table-wr", "table-solved", "table-rat", 
+    body = {"stat-head", "table-wr", "table-solved", "table-rat",
             "stat-other", "stat-help", "stat-tail"}
 }
 
