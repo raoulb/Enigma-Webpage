@@ -478,7 +478,7 @@ html.links = {
     title_de = "Links",
     title_ru = "Ссылки",
     title_es = "Enlaces",
-    body = {"links"}
+    body = {"links", "longline"}
 }
 
 ----------------------------------------------------------------------
