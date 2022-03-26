@@ -29,7 +29,7 @@ This directory should look like:
 ls -a
 ```
 ```
-advent.css  appdata  enigma.css  gfx-templates  images  input  main.lua  manual  manual_1.20  README.txt  swfobject.js
+advent.css  appdata  enigma.css  gfx-templates  images  input  main.lua  manual  manual_1.20  README.txt
 ```
 
 Next, get a copy of the `cvs` repository used for publishing

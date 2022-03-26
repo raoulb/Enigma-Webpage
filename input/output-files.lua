@@ -53,9 +53,9 @@ general = {
     manual_de = "manual_1.30/manual/enigma_de.html",
     manual_fr = "manual_1.30/manual/enigma_fr.html",
     manual_ru = "manual_1.30/manual/enigma_ru.html",
-    trailer_1 = "http://download.berlios.de/enigma-game/EnigmaTrailer1.flv",
-    trailer_2 = "http://download.berlios.de/enigma-game/EnigmaTrailer2.flv",
-    magicmoments_1 = "http://download.berlios.de/enigma-game/EnigmaMagicMoments1.flv",
+    trailer_1 = "https://static.enigma-game.org/files/videos/EnigmaTrailer1.mp4",
+    trailer_2 = "https://static.enigma-game.org/files/videos/EnigmaTrailer2.mp4",
+    magicmoments_1 = "https://static.enigma-game.org/files/videos/EnigmaMagicMoments1.mp4",
     disclaimer = "http://www.disclaimer.de/disclaimer.htm#2",
     disclaimer_de = "http://www.disclaimer.de/disclaimer.htm#1",
     gpl = "http://www.gnu.org/licenses/licenses.html#GPL",
@@ -284,8 +284,7 @@ html.viewclips = {
     title_de = "Video-Clips von Enigma",
     title_ru = "Видеофрагменты Enigma",
     title_es = "Movie Clips of Enigma",
-    body = {"viewclips"},
-    scripts = {"videoplayer", noanchor = true}
+    body = {"viewclips"}
 }
 
 ----------------------------------------------------------------------
