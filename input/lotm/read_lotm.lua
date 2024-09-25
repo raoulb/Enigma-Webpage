@@ -1,4 +1,4 @@
-#! /usr/bin/env lua50
+#! /usr/bin/env lua5.4
 
 -- Syntax: orderfield is a string refering to the field to which
 --         shall be ordered, inverse is true/false whether the
@@ -41,7 +41,7 @@ function lotm_to_html(lotm_data, lang)
   end
   return html_text
 end
-      
+
 function lotm_archive_date(lang)
   return translate_month(lang, lotm_archive_data_from)
 end
@@ -69,7 +69,7 @@ function generate_lotm_entries(html)
     html[macroname] = {}
     html[macroname].outfile = macroname..".html"
     html[macroname].rightcolumn = {}
-    html[macroname].body = {"lotm/"..macroname}    
+    html[macroname].body = {"lotm/"..macroname}
     for j, l0 in pairs(language_list) do
       html[macroname]["title"..l0] = "$$lotm_expansion$$: "
         ..translate_month(l0, v.date)
@@ -98,7 +98,7 @@ end
 -- It works only for small numbers.
 function roman_numeral(number)
   local rn = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI",
-              "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"} 
+              "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"}
   if rn[number] then
     return rn[number]
   else
@@ -115,7 +115,7 @@ function parse_level_archive(lang)
     for _, first in ipairs(ordered_data) do
       if first.position_num == entry.position_num then
         found = true
-        first.full_link = first.full_link 
+        first.full_link = first.full_link
           ..", <a href=\""..entry.link.."\">"..entry.occasion.."</a>"
       end
     end
@@ -160,5 +160,3 @@ function parse_level_archive(lang)
   end
   return html_text
 end
-
-

@@ -75,7 +75,7 @@ Once done, build the website:
 
 ```
 chmod u+x main.lua
-lua5.1 main.lua
+lua5.4 main.lua
 ```
 
 and review your local changes, for example within a browser:

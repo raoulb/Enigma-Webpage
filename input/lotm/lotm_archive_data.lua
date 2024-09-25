@@ -367,6 +367,4 @@ lotm_rating(          "Plan Ahead",  8.00,  20,  "<b>(newcomer)</b>")
 
 lotm_archive_data_from = { month = 10, year = 2008 }
 
-lotm_current = lotm_archive_data[table.getn(lotm_archive_data)]
-
-
+lotm_current = lotm_archive_data[#lotm_archive_data]

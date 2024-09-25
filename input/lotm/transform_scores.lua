@@ -6,7 +6,7 @@
 -- Output is:
 --  "    <tr><td class="num">MINUTES:SECONDS</td>"
 --  "        <td class="left">NAME</td></tr>"
-    
+
 
 line = ""
 mod = math.mod or math.fmod
@@ -24,7 +24,7 @@ repeat
     local remaining = string.sub(line, space_position + 2)
           space_position = string.find(remaining, " ")
     local time_str = string.sub(remaining, 1, space_position - 1)
-    local name = string.sub(remaining, space_position + 2)      
+    local name = string.sub(remaining, space_position + 2)
     -- calculate time string from first number
     local number = tonumber(number_str)
     local seconds = mod(number, 60)
@@ -39,4 +39,3 @@ repeat
     io.write("        <td class=\"left\">"..name.."</td></tr>\n")
   end
 until line == nil
-

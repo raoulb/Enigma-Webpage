@@ -1,4 +1,4 @@
-#! /usr/bin/env lua50
+#! /usr/bin/env lua5.4
 general = {}
 html = {}
 
@@ -10,7 +10,7 @@ verbose = false
 --  The Enigma Lua Homepage Gluer is licensed under GPL v.2 or above,
 --  please find a copy of it here:
 --    http://www.gnu.org/licenses/gpl-2.0.html
---  This program and some of its input files are loosely based on 
+--  This program and some of its input files are loosely based on
 --  a predecessor by Daniel Heck.
 --
 --  The Enigma Lua Homepage Gluer incorporates the subprograms
@@ -284,4 +284,3 @@ for lang_nr, lang in pairs(language_list) do
     outfile:close()
   end
 end
-

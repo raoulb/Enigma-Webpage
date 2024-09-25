@@ -1,4 +1,4 @@
-#! /usr/bin/env lua50
+#! /usr/bin/env lua5.4
 --
 -- Parameters:
 -- dir:     directory with the news-issues, including last "/"
@@ -38,7 +38,7 @@ function parse_news(dir, lang0, num_array)
     if num_array == nil then -- Print full news page
         num_array = determine_num_news(dir)
     end
-    for i=table.getn(num_array), 1, -1 do
+    for i=#num_array, 1, -1 do
         all_news_content = all_news_content..parse_this_news(dir, num_array[i], lang)
     end
     return all_news_content
@@ -59,23 +59,23 @@ function parse_this_news(dir, n, lang)
         print("WARNING: Newsfile news_issue"..tostring(n)..lang..".html".." not found!")
 
         -- If the lang is not en, we have got a second chance to finde a suitable newsfile in the english tree
-        local separator = separator_begin.."News Issue #"..tostring(n)..lang.." NOT found! Trying english news file "..separator_end    
+        local separator = separator_begin.."News Issue #"..tostring(n)..lang.." NOT found! Trying english news file "..separator_end
         the_content = ""..separator
 
         local temp_content = ""
-        print("INFO: lang is "..lang..". Searching for news_issue"..tostring(n).." in the english news tree.")  
-          
+        print("INFO: lang is "..lang..". Searching for news_issue"..tostring(n).." in the english news tree.")
+
         if lang ~= "_en" then -- Our second chance
             temp_content = parse_this_news(dir, n, "_en")
         else -- There is no hope to find a file anymore!!
             print("ERROR: Newsfile news_issue"..tostring(n).."_en.html".." not found!")
-            local separator = separator_begin.."News Issue #"..tostring(n).."_en NOT found! Omitting this news!"..separator_end    
+            local separator = separator_begin.."News Issue #"..tostring(n).."_en NOT found! Omitting this news!"..separator_end
             the_content = ""..separator
         end
         the_content = the_content..temp_content
 
     else -- requested newsfile exists
-        local separator = separator_begin.."News Issue #"..tostring(n)..lang..separator_end    
+        local separator = separator_begin.."News Issue #"..tostring(n)..lang..separator_end
         the_content = ""..separator
         the_content = the_content..newsfile:read("*a")
     end
@@ -94,7 +94,7 @@ function determine_num_news(dir)
         -- We know, that the english news tree IS complete
         local newsfilename = "news_issue"..tostring(num_news).."_en"..".html"
         newsfile = io.open (dir..newsfilename, "r")
-    until newsfile == nil 
+    until newsfile == nil
 
     if verbose then
         print("INFO: "..tostring(num_news-1).." english Newsfiles found")
